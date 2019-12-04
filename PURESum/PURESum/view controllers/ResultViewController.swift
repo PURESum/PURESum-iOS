@@ -14,6 +14,7 @@ class ResultViewController: UIViewController {
     var titleString: String?
     
     // MARK: - IBOutlet
+    @IBOutlet weak var wordcloudImageView: UIImageView!
     
     // MARK: - IBAction
     
