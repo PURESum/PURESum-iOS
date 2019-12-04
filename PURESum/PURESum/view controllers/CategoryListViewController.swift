@@ -12,7 +12,7 @@ class CategoryListViewController: UIViewController {
 
     // MARK: - properties
     let cellIdentifier: String = "ListCollectionViewCell"
-    var titleLabel: String = ""
+    var titleString: String?
     
     let titleArray: [String] = ["엑시트", "조커", "82년생 김지영", "가장 보통의 연애", "타이타닉", "곡성"]
     
@@ -22,18 +22,27 @@ class CategoryListViewController: UIViewController {
     // MARK: - IBAction
     
     // MARK: - life cycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.title = "'\(titleString ?? "")' 카테고리"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // collectionview delegate, datasource
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        self.title = titleLabel
     }
     
     // MARK: - Methods
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nextVC: ResultViewController = segue.destination as? ResultViewController else { return }
+        guard let cell: ListCollectionViewCell = sender as? ListCollectionViewCell else { return }
+        
+        nextVC.titleString = cell.label?.text
+    }
 }
 
 extension CategoryListViewController: UICollectionViewDelegate {

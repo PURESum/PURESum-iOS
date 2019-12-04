@@ -191,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="2004" y="-536"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="eX5-LZ-4gS">
             <objects>
-                <viewController id="WK7-bS-AUu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="WK7-bS-AUu" customClass="ResultViewController" customModule="PURESum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OoD-2g-NlZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

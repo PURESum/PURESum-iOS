@@ -11,12 +11,18 @@ import UIKit
 class ResultViewController: UIViewController {
 
     // MARK: - properties
+    var titleString: String?
     
     // MARK: - IBOutlet
     
     // MARK: - IBAction
     
     // MARK: - life cycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.title = "'\(titleString ?? "")' 분석 결과"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

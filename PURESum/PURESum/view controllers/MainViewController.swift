@@ -30,12 +30,17 @@ class MainViewController: UIViewController {
     }
 
     // MARK: - Methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nextVC: CategoryListViewController = segue.destination as? CategoryListViewController else { return }
+        guard let cell: categoryCollectionViewCell = sender as? categoryCollectionViewCell else { return }
+        
+        nextVC.titleString = cell.label?.text
+    }
 }
 
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CategoryListViewController")
-        nextVC.title = categoryArray[indexPath.item]
+        
     }
 }
 
