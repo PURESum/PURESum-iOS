@@ -13,6 +13,8 @@ class MainViewController: UIViewController {
     // MARK: - properties
     let cellIdentifier: String = "categoryCollectionViewCell"
     
+    let categoryArray: [String] = ["MOVIE", "RESTAURANT", "PRODUCT"]
+    
     // MARK: - IBOutlet
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
@@ -31,7 +33,10 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CategoryListViewController")
+        nextVC.title = categoryArray[indexPath.item]
+    }
 }
 
 extension MainViewController: UICollectionViewDataSource {
@@ -46,13 +51,13 @@ extension MainViewController: UICollectionViewDataSource {
         switch indexPath.item {
         case 0:
             cell.imageView.image = #imageLiteral(resourceName: "icon_movie.jpeg")
-            cell.label.text = "MOVIE"
+            cell.label.text = categoryArray[indexPath.item]
         case 1:
             cell.imageView.image = #imageLiteral(resourceName: "icon_food.jpeg")
-            cell.label.text = "RESTAURANT"
+            cell.label.text = categoryArray[indexPath.item]
         case 2:
             cell.imageView.image = #imageLiteral(resourceName: "icon_product.jpeg")
-            cell.label.text = "PRODUCT"
+            cell.label.text = categoryArray[indexPath.item]
         default: break
         }
         return cell

@@ -16,6 +16,10 @@
 		D99F7F682397CC1F0045935E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F7F672397CC1F0045935E /* MainViewController.swift */; };
 		D99F7F6C2397CFFF0045935E /* categoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F7F6A2397CFFF0045935E /* categoryCollectionViewCell.swift */; };
 		D99F7F6D2397CFFF0045935E /* categoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99F7F6B2397CFFF0045935E /* categoryCollectionViewCell.xib */; };
+		D99F7F6F2397D4690045935E /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F7F6E2397D4690045935E /* CategoryListViewController.swift */; };
+		D99F7F722397D4C30045935E /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F7F702397D4C30045935E /* ListCollectionViewCell.swift */; };
+		D99F7F732397D4C30045935E /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99F7F712397D4C30045935E /* ListCollectionViewCell.xib */; };
+		D99F7F752397D9720045935E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F7F742397D9720045935E /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		D99F7F672397CC1F0045935E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D99F7F6A2397CFFF0045935E /* categoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		D99F7F6B2397CFFF0045935E /* categoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D99F7F6E2397D4690045935E /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		D99F7F702397D4C30045935E /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D99F7F712397D4C30045935E /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D99F7F742397D9720045935E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,8 @@
 			children = (
 				D99F7F692397CFF00045935E /* views */,
 				D99F7F672397CC1F0045935E /* MainViewController.swift */,
+				D99F7F6E2397D4690045935E /* CategoryListViewController.swift */,
+				D99F7F742397D9720045935E /* ResultViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -141,6 +151,8 @@
 			children = (
 				D99F7F6A2397CFFF0045935E /* categoryCollectionViewCell.swift */,
 				D99F7F6B2397CFFF0045935E /* categoryCollectionViewCell.xib */,
+				D99F7F702397D4C30045935E /* ListCollectionViewCell.swift */,
+				D99F7F712397D4C30045935E /* ListCollectionViewCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -204,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99F7F732397D4C30045935E /* ListCollectionViewCell.xib in Resources */,
 				D99F7F6D2397CFFF0045935E /* categoryCollectionViewCell.xib in Resources */,
 				D92177882397C5C700D3FF05 /* LaunchScreen.storyboard in Resources */,
 				D92177852397C5C700D3FF05 /* Assets.xcassets in Resources */,
@@ -243,6 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99F7F722397D4C30045935E /* ListCollectionViewCell.swift in Sources */,
+				D99F7F6F2397D4690045935E /* CategoryListViewController.swift in Sources */,
+				D99F7F752397D9720045935E /* ResultViewController.swift in Sources */,
 				D99F7F6C2397CFFF0045935E /* categoryCollectionViewCell.swift in Sources */,
 				D99F7F682397CC1F0045935E /* MainViewController.swift in Sources */,
 				D92177832397C5C300D3FF05 /* PURESum.xcdatamodeld in Sources */,
