@@ -15,6 +15,7 @@ class CategoryListViewController: UIViewController {
     var titleString: String?
     
     let titleArray: [String] = ["엑시트", "조커", "82년생 김지영", "가장 보통의 연애", "타이타닉", "곡성"]
+    let imageArray: [String] = ["image_1", "image_2", "image_3", "image_4", "image_5", "image_6"]
     
     // MARK: - IBOutlet
     @IBOutlet weak var collectionView: UICollectionView!
@@ -56,33 +57,11 @@ extension CategoryListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell: ListCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? ListCollectionViewCell else { return UICollectionViewCell ()}
-        switch indexPath.item {
-        case 0:
-            cell.imageView.image = UIImage(named: "image_1")
-            cell.label.text = titleArray[indexPath.item]
-        case 1:
-            cell.imageView.image = UIImage(named: "image_2")
-            cell.label.text = titleArray[indexPath.item]
-        case 2:
-            cell.imageView.image = UIImage(named: "image_3")
-            cell.label.text = titleArray[indexPath.item]
-        case 3:
-            cell.imageView.image = UIImage(named: "image_4")
-            cell.label.text = titleArray[indexPath.item]
-        case 4:
-            cell.imageView.image = UIImage(named: "image_5")
-            cell.label.text = titleArray[indexPath.item]
-        case 5:
-            cell.imageView.image = UIImage(named: "image_6")
-            cell.label.text = titleArray[indexPath.item]
-        default: break
-        }
+        cell.imageView.image = UIImage(named: imageArray[indexPath.row])
+        cell.label.text = titleArray[indexPath.item]
         return cell
     }
-    
-    
 }
-
 extension CategoryListViewController: UICollectionViewDelegateFlowLayout {
     
 }
