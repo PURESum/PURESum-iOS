@@ -28,6 +28,13 @@ class WriteConcernViewController: UIViewController {
     
     // MARK: - IBAction
     @IBAction func tappedMatchButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WaitingViewController")
+//        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        vc.preferredContentSize.width = self.view.bounds.width
+        vc.preferredContentSize.height = self.view.bounds.height
+//        alert.setValue(vc, forKey: "contentViewController")
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: false)
     }
     
     // MARK: - life cycle

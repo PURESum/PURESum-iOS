@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D9C7FD1724446B8E0057AE15 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7FD1624446B8E0057AE15 /* CustomTextView.swift */; };
+		D9C7FD192444A14D0057AE15 /* WaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7FD182444A14D0057AE15 /* WaitingViewController.swift */; };
+		D9C7FD1B2444A1D80057AE15 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7FD1A2444A1D80057AE15 /* CustomView.swift */; };
 		D9E34F9B244459AA00626EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34F9A244459AA00626EBA /* AppDelegate.swift */; };
 		D9E34F9D244459AA00626EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34F9C244459AA00626EBA /* SceneDelegate.swift */; };
 		D9E34FA2244459AA00626EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E34FA0244459AA00626EBA /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		D9C7FD1624446B8E0057AE15 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		D9C7FD182444A14D0057AE15 /* WaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingViewController.swift; sourceTree = "<group>"; };
+		D9C7FD1A2444A1D80057AE15 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		D9E34F97244459AA00626EBA /* MatchingService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E34F9A244459AA00626EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E34F9C244459AA00626EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D9E34FB42444670A00626EBA /* WriteConcernViewController.swift */,
+				D9C7FD182444A14D0057AE15 /* WaitingViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 				D9E34FA5244459AE00626EBA /* LaunchScreen.storyboard */,
 				D9E34FA8244459AE00626EBA /* Info.plist */,
 				D9C7FD1624446B8E0057AE15 /* CustomTextView.swift */,
+				D9C7FD1A2444A1D80057AE15 /* CustomView.swift */,
 			);
 			path = "supporting files";
 			sourceTree = "<group>";
@@ -173,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C7FD192444A14D0057AE15 /* WaitingViewController.swift in Sources */,
 				D9E34FB52444670A00626EBA /* WriteConcernViewController.swift in Sources */,
 				D9E34F9B244459AA00626EBA /* AppDelegate.swift in Sources */,
+				D9C7FD1B2444A1D80057AE15 /* CustomView.swift in Sources */,
 				D9C7FD1724446B8E0057AE15 /* CustomTextView.swift in Sources */,
 				D9E34F9D244459AA00626EBA /* SceneDelegate.swift in Sources */,
 			);
