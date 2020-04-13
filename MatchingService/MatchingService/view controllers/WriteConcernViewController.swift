@@ -13,6 +13,9 @@ class WriteConcernViewController: UIViewController {
     // MARK: - properties
     let maxCount = 300
     
+    var width: CGFloat?
+    var height: CGFloat?
+    
     // MARK: - IBOutlet
     @IBOutlet weak var boxView: UIView!
     
@@ -28,6 +31,8 @@ class WriteConcernViewController: UIViewController {
     
     // MARK: - IBAction
     @IBAction func tappedMatchButton(_ sender: Any) {
+        self.view.endEditing(true)
+        
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WaitingViewController")
 //        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
         vc.preferredContentSize.width = self.view.bounds.width
@@ -42,6 +47,9 @@ class WriteConcernViewController: UIViewController {
         // add keyboard notification center
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil) // keyboard will show
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil) // keyboard will hide
+        
+        // hide navigation bar
+        navigationController?.isNavigationBarHidden = true
     }
     
     override func viewDidLoad() {
@@ -56,6 +64,10 @@ class WriteConcernViewController: UIViewController {
         
         // textView delegate
         textView.delegate = self
+        
+        // width, height 저장
+        width = self.view.bounds.width
+        height = self.view.bounds.height
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -64,6 +76,9 @@ class WriteConcernViewController: UIViewController {
         // remove keyboard notification center
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        // show navigation bar
+        navigationController?.isNavigationBarHidden = true
     }
     
     // MARK: - Methods
@@ -99,16 +114,20 @@ class WriteConcernViewController: UIViewController {
     // 키보드 올라 왔을 때 호출되는 함수
     @objc private func keyboardWillShow(_ notification: Notification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            self.view.frame.size = CGSize(width: self.view.bounds.width, height: self.view.bounds.height - keyboardSize.height)
-            self.view.layoutIfNeeded()
+            if self.view.frame.size == CGSize(width: width!, height: height!) {
+                self.view.frame.size = CGSize(width: self.view.bounds.width, height: self.view.bounds.height - keyboardSize.height)
+                self.view.layoutIfNeeded()
+            }
         }
     }
     
     // 키보드 내려갈 때 호출되는 함수
     @objc private func keyboardWillHide(_ notification: Notification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            self.view.frame.size = CGSize(width: self.view.bounds.width, height: self.view.bounds.height + keyboardSize.height)
-            self.view.layoutIfNeeded()
+            if self.view.frame.size != CGSize(width: width!, height: height!) {
+                self.view.frame.size = CGSize(width: self.view.bounds.width, height: self.view.bounds.height + keyboardSize.height)
+                self.view.layoutIfNeeded()
+            }
         }
     }
 }
