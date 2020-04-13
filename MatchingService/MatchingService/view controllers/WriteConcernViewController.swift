@@ -33,19 +33,54 @@ class WriteConcernViewController: UIViewController {
     @IBAction func tappedMatchButton(_ sender: Any) {
         self.view.endEditing(true)
         
-        guard let vc: WaitingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WaitingViewController") as? WaitingViewController else {
-            return
+        if textView.text == "" || textView.text == "300자 이내로 작성해 주세요." {
+            let toastLabel = UILabel(frame: CGRect(x: view.frame.size.width / 2 - 100, y: view.frame.size.height - 100, width: 200, height: 36))
+            toastLabel.backgroundColor = .clear
+            toastLabel.textColor = .white
+            toastLabel.textAlignment = .center
+            view.addSubview(toastLabel)
+            
+            toastLabel.text = "내용을 입력해 주세요."
+            toastLabel.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 16)
+            toastLabel.alpha = 1.0
+            toastLabel.backgroundColor = .darkGray
+            toastLabel.layer.cornerRadius = 18
+            toastLabel.clipsToBounds = true
+            
+            UIView.animate(withDuration: 1.0, animations: {
+                toastLabel.alpha = 0.0
+            }, completion: {
+                (isBool) -> Void in
+                self.dismiss(animated: false, completion: nil)
+            })
+            
+            /*
+            let alert = UIAlertController(title: nil, message: "내용을 입력해 주세요.", preferredStyle: .alert)
+            alert.view.backgroundColor = .black
+            alert.view.alpha = 0.7
+            alert.view.layer.cornerRadius = 20
+            
+            self.present(alert, animated: true, completion: nil)
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
+                alert.dismiss(animated: true, completion: nil)
+                return
+            }
+            */
+        } else {
+            guard let vc: WaitingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WaitingViewController") as? WaitingViewController else {
+                return
+            }
+            
+            vc.preferredContentSize.width = self.view.bounds.width
+            vc.preferredContentSize.height = self.view.bounds.height
+            vc.modalPresentationStyle = .overFullScreen
+            
+            // delegate
+            vc.searchingDelegate = self
+            
+            self.present(vc, animated: false)
         }
-//        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
-        vc.preferredContentSize.width = self.view.bounds.width
-        vc.preferredContentSize.height = self.view.bounds.height
-//        alert.setValue(vc, forKey: "contentViewController")
-        vc.modalPresentationStyle = .overFullScreen
-        
-        // delegate
-        vc.searchingDelegate = self
-        
-        self.present(vc, animated: false)
     }
     
     // MARK: - life cycle
@@ -174,6 +209,8 @@ extension WriteConcernViewController: SearchingDelegate {
         guard let vc: ResultViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
+        
+        vc.content = textView.text
         vc.result = result
         self.show(vc, sender: nil)
     }

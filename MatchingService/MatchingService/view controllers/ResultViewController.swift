@@ -11,10 +11,13 @@ import UIKit
 class ResultViewController: UIViewController {
 
     // MARK: - properties
+    var content: String?
     var result: String?
     
     // MARK: - IBOutlet
-    @IBOutlet weak var textView: CustomTextView!
+    @IBOutlet weak var userTextView: CustomTextView!
+    
+    @IBOutlet weak var resultTextView: CustomTextView!
     
     // MARK: - IBAction
     
@@ -28,8 +31,9 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.textView.text = result
+        
+        self.userTextView.text = content
+        self.resultTextView.text = result
     }
     
     // MARK: - Methods

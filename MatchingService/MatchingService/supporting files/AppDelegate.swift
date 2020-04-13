@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().clipsToBounds = true
         
+        // set navigation bar color
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.2745098039, green: 0.4431372549, blue: 0.7764705882, alpha: 1)
+        UINavigationBar.appearance().backgroundColor = .clear
+        
         // hide back button title
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: 0, vertical: -80.0), for: .default)
         
