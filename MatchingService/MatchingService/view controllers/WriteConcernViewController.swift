@@ -47,12 +47,21 @@ class WriteConcernViewController: UIViewController {
             toastLabel.layer.cornerRadius = 18
             toastLabel.clipsToBounds = true
             
-            UIView.animate(withDuration: 1.0, animations: {
-                toastLabel.alpha = 0.0
-            }, completion: {
-                (isBool) -> Void in
-                self.dismiss(animated: false, completion: nil)
-            })
+            UIView.animate(withDuration: 2.0, animations: {
+                toastLabel.alpha = 1.0
+            }) { (true) in
+                UIView.animate(withDuration: 2.0, animations: {
+                    toastLabel.alpha = 0.0
+                }) { (true) in
+                    UIView.animate(withDuration: 2.0, animations: {
+                        toastLabel.alpha = 0.0
+                    }) { (true) in
+                        DispatchQueue.main.async(execute: {
+                            self.dismiss(animated: true, completion: nil)
+                        })
+                    }
+                }
+            }
             
             /*
             let alert = UIAlertController(title: nil, message: "내용을 입력해 주세요.", preferredStyle: .alert)
