@@ -11,16 +11,25 @@ import UIKit
 class ResultViewController: UIViewController {
 
     // MARK: - properties
+    var result: String?
     
     // MARK: - IBOutlet
+    @IBOutlet weak var textView: CustomTextView!
     
     // MARK: - IBAction
     
     // MARK: - life cycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // show navigation bar
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.textView.text = result
     }
     
     // MARK: - Methods

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol SearchingDelegate: class {
+    func getMatchResult(result: String)
+}
+
 class WaitingViewController: UIViewController {
     
     // MARK: - properties
@@ -26,6 +30,9 @@ class WaitingViewController: UIViewController {
         return activityIndicator
     }()
     
+    // dismiss delegate
+    var searchingDelegate: SearchingDelegate?
+    
     // MARK: - IBOutlet
     @IBAction func tappedCancelButton(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
@@ -42,8 +49,16 @@ class WaitingViewController: UIViewController {
         self.view.addSubview(self.activityIndicator)
         // 로딩중 시작
         self.activityIndicator.startAnimating()
+        
+        // finish searching
+        finishSearching()
     }
     
     // MARK: - Methods
-
+    func finishSearching() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) {
+            self.searchingDelegate?.getMatchResult(result: "결과값 입니다. :)")
+            self.dismiss(animated: false, completion: nil)
+        }
+    }
 }

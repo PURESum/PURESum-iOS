@@ -33,17 +33,25 @@ class WriteConcernViewController: UIViewController {
     @IBAction func tappedMatchButton(_ sender: Any) {
         self.view.endEditing(true)
         
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WaitingViewController")
+        guard let vc: WaitingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WaitingViewController") as? WaitingViewController else {
+            return
+        }
 //        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
         vc.preferredContentSize.width = self.view.bounds.width
         vc.preferredContentSize.height = self.view.bounds.height
 //        alert.setValue(vc, forKey: "contentViewController")
         vc.modalPresentationStyle = .overFullScreen
+        
+        // delegate
+        vc.searchingDelegate = self
+        
         self.present(vc, animated: false)
     }
     
     // MARK: - life cycle
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         // add keyboard notification center
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil) // keyboard will show
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil) // keyboard will hide
@@ -78,7 +86,7 @@ class WriteConcernViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
         
         // show navigation bar
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.isNavigationBarHidden = false
     }
     
     // MARK: - Methods
@@ -156,5 +164,17 @@ extension WriteConcernViewController: UITextViewDelegate {
         } else {
             return false
         }
+    }
+}
+
+extension WriteConcernViewController: SearchingDelegate {
+    func getMatchResult(result: String) {
+        print("getMatchResult !")
+        
+        guard let vc: ResultViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
+            return
+        }
+        vc.result = result
+        self.show(vc, sender: nil)
     }
 }
