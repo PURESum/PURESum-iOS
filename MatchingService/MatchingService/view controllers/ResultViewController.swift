@@ -12,12 +12,15 @@ class ResultViewController: UIViewController {
 
     // MARK: - properties
     var content: String?
-    var result: String?
+    var predict: Predict?
     
     // MARK: - IBOutlet
     @IBOutlet weak var userTextView: CustomTextView!
     
     @IBOutlet weak var resultTextView: CustomTextView!
+    
+    @IBOutlet weak var categoryPercentageLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     
     // MARK: - IBAction
     
@@ -33,7 +36,9 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         
         self.userTextView.text = content
-        self.resultTextView.text = result
+        self.resultTextView.text = predict?.data.predict.text
+        self.categoryPercentageLabel.text = "\(String(describing: predict?.data.predict.percent))%"
+        self.categoryLabel.text = "\'\(String(describing: predict?.data.predict.category))'"
     }
     
     // MARK: - Methods

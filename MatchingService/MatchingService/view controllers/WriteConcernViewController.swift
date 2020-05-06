@@ -16,6 +16,9 @@ class WriteConcernViewController: UIViewController {
     var width: CGFloat?
     var height: CGFloat?
     
+    // response model
+    var predict: Predict?
+    
     // MARK: - IBOutlet
     @IBOutlet weak var boxView: UIView!
     
@@ -86,6 +89,7 @@ class WriteConcernViewController: UIViewController {
             vc.modalPresentationStyle = .overFullScreen
             
             // delegate
+            vc.content = textView.text
             vc.searchingDelegate = self
             
             self.present(vc, animated: false)
@@ -212,7 +216,7 @@ extension WriteConcernViewController: UITextViewDelegate {
 }
 
 extension WriteConcernViewController: SearchingDelegate {
-    func getMatchResult(result: String) {
+    func getMatchResult(result: Predict) {
         print("getMatchResult !")
         
         guard let vc: ResultViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
@@ -220,7 +224,7 @@ extension WriteConcernViewController: SearchingDelegate {
         }
         
         vc.content = textView.text
-        vc.result = result
+        vc.predict = predict
         self.show(vc, sender: nil)
     }
 }

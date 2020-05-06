@@ -405,6 +405,8 @@
                     </view>
                     <size key="freeformSize" width="414" height="1100"/>
                     <connections>
+                        <outlet property="categoryLabel" destination="lRG-4v-EE4" id="doD-jL-dZC"/>
+                        <outlet property="categoryPercentageLabel" destination="G2e-OR-mhf" id="3k6-Iw-434"/>
                         <outlet property="resultTextView" destination="usc-oq-RRK" id="ES6-kN-Pv4"/>
                         <outlet property="userTextView" destination="WFh-7R-0YS" id="eWF-0l-zzm"/>
                     </connections>

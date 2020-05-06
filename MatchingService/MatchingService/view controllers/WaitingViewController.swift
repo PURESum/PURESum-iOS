@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SearchingDelegate: class {
-    func getMatchResult(result: String)
+    func getMatchResult(result: Predict)
 }
 
 class WaitingViewController: UIViewController {
@@ -32,6 +32,12 @@ class WaitingViewController: UIViewController {
     
     // dismiss delegate
     var searchingDelegate: SearchingDelegate?
+    
+    // 사용자의 글
+    var content: String?
+    
+    // predict response model
+    var predict: Predict?
     
     // MARK: - IBOutlet
     @IBAction func tappedCancelButton(_ sender: Any) {
@@ -56,8 +62,18 @@ class WaitingViewController: UIViewController {
     
     // MARK: - Methods
     func finishSearching() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) {
-            self.searchingDelegate?.getMatchResult(result: "결과값 입니다. :)")
+        guard let content: String = self.content else {
+            print("content 할당 오류")
+            return
+        }
+        PredictServices.shared.postPredict(content: content) { predict in
+            
+            self.predict = predict
+            print("========")
+            print("POST /predict 통신 성공")
+            print(String(describing: self.predict))
+            
+            self.searchingDelegate?.getMatchResult(result: predict)
             self.dismiss(animated: false, completion: nil)
         }
     }
