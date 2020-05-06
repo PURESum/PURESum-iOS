@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D930363D2462D8CE00DBDB12 /* MatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */; };
+		D930363E2462D8CE00DBDB12 /* MatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */; };
 		D97CAA9D2462C92E00943930 /* Predict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAA9C2462C92E00943930 /* Predict.swift */; };
 		D97CAA9F2462C93A00943930 /* PredictServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAA9E2462C93A00943930 /* PredictServices.swift */; };
 		D97CAAA32462CDDD00943930 /* ServerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAAA22462CDDD00943930 /* ServerString.swift */; };
@@ -27,6 +29,8 @@
 		065170C298C2005CE32CED59 /* Pods-MatchingService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingService.debug.xcconfig"; path = "Target Support Files/Pods-MatchingService/Pods-MatchingService.debug.xcconfig"; sourceTree = "<group>"; };
 		D93036322462CE4400DBDB12 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93036362462D2DA00DBDB12 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCollectionViewCell.swift; sourceTree = "<group>"; };
+		D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchCollectionViewCell.xib; sourceTree = "<group>"; };
 		D97CAA9C2462C92E00943930 /* Predict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
 		D97CAA9E2462C93A00943930 /* PredictServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictServices.swift; sourceTree = "<group>"; };
 		D97CAAA22462CDDD00943930 /* ServerString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerString.swift; sourceTree = "<group>"; };
@@ -77,6 +81,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D930363A2462D8AC00DBDB12 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */,
+				D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		D97CAA9B2462C91100943930 /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 		D9E34FAE244459B600626EBA /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D930363A2462D8AC00DBDB12 /* views */,
 				D9E34FB42444670A00626EBA /* WriteConcernViewController.swift */,
 				D9C7FD182444A14D0057AE15 /* WaitingViewController.swift */,
 				D9C982312444A9980078EF42 /* ResultViewController.swift */,
@@ -215,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D930363E2462D8CE00DBDB12 /* MatchCollectionViewCell.xib in Resources */,
 				D9E34FA7244459AE00626EBA /* LaunchScreen.storyboard in Resources */,
 				D9E34FA4244459AE00626EBA /* Assets.xcassets in Resources */,
 				D9E34FA2244459AA00626EBA /* Main.storyboard in Resources */,
@@ -254,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C7FD192444A14D0057AE15 /* WaitingViewController.swift in Sources */,
+				D930363D2462D8CE00DBDB12 /* MatchCollectionViewCell.swift in Sources */,
 				D9E34FB52444670A00626EBA /* WriteConcernViewController.swift in Sources */,
 				D9C982322444A9980078EF42 /* ResultViewController.swift in Sources */,
 				D97CAA9D2462C92E00943930 /* Predict.swift in Sources */,

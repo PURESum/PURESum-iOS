@@ -14,6 +14,9 @@ class ResultViewController: UIViewController {
     var content: String?
     var predict: Predict?
     
+    // cell identifier
+    let cellIdentifier: String = "MatchCollectionViewCell"
+    
     // MARK: - IBOutlet
     @IBOutlet weak var userTextView: CustomTextView!
     
@@ -21,6 +24,8 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var categoryPercentageLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - IBAction
     
@@ -51,8 +56,43 @@ class ResultViewController: UIViewController {
             self.categoryLabel.text = "\'--'"
         }
         
+        // collectionView
+        let collectionViewLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        icollectionView.minimumLineSpacing = 0
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.decelerationRate = .fast
+        
     }
     
     // MARK: - Methods
     
+}
+
+extension ResultViewController: UICollectionViewDelegate {
+    
+}
+
+extension ResultViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell: MatchCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? MatchCollectionViewCell else {
+            print("collectionView cell 할당 오류")
+            return
+        }
+        
+        return cell
+    }
+    
+    
+}
+
+extension ResultViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 300, height: 300)
+    }
 }

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MatchCollectionViewCell" reuseIdentifier="MatchCollectionViewCell" id="uv1-FE-7ZF" customClass="MatchCollectionViewCell" customModule="MatchingService" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gAD-6g-iYU">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yl1-0g-kGV" customClass="CustomView" customModule="MatchingService" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="280" height="280"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--번 상담사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uok-aa-ECg">
+                                <rect key="frame" x="22" y="22" width="236" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd0-xH-s7c">
+                                <rect key="frame" x="22" y="51" width="236" height="18"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <color key="textColor" name="deepBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gz0-Mz-Biw">
+                                <rect key="frame" x="22" y="91" width="236" height="167"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gz0-Mz-Biw" secondAttribute="trailing" constant="22" id="D9T-QM-Fqs"/>
+                            <constraint firstItem="Gz0-Mz-Biw" firstAttribute="top" secondItem="Hd0-xH-s7c" secondAttribute="bottom" constant="22" id="FvF-Hq-fGh"/>
+                            <constraint firstItem="Uok-aa-ECg" firstAttribute="top" secondItem="yl1-0g-kGV" secondAttribute="top" constant="22" id="Skq-2M-1yT"/>
+                            <constraint firstItem="Uok-aa-ECg" firstAttribute="leading" secondItem="yl1-0g-kGV" secondAttribute="leading" constant="22" id="axq-lT-Foz"/>
+                            <constraint firstAttribute="trailing" secondItem="Uok-aa-ECg" secondAttribute="trailing" constant="22" id="d4O-yF-qb1"/>
+                            <constraint firstItem="Gz0-Mz-Biw" firstAttribute="leading" secondItem="yl1-0g-kGV" secondAttribute="leading" constant="22" id="i8y-Kx-jW6"/>
+                            <constraint firstItem="Hd0-xH-s7c" firstAttribute="leading" secondItem="Uok-aa-ECg" secondAttribute="leading" id="kON-lA-Ua6"/>
+                            <constraint firstAttribute="bottom" secondItem="Gz0-Mz-Biw" secondAttribute="bottom" constant="22" id="rhP-0X-4sK"/>
+                            <constraint firstItem="Hd0-xH-s7c" firstAttribute="top" secondItem="Uok-aa-ECg" secondAttribute="bottom" constant="8" id="sof-PG-Jqj"/>
+                            <constraint firstAttribute="trailing" secondItem="Hd0-xH-s7c" secondAttribute="trailing" constant="22" id="woF-4K-7lq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="deepBlue"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.080000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yl1-0g-kGV" firstAttribute="leading" secondItem="gAD-6g-iYU" secondAttribute="leading" constant="10" id="4GS-Qd-abt"/>
+                    <constraint firstAttribute="trailing" secondItem="yl1-0g-kGV" secondAttribute="trailing" constant="10" id="na1-xl-eSa"/>
+                    <constraint firstItem="yl1-0g-kGV" firstAttribute="top" secondItem="gAD-6g-iYU" secondAttribute="top" constant="10" id="rzd-Xp-Ojj"/>
+                    <constraint firstAttribute="bottom" secondItem="yl1-0g-kGV" secondAttribute="bottom" constant="10" id="uGr-Tv-tDP"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="50" height="50"/>
+            <connections>
+                <outlet property="categoryLabel" destination="Hd0-xH-s7c" id="JJD-ny-ZUv"/>
+                <outlet property="indexLabel" destination="Uok-aa-ECg" id="Wfv-C7-XtP"/>
+                <outlet property="textView" destination="Gz0-Mz-Biw" id="ej2-1d-eSa"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="deepBlue">
+            <color red="0.27450980392156865" green="0.44313725490196076" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
