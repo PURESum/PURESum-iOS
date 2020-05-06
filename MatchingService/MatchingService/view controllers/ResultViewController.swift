@@ -20,8 +20,6 @@ class ResultViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet weak var userTextView: CustomTextView!
     
-    @IBOutlet weak var resultTextView: CustomTextView!
-    
     @IBOutlet weak var categoryPercentageLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     
@@ -42,7 +40,6 @@ class ResultViewController: UIViewController {
         
         self.userTextView.text = content
         
-        self.resultTextView.text = predict?.data.predict.text
         // 퍼센트
         if let percent = predict?.data.predict.percent {
             self.categoryPercentageLabel.text = "\(percent)%"
@@ -58,7 +55,7 @@ class ResultViewController: UIViewController {
         
         // collectionView
         let collectionViewLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        icollectionView.minimumLineSpacing = 0
+        collectionViewLayout.minimumLineSpacing = 0
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -68,6 +65,23 @@ class ResultViewController: UIViewController {
     
     // MARK: - Methods
     
+}
+
+extension ResultViewController: UIScrollViewDelegate {
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if scrollView == collectionView {
+            // item의 사이즈와 item 간의 간격 사이즈를 구해서 하나의 item 크기로 설정.
+            let cellWidth: CGFloat = UIScreen.main.bounds.width - 80
+            let insetX = (UIScreen.main.bounds.width - cellWidth) / 2.0
+            
+            // targetContentOff을 이용하여 x좌표가 얼마나 이동했는지 확인
+            // 이동한 x좌표 값과 item의 크기를 비교하여 몇 페이징이 될 것인지 값 설정
+            let page: CGFloat = targetContentOffset.pointee.x / cellWidth
+            let roundedPage = round(page)
+            
+            targetContentOffset.pointee = CGPoint(x: roundedPage * cellWidth - insetX + 10, y: -scrollView.contentInset.top)
+        }
+    }
 }
 
 extension ResultViewController: UICollectionViewDelegate {
@@ -82,7 +96,7 @@ extension ResultViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell: MatchCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? MatchCollectionViewCell else {
             print("collectionView cell 할당 오류")
-            return
+            return UICollectionViewCell()
         }
         
         return cell
@@ -93,6 +107,6 @@ extension ResultViewController: UICollectionViewDataSource {
 
 extension ResultViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 300, height: 300)
+        return CGSize(width: UIScreen.main.bounds.width - 80, height: 300)
     }
 }
