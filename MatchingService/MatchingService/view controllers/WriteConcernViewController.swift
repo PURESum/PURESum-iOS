@@ -219,12 +219,14 @@ extension WriteConcernViewController: SearchingDelegate {
     func getMatchResult(result: Predict) {
         print("getMatchResult !")
         
+        self.predict = result
+        print(String(describing: self.predict))
         guard let vc: ResultViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
         vc.content = textView.text
-        vc.predict = predict
+        vc.predict = self.predict
         self.show(vc, sender: nil)
     }
 }

@@ -36,9 +36,21 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         
         self.userTextView.text = content
+        
         self.resultTextView.text = predict?.data.predict.text
-        self.categoryPercentageLabel.text = "\(String(describing: predict?.data.predict.percent))%"
-        self.categoryLabel.text = "\'\(String(describing: predict?.data.predict.category))'"
+        // 퍼센트
+        if let percent = predict?.data.predict.percent {
+            self.categoryPercentageLabel.text = "\(percent)%"
+        } else {
+            self.categoryPercentageLabel.text = "0%"
+        }
+        // 카테고리
+        if let category = predict?.data.predict.category {
+            self.categoryLabel.text = "'\(category)'"
+        } else {
+            self.categoryLabel.text = "\'--'"
+        }
+        
     }
     
     // MARK: - Methods
