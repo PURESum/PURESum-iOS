@@ -38,6 +38,16 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // collectionView
+        let collectionViewLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        collectionViewLayout.minimumLineSpacing = 0
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.decelerationRate = .fast
+        
+        collectionView.reloadData()
+        
         self.userTextView.text = content
         
         // 퍼센트
@@ -52,21 +62,13 @@ class ResultViewController: UIViewController {
         } else {
             self.categoryLabel.text = "\'--'"
         }
-        
-        // collectionView
-        let collectionViewLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        collectionViewLayout.minimumLineSpacing = 0
-        
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.decelerationRate = .fast
-        
     }
     
     // MARK: - Methods
     
 }
 
+// MARK: - UIScrollViewDelegate
 extension ResultViewController: UIScrollViewDelegate {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         if scrollView == collectionView {
@@ -84,13 +86,24 @@ extension ResultViewController: UIScrollViewDelegate {
     }
 }
 
+
+// MARK: - UICollectionViewDelegate
 extension ResultViewController: UICollectionViewDelegate {
     
 }
 
+// MARK: - UICollectionViewDataSource
 extension ResultViewController: UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        if let count = predict?.data.predict.counselor.count {
+            return count
+        } else {
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -99,14 +112,34 @@ extension ResultViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
+        // index
+        if let index = predict?.data.predict.counselor[indexPath.item].index {
+            cell.indexLabel.text = "\(index)번 상담사"
+        } else {
+            cell.indexLabel.text = "0번 상담사"
+        }
+        
+        // category
+        if let category = predict?.data.predict.counselor[indexPath.item].category {
+            cell.categoryLabel.text = category
+        } else {
+            cell.categoryLabel.text = ""
+        }
+        
+        // text
+        if let text = predict?.data.predict.counselor[indexPath.item].data {
+            cell.textView.text = text
+        } else {
+            cell.textView.text = ""
+        }
+        
         return cell
     }
-    
-    
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension ResultViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width - 80, height: 300)
+        return CGSize(width: view.frame.width - 80, height: 300)
     }
 }
