@@ -1,22 +1,19 @@
 //
-//  ConcernListFinishViewController.swift
+//  ConcernWriteViewController.swift
 //  Willson
 //
-//  Created by JHKim on 06/10/2019.
+//  Created by JHKim on 2020/05/18.
 //
 
 import UIKit
 
-class ConcernListFinishViewController: UIViewController {
+class ConcernWriteViewController: UIViewController {
 
     // MARK: - properties
     
     // MARK: - IBOutlet
     
     // MARK: - IBAction
-    @IBAction func tappedCancelButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
     
     // MARK: - life cycle
     override func viewDidLoad() {
