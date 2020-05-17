@@ -10,9 +10,6 @@
 		A9472FF8C3C10D53AF2E18C1 /* Pods_Willson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AE663FE0791050606F474A /* Pods_Willson.framework */; };
 		D9077B8A240E321400A0C9FD /* WillsonerMypageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9077B89240E321400A0C9FD /* WillsonerMypageModels.swift */; };
 		D9107C87235613CB004A3E35 /* AskerPay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9107C86235613CB004A3E35 /* AskerPay.storyboard */; };
-		D9107C8A23561482004A3E35 /* AskerPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9107C8923561482004A3E35 /* AskerPayViewController.swift */; };
-		D92001E5234E22C700C82F78 /* RequestListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92001E3234E22C700C82F78 /* RequestListCollectionViewCell.swift */; };
-		D92001E6234E22C700C82F78 /* RequestListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D92001E4234E22C700C82F78 /* RequestListCollectionViewCell.xib */; };
 		D920C5D523ED2D6100AAB1D1 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920C5D423ED2D6100AAB1D1 /* ChatModels.swift */; };
 		D92B0C1F23EBFB5B00C3D025 /* ChatServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B0C1E23EBFB5B00C3D025 /* ChatServices.swift */; };
 		D92BE62B23C2D1F7002B2786 /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE62A23C2D1F7002B2786 /* SignUpPasswordViewController.swift */; };
@@ -29,7 +26,6 @@
 		D93AAE6923BB284000489030 /* AskerPointTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93AAE6723BB284000489030 /* AskerPointTableViewCell.xib */; };
 		D93AAE6B23BB2D8800489030 /* AskerEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AAE6A23BB2D8800489030 /* AskerEditProfileViewController.swift */; };
 		D93AAE6F23BB36C700489030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D93AAE6E23BB36C700489030 /* GoogleService-Info.plist */; };
-		D93BD7B3241F7E6D00FD6A6D /* ConcernListDatePickerPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD7B2241F7E6D00FD6A6D /* ConcernListDatePickerPopUpViewController.swift */; };
 		D940F64923520C4900000230 /* AskerDetailRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940F64823520C4900000230 /* AskerDetailRequestViewController.swift */; };
 		D94808B023EFCE0700D3CEB3 /* AskerApplyConcernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94808AF23EFCE0700D3CEB3 /* AskerApplyConcernViewController.swift */; };
 		D9499ED5240762330091F980 /* AskerMypageReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9499ED3240762330091F980 /* AskerMypageReviewTableViewCell.swift */; };
@@ -119,7 +115,6 @@
 		D98898D523D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98898D323D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.xib */; };
 		D98898D823D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98898D623D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift */; };
 		D98898D923D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98898D723D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.xib */; };
-		D98CB22E238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98CB22D238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift */; };
 		D98EC08423B1AD8300B93D6F /* SignUpSexAndAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EC08323B1AD8300B93D6F /* SignUpSexAndAgeViewController.swift */; };
 		D98EC08623B1AE6400B93D6F /* SignUpNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EC08523B1AE6400B93D6F /* SignUpNicknameViewController.swift */; };
 		D99248CE23BB44E200AB7B9A /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99248CD23BB44E200AB7B9A /* SignUpService.swift */; };
@@ -130,10 +125,6 @@
 		D999A1C52342E6E900670263 /* AskerMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999A1C42342E6E900670263 /* AskerMyPageViewController.swift */; };
 		D999A1C723449A5B00670263 /* AskerChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D999A1C623449A5B00670263 /* AskerChat.storyboard */; };
 		D999A1CA23449A9500670263 /* AskerChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999A1C923449A9500670263 /* AskerChatListViewController.swift */; };
-		D99E1D6E243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E1D6C243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift */; };
-		D99E1D6F243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99E1D6D243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib */; };
-		D99E1D7124358B45001FE017 /* AskerPayModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E1D7024358B45001FE017 /* AskerPayModels.swift */; };
-		D99E1D7324358C35001FE017 /* AskerPayServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E1D7224358C35001FE017 /* AskerPayServices.swift */; };
 		D9A087CC2406A6DA000DB08F /* PurchaseListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A087CA2406A6DA000DB08F /* PurchaseListTableViewCell.swift */; };
 		D9A087CD2406A6DA000DB08F /* PurchaseListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A087CB2406A6DA000DB08F /* PurchaseListTableViewCell.xib */; };
 		D9A9E05523491D6B0011E08C /* ChatListRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9E05323491D6B0011E08C /* ChatListRoomTableViewCell.swift */; };
@@ -150,16 +141,11 @@
 		D9C107C523FA3FB100DDB126 /* OtherChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C107C323FA3FB100DDB126 /* OtherChatTableViewCell.xib */; };
 		D9C4E5EC2406A10E00D69789 /* MyPageFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C4E5EA2406A10E00D69789 /* MyPageFooterTableViewCell.swift */; };
 		D9C4E5ED2406A10E00D69789 /* MyPageFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C4E5EB2406A10E00D69789 /* MyPageFooterTableViewCell.xib */; };
-		D9C64D2B240B9FF30029139A /* HelperRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C64D2A240B9FF30029139A /* HelperRequestViewController.swift */; };
 		D9CAFBED2429C013005EDD0B /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CAFBEC2429C013005EDD0B /* Tutorial.storyboard */; };
 		D9CAFBF02429C0C4005EDD0B /* TutorialConcernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAFBEF2429C0C4005EDD0B /* TutorialConcernViewController.swift */; };
 		D9CC1A3B245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC1A39245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift */; };
 		D9CC1A3C245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9CC1A3A245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib */; };
-		D9CD629F236A9361009E5703 /* AskerPayAmountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD629D236A9361009E5703 /* AskerPayAmountTableViewCell.swift */; };
-		D9CD62A0236A9361009E5703 /* AskerPayAmountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9CD629E236A9361009E5703 /* AskerPayAmountTableViewCell.xib */; };
-		D9CD62A2236A9A80009E5703 /* AskerPayMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD62A1236A9A80009E5703 /* AskerPayMethodViewController.swift */; };
 		D9CF2EBA23D41D6600877341 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF2EB923D41D6600877341 /* FindPasswordViewController.swift */; };
-		D9CFD683246A6D6E0012F38A /* AskerPayFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFD682246A6D6E0012F38A /* AskerPayFinalViewController.swift */; };
 		D9CFD685246A77430012F38A /* AskerSearchingWillsonerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFD684246A77430012F38A /* AskerSearchingWillsonerViewController.swift */; };
 		D9CFD687246A80F70012F38A /* SignUpAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFD686246A80F70012F38A /* SignUpAgeViewController.swift */; };
 		D9D9C273238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9C272238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift */; };
@@ -185,15 +171,12 @@
 		D9F5D59B240FE0CF003A96DC /* AskerConcernModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D59A240FE0CF003A96DC /* AskerConcernModels.swift */; };
 		D9F5D59D240FE906003A96DC /* AskerMypageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D59C240FE906003A96DC /* AskerMypageModels.swift */; };
 		D9F5D59F240FEACB003A96DC /* WillsonerRegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D59E240FEACB003A96DC /* WillsonerRegisterModels.swift */; };
-		D9F5D5A1240FEB40003A96DC /* WillsonerConcernModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A0240FEB40003A96DC /* WillsonerConcernModels.swift */; };
 		D9F5D5A3240FED46003A96DC /* WillsonerMypageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A2240FED45003A96DC /* WillsonerMypageServices.swift */; };
 		D9F5D5A5240FEE8B003A96DC /* AskerRequestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A4240FEE8B003A96DC /* AskerRequestServices.swift */; };
 		D9F5D5A7240FEF7A003A96DC /* AskerConcernServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A6240FEF7A003A96DC /* AskerConcernServices.swift */; };
 		D9F5D5A9240FF0DD003A96DC /* WillsonerRegisterServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A8240FF0DD003A96DC /* WillsonerRegisterServices.swift */; };
-		D9F5D5AB240FF18E003A96DC /* WillsonerConcernServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5AA240FF18E003A96DC /* WillsonerConcernServices.swift */; };
 		D9FB5FEF234F9BE300EDEEB4 /* AskerConfirmTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FEE234F9BE300EDEEB4 /* AskerConfirmTalkViewController.swift */; };
 		D9FB5FF1234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FF0234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift */; };
-		D9FB5FF3234F9EA800EDEEB4 /* HelperRequest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FB5FF2234F9EA800EDEEB4 /* HelperRequest.storyboard */; };
 		D9FB5FF6234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FF5234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift */; };
 		D9FB5FF8234FA0ED00EDEEB4 /* HelperMypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FB5FF7234FA0ED00EDEEB4 /* HelperMypage.storyboard */; };
 		D9FB5FFB234FA16900EDEEB4 /* HelperMypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FFA234FA16900EDEEB4 /* HelperMypageViewController.swift */; };
@@ -206,10 +189,6 @@
 		B43A2E00858F1BD2BD4BAA6B /* Pods-Willson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Willson.release.xcconfig"; path = "Target Support Files/Pods-Willson/Pods-Willson.release.xcconfig"; sourceTree = "<group>"; };
 		C4AE663FE0791050606F474A /* Pods_Willson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Willson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9077B89240E321400A0C9FD /* WillsonerMypageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerMypageModels.swift; sourceTree = "<group>"; };
-		D9107C86235613CB004A3E35 /* AskerPay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerPay.storyboard; sourceTree = "<group>"; };
-		D9107C8923561482004A3E35 /* AskerPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayViewController.swift; sourceTree = "<group>"; };
-		D92001E3234E22C700C82F78 /* RequestListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListCollectionViewCell.swift; sourceTree = "<group>"; };
-		D92001E4234E22C700C82F78 /* RequestListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestListCollectionViewCell.xib; sourceTree = "<group>"; };
 		D920C5D423ED2D6100AAB1D1 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
 		D92B0C1E23EBFB5B00C3D025 /* ChatServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServices.swift; sourceTree = "<group>"; };
 		D92BE62A23C2D1F7002B2786 /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
@@ -318,7 +297,6 @@
 		D98898D323D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestConcernHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		D98898D623D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConcernFooterCollectionReusableView.swift; sourceTree = "<group>"; };
 		D98898D723D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestConcernFooterCollectionReusableView.xib; sourceTree = "<group>"; };
-		D98CB22D238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperDetailRequestViewController.swift; sourceTree = "<group>"; };
 		D98EC08223B1A76E00B93D6F /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		D98EC08323B1AD8300B93D6F /* SignUpSexAndAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSexAndAgeViewController.swift; sourceTree = "<group>"; };
 		D98EC08523B1AE6400B93D6F /* SignUpNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNicknameViewController.swift; sourceTree = "<group>"; };
@@ -330,10 +308,6 @@
 		D999A1C42342E6E900670263 /* AskerMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMyPageViewController.swift; sourceTree = "<group>"; };
 		D999A1C623449A5B00670263 /* AskerChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerChat.storyboard; sourceTree = "<group>"; };
 		D999A1C923449A9500670263 /* AskerChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerChatListViewController.swift; sourceTree = "<group>"; };
-		D99E1D6C243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayWillsonerCollectionViewCell.swift; sourceTree = "<group>"; };
-		D99E1D6D243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerPayWillsonerCollectionViewCell.xib; sourceTree = "<group>"; };
-		D99E1D7024358B45001FE017 /* AskerPayModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayModels.swift; sourceTree = "<group>"; };
-		D99E1D7224358C35001FE017 /* AskerPayServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayServices.swift; sourceTree = "<group>"; };
 		D9A087CA2406A6DA000DB08F /* PurchaseListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseListTableViewCell.swift; sourceTree = "<group>"; };
 		D9A087CB2406A6DA000DB08F /* PurchaseListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseListTableViewCell.xib; sourceTree = "<group>"; };
 		D9A9E05323491D6B0011E08C /* ChatListRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListRoomTableViewCell.swift; sourceTree = "<group>"; };
@@ -350,16 +324,11 @@
 		D9C107C323FA3FB100DDB126 /* OtherChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherChatTableViewCell.xib; sourceTree = "<group>"; };
 		D9C4E5EA2406A10E00D69789 /* MyPageFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageFooterTableViewCell.swift; sourceTree = "<group>"; };
 		D9C4E5EB2406A10E00D69789 /* MyPageFooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageFooterTableViewCell.xib; sourceTree = "<group>"; };
-		D9C64D2A240B9FF30029139A /* HelperRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRequestViewController.swift; sourceTree = "<group>"; };
 		D9CAFBEC2429C013005EDD0B /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		D9CAFBEF2429C0C4005EDD0B /* TutorialConcernViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialConcernViewController.swift; sourceTree = "<group>"; };
 		D9CC1A39245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDefaultCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9CC1A3A245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestDefaultCollectionViewCell.xib; sourceTree = "<group>"; };
-		D9CD629D236A9361009E5703 /* AskerPayAmountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayAmountTableViewCell.swift; sourceTree = "<group>"; };
-		D9CD629E236A9361009E5703 /* AskerPayAmountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerPayAmountTableViewCell.xib; sourceTree = "<group>"; };
-		D9CD62A1236A9A80009E5703 /* AskerPayMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayMethodViewController.swift; sourceTree = "<group>"; };
 		D9CF2EB923D41D6600877341 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
-		D9CFD682246A6D6E0012F38A /* AskerPayFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayFinalViewController.swift; sourceTree = "<group>"; };
 		D9CFD684246A77430012F38A /* AskerSearchingWillsonerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerSearchingWillsonerViewController.swift; sourceTree = "<group>"; };
 		D9CFD686246A80F70012F38A /* SignUpAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAgeViewController.swift; sourceTree = "<group>"; };
 		D9D9C272238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationPhotoVideoAuthViewController.swift; sourceTree = "<group>"; };
@@ -385,15 +354,12 @@
 		D9F5D59A240FE0CF003A96DC /* AskerConcernModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerConcernModels.swift; sourceTree = "<group>"; };
 		D9F5D59C240FE906003A96DC /* AskerMypageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMypageModels.swift; sourceTree = "<group>"; };
 		D9F5D59E240FEACB003A96DC /* WillsonerRegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerRegisterModels.swift; sourceTree = "<group>"; };
-		D9F5D5A0240FEB40003A96DC /* WillsonerConcernModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerConcernModels.swift; sourceTree = "<group>"; };
 		D9F5D5A2240FED45003A96DC /* WillsonerMypageServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerMypageServices.swift; sourceTree = "<group>"; };
 		D9F5D5A4240FEE8B003A96DC /* AskerRequestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerRequestServices.swift; sourceTree = "<group>"; };
 		D9F5D5A6240FEF7A003A96DC /* AskerConcernServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerConcernServices.swift; sourceTree = "<group>"; };
 		D9F5D5A8240FF0DD003A96DC /* WillsonerRegisterServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerRegisterServices.swift; sourceTree = "<group>"; };
-		D9F5D5AA240FF18E003A96DC /* WillsonerConcernServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerConcernServices.swift; sourceTree = "<group>"; };
 		D9FB5FEE234F9BE300EDEEB4 /* AskerConfirmTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerConfirmTalkViewController.swift; sourceTree = "<group>"; };
 		D9FB5FF0234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerAlreadyMatchingViewController.swift; sourceTree = "<group>"; };
-		D9FB5FF2234F9EA800EDEEB4 /* HelperRequest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperRequest.storyboard; sourceTree = "<group>"; };
 		D9FB5FF5234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRequestDefaultViewController.swift; sourceTree = "<group>"; };
 		D9FB5FF7234FA0ED00EDEEB4 /* HelperMypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperMypage.storyboard; sourceTree = "<group>"; };
 		D9FB5FFA234FA16900EDEEB4 /* HelperMypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMypageViewController.swift; sourceTree = "<group>"; };
@@ -421,17 +387,6 @@
 				B43A2E00858F1BD2BD4BAA6B /* Pods-Willson.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		D9107C8823561465004A3E35 /* Pay */ = {
-			isa = PBXGroup;
-			children = (
-				D9CD629C236A83D8009E5703 /* views */,
-				D9107C8923561482004A3E35 /* AskerPayViewController.swift */,
-				D9CD62A1236A9A80009E5703 /* AskerPayMethodViewController.swift */,
-				D9CFD682246A6D6E0012F38A /* AskerPayFinalViewController.swift */,
-			);
-			path = Pay;
 			sourceTree = "<group>";
 		};
 		D92001E2234E225D00C82F78 /* views */ = {
@@ -491,7 +446,6 @@
 			children = (
 				D9694478242A0043003D07A9 /* AskerMainModels.swift */,
 				D9F5D598240FDCF8003A96DC /* AskerRequestModels.swift */,
-				D99E1D7024358B45001FE017 /* AskerPayModels.swift */,
 				D9F5D59A240FE0CF003A96DC /* AskerConcernModels.swift */,
 				D9F5D59C240FE906003A96DC /* AskerMypageModels.swift */,
 			);
@@ -502,7 +456,6 @@
 			isa = PBXGroup;
 			children = (
 				D9F5D59E240FEACB003A96DC /* WillsonerRegisterModels.swift */,
-				D9F5D5A0240FEB40003A96DC /* WillsonerConcernModels.swift */,
 				D9077B89240E321400A0C9FD /* WillsonerMypageModels.swift */,
 			);
 			path = willsoner;
@@ -513,7 +466,6 @@
 			children = (
 				D969447A242A0148003D07A9 /* AskerMainServices.swift */,
 				D9F5D5A4240FEE8B003A96DC /* AskerRequestServices.swift */,
-				D99E1D7224358C35001FE017 /* AskerPayServices.swift */,
 				D9F5D5A6240FEF7A003A96DC /* AskerConcernServices.swift */,
 				D9F5D596240FA4CA003A96DC /* AskerMypageServices.swift */,
 			);
@@ -524,7 +476,6 @@
 			isa = PBXGroup;
 			children = (
 				D9F5D5A8240FF0DD003A96DC /* WillsonerRegisterServices.swift */,
-				D9F5D5AA240FF18E003A96DC /* WillsonerConcernServices.swift */,
 				D9F5D5A2240FED45003A96DC /* WillsonerMypageServices.swift */,
 			);
 			path = willsoner;
@@ -608,7 +559,6 @@
 				D950E76A2325ED7200658CDD /* AskerTabbar.storyboard */,
 				D950E772232E2EC700658CDD /* AskerHome.storyboard */,
 				D950E77F232E433500658CDD /* AskerConcernList.storyboard */,
-				D9107C86235613CB004A3E35 /* AskerPay.storyboard */,
 				D950E778232E3E1F00658CDD /* AskerRequest.storyboard */,
 				D999A1C623449A5B00670263 /* AskerChat.storyboard */,
 				D999A1C12342E66E00670263 /* AskerMypage.storyboard */,
@@ -622,7 +572,6 @@
 				D950E76C2325ED7D00658CDD /* HelperTabbar.storyboard */,
 				D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */,
 				D9EE261023530E250054BC04 /* HelperApplication.storyboard */,
-				D9FB5FF2234F9EA800EDEEB4 /* HelperRequest.storyboard */,
 				D9FB5FFC234FA21B00EDEEB4 /* HelperChat.storyboard */,
 				D9FB5FF7234FA0ED00EDEEB4 /* HelperMypage.storyboard */,
 			);
@@ -634,7 +583,6 @@
 			children = (
 				D9E9F7C3236ED33100B37341 /* Home */,
 				D9EE261223530ED50054BC04 /* Application */,
-				D9FB5FF4234F9EB000EDEEB4 /* Request */,
 				D9FB5FFE234FA24400EDEEB4 /* Chatting */,
 				D9FB5FF9234FA15600EDEEB4 /* Mypage */,
 			);
@@ -647,7 +595,6 @@
 				D950E775232E2EDA00658CDD /* Home */,
 				D950E781232E435400658CDD /* ConcernList */,
 				D950E77A232E3E3300658CDD /* Request */,
-				D9107C8823561465004A3E35 /* Pay */,
 				D999A1C823449A7000670263 /* Chatting */,
 				D999A1C32342E6D000670263 /* MyPage */,
 			);
@@ -782,15 +729,6 @@
 				D9CFD686246A80F70012F38A /* SignUpAgeViewController.swift */,
 			);
 			path = SignUp;
-			sourceTree = "<group>";
-		};
-		D9726D9B23E12B39009A0F0A /* views */ = {
-			isa = PBXGroup;
-			children = (
-				D92001E3234E22C700C82F78 /* RequestListCollectionViewCell.swift */,
-				D92001E4234E22C700C82F78 /* RequestListCollectionViewCell.xib */,
-			);
-			path = views;
 			sourceTree = "<group>";
 		};
 		D97354B723E7EF8A002273DB /* flow */ = {
@@ -1001,17 +939,6 @@
 			path = Tutorial;
 			sourceTree = "<group>";
 		};
-		D9CD629C236A83D8009E5703 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				D99E1D6C243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift */,
-				D99E1D6D243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib */,
-				D9CD629D236A9361009E5703 /* AskerPayAmountTableViewCell.swift */,
-				D9CD629E236A9361009E5703 /* AskerPayAmountTableViewCell.xib */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
 		D9E9F7AE236EA7E500B37341 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1057,16 +984,6 @@
 				D997F1CC23CED73300380912 /* HelperHashTagTableViewCell.xib */,
 			);
 			path = views;
-			sourceTree = "<group>";
-		};
-		D9FB5FF4234F9EB000EDEEB4 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				D9726D9B23E12B39009A0F0A /* views */,
-				D9C64D2A240B9FF30029139A /* HelperRequestViewController.swift */,
-				D98CB22D238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift */,
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		D9FB5FF9234FA15600EDEEB4 /* Mypage */ = {
@@ -1175,11 +1092,9 @@
 				D999A1C723449A5B00670263 /* AskerChat.storyboard in Resources */,
 				D950E7522325E5DF00658CDD /* LaunchScreen.storyboard in Resources */,
 				D9CAFBED2429C013005EDD0B /* Tutorial.storyboard in Resources */,
-				D9CD62A0236A9361009E5703 /* AskerPayAmountTableViewCell.xib in Resources */,
 				D950E76D2325ED7D00658CDD /* HelperTabbar.storyboard in Resources */,
 				D96D3F812337176B0011A840 /* SignUp.storyboard in Resources */,
 				D950E779232E3E1F00658CDD /* AskerRequest.storyboard in Resources */,
-				D9FB5FF3234F9EA800EDEEB4 /* HelperRequest.storyboard in Resources */,
 				D9EE26252353220C0054BC04 /* HelperAuthorizationTableViewCell.xib in Resources */,
 				D9FB5FF8234FA0ED00EDEEB4 /* HelperMypage.storyboard in Resources */,
 				D9CC1A3C245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib in Resources */,
@@ -1188,7 +1103,6 @@
 				D95FD8BD2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.xib in Resources */,
 				D9EE260F23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.xib in Resources */,
 				D95FD8B32432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.xib in Resources */,
-				D99E1D6F243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib in Resources */,
 				D950E7692325ED5600658CDD /* Login.storyboard in Resources */,
 				D9A087CD2406A6DA000DB08F /* PurchaseListTableViewCell.xib in Resources */,
 				D95308D12402533E00FEEA35 /* ChatAgreementTableViewCell.xib in Resources */,
@@ -1197,13 +1111,11 @@
 				D999A1C22342E66E00670263 /* AskerMypage.storyboard in Resources */,
 				D983934E243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.xib in Resources */,
 				D9EE261F23531A4C0054BC04 /* HelperImageCollectionViewCell.xib in Resources */,
-				D92001E6234E22C700C82F78 /* RequestListCollectionViewCell.xib in Resources */,
 				D9FB5FFD234FA21B00EDEEB4 /* HelperChat.storyboard in Resources */,
 				D95FD8B724336A9A00497F3F /* AskerHomeReviewCollectionViewCell.xib in Resources */,
 				D93AAE6923BB284000489030 /* AskerPointTableViewCell.xib in Resources */,
 				D9E9F7C2236ED2C700B37341 /* HelperHome.storyboard in Resources */,
 				D9839352243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.xib in Resources */,
-				D9107C87235613CB004A3E35 /* AskerPay.storyboard in Resources */,
 				D950E773232E2EC700658CDD /* AskerHome.storyboard in Resources */,
 				D93AAE6223BB136D00489030 /* MyPageTableViewCell.xib in Resources */,
 				D9639B1523D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.xib in Resources */,
@@ -1282,7 +1194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D950E771232E1F0300658CDD /* EmailLoginViewController.swift in Sources */,
-				D9F5D5A1240FEB40003A96DC /* WillsonerConcernModels.swift in Sources */,
 				D9F5D59B240FE0CF003A96DC /* AskerConcernModels.swift in Sources */,
 				D96188C92349BF910094D6D9 /* ConcernListAgreementViewController.swift in Sources */,
 				D9FB5FF1234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift in Sources */,
@@ -1295,7 +1206,6 @@
 				D966B84B2377AE6D00716120 /* AuthenticationIDCardViewController.swift in Sources */,
 				D9EE26242353220C0054BC04 /* HelperAuthorizationTableViewCell.swift in Sources */,
 				D969446F2429CC18003D07A9 /* TutorialWillsonerViewController.swift in Sources */,
-				D9F5D5AB240FF18E003A96DC /* WillsonerConcernServices.swift in Sources */,
 				D920C5D523ED2D6100AAB1D1 /* ChatModels.swift in Sources */,
 				D9839351243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.swift in Sources */,
 				D98898D423D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.swift in Sources */,
@@ -1307,15 +1217,11 @@
 				D96D3F84233718050011A840 /* SignUpRootPageViewController.swift in Sources */,
 				D974DA082452E09200C62F35 /* ConcernPopUpAgreementViewController.swift in Sources */,
 				D9639B1023D5874E00EEF9E9 /* RequestConcernCollectionViewCell.swift in Sources */,
-				D99E1D6E243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift in Sources */,
-				D98CB22E238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift in Sources */,
 				D9A9E05523491D6B0011E08C /* ChatListRoomTableViewCell.swift in Sources */,
 				D9F5D5A7240FEF7A003A96DC /* AskerConcernServices.swift in Sources */,
 				D9EE2618235316C30054BC04 /* HelperApplicationExperienceViewController.swift in Sources */,
 				D997F1D023CED7D200380912 /* CustomTextField.swift in Sources */,
 				D96944772429E957003D07A9 /* TutorialCompleteViewController.swift in Sources */,
-				D9107C8A23561482004A3E35 /* AskerPayViewController.swift in Sources */,
-				D9CD62A2236A9A80009E5703 /* AskerPayMethodViewController.swift in Sources */,
 				D980697023E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.swift in Sources */,
 				D9EE261423530EF00054BC04 /* HelperApplicationCategoryViewController.swift in Sources */,
 				D96188CD2349C6C60094D6D9 /* AskerSearchHelperFailViewController.swift in Sources */,
@@ -1326,11 +1232,9 @@
 				D98EC08623B1AE6400B93D6F /* SignUpNicknameViewController.swift in Sources */,
 				D9D9C275238A756D00597D85 /* HelperReceivedRequestViewController.swift in Sources */,
 				D9499ED5240762330091F980 /* AskerMypageReviewTableViewCell.swift in Sources */,
-				D92001E5234E22C700C82F78 /* RequestListCollectionViewCell.swift in Sources */,
 				D96ED08A238115F7009642DE /* ChatAnnouncementTableViewCell.swift in Sources */,
 				D9EE261A2353185F0054BC04 /* HelperApplicationImageSelectViewController.swift in Sources */,
 				D92BE62B23C2D1F7002B2786 /* SignUpPasswordViewController.swift in Sources */,
-				D99E1D7324358C35001FE017 /* AskerPayServices.swift in Sources */,
 				D969DBBE24719C3900370E19 /* ConcernWriteViewController.swift in Sources */,
 				D95FD8BC2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.swift in Sources */,
 				D966B84D2377B4B300716120 /* AuthenticationAlertViewController.swift in Sources */,
@@ -1353,7 +1257,6 @@
 				D966B84F237BEDD600716120 /* HelperApplicationPhoneNumberViewController.swift in Sources */,
 				D9ACDECC240755B0001A57F4 /* AskerChatHistoryViewController.swift in Sources */,
 				D96C7AC5240375060014CF4B /* ChatStartTableViewCell.swift in Sources */,
-				D9C64D2B240B9FF30029139A /* HelperRequestViewController.swift in Sources */,
 				D9EE2621235320920054BC04 /* HelperApplicationAuthorizationViewController.swift in Sources */,
 				D92BE63723C322E5002B2786 /* SignIn.swift in Sources */,
 				D98898D823D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift in Sources */,
@@ -1380,11 +1283,9 @@
 				D9FB5FF6234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift in Sources */,
 				D950E7452325E5DE00658CDD /* AppDelegate.swift in Sources */,
 				D96D3F862337188C0011A840 /* SignUpEmailViewController.swift in Sources */,
-				D9CFD683246A6D6E0012F38A /* AskerPayFinalViewController.swift in Sources */,
 				D93AAE6B23BB2D8800489030 /* AskerEditProfileViewController.swift in Sources */,
 				D950E77E232E411A00658CDD /* AskerSearchingRequestViewController.swift in Sources */,
 				D96ED08F23822992009642DE /* AskerChatReviewViewController.swift in Sources */,
-				D9CD629F236A9361009E5703 /* AskerPayAmountTableViewCell.swift in Sources */,
 				D96BDF8E2410CFB400949EB7 /* AskerCouponTableViewCell.swift in Sources */,
 				D999A1C52342E6E900670263 /* AskerMyPageViewController.swift in Sources */,
 				D9CC1A3B245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift in Sources */,
@@ -1393,7 +1294,6 @@
 				D931BF1723F788E0005797A5 /* ChatListHeaderTableViewCell.swift in Sources */,
 				D96188CF2349C8A10094D6D9 /* AskerReceiveRequestViewController.swift in Sources */,
 				D9E9F7C5236ED34C00B37341 /* HelperHomeViewController.swift in Sources */,
-				D99E1D7124358B45001FE017 /* AskerPayModels.swift in Sources */,
 				D9EE261E23531A4C0054BC04 /* HelperImageCollectionViewCell.swift in Sources */,
 				D9499EDC2407775A0091F980 /* AskerMypageNoticeViewController.swift in Sources */,
 				D950E777232E2EF000658CDD /* AskerHomeViewController.swift in Sources */,
