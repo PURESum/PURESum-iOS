@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RequestConcernHeaderCollectionViewCell" reuseIdentifier="RequestConcernHeaderCollectionViewCell" id="EFS-OL-0WU" customClass="RequestConcernHeaderCollectionViewCell" customModule="Willson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7Mz-NU-rp7">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="실시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aF-Tb-bbR">
+                        <rect key="frame" x="22" y="28" width="42" height="20"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="16"/>
+                        <color key="textColor" name="black"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRd-0f-zYN" customClass="CustomView" customModule="Willson" customModuleProvider="target">
+                        <rect key="frame" x="69" y="31" width="14" height="14"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFW-U7-z4A">
+                                <rect key="frame" x="5" y="1.5" width="4" height="11"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="9"/>
+                                <color key="textColor" name="FFFFFF"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="deepSkyBlue"/>
+                        <constraints>
+                            <constraint firstItem="SFW-U7-z4A" firstAttribute="centerX" secondItem="dRd-0f-zYN" secondAttribute="centerX" id="bXJ-Ql-VPQ"/>
+                            <constraint firstAttribute="width" constant="14" id="cv6-kO-KGk"/>
+                            <constraint firstAttribute="height" constant="14" id="hGS-fn-T1p"/>
+                            <constraint firstItem="SFW-U7-z4A" firstAttribute="centerY" secondItem="dRd-0f-zYN" secondAttribute="centerY" id="qXi-rb-418"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7aF-Tb-bbR" secondAttribute="bottom" constant="7" id="CLp-Hh-fOe"/>
+                    <constraint firstItem="dRd-0f-zYN" firstAttribute="leading" secondItem="7aF-Tb-bbR" secondAttribute="trailing" constant="5" id="m4o-c7-cBf"/>
+                    <constraint firstItem="7aF-Tb-bbR" firstAttribute="leading" secondItem="7Mz-NU-rp7" secondAttribute="leading" constant="22" id="m82-bx-LKf"/>
+                    <constraint firstItem="dRd-0f-zYN" firstAttribute="centerY" secondItem="7aF-Tb-bbR" secondAttribute="centerY" id="tKD-PM-jox"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="a4G-aK-Qrg"/>
+            </collectionViewCellContentView>
+            <size key="customSize" width="387" height="55"/>
+            <connections>
+                <outlet property="countLabel" destination="SFW-U7-z4A" id="6OQ-ky-XNG"/>
+                <outlet property="countView" destination="dRd-0f-zYN" id="O62-bT-qNF"/>
+                <outlet property="titleLabel" destination="7aF-Tb-bbR" id="xNt-HP-Z8I"/>
+            </connections>
+            <point key="canvasLocation" x="381.8840579710145" y="143.63839285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="FFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="deepSkyBlue">
+            <color red="0.066666666666666666" green="0.50196078431372548" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

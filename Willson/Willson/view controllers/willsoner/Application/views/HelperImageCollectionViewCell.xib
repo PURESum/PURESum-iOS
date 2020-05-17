@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HelperImageCollectionViewCell" reuseIdentifier="HelperImageCollectionViewCell" id="KLe-Dq-QCS" customClass="HelperImageCollectionViewCell" customModule="Willson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="467"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="467"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFH-JR-Mqp" customClass="CustomView" customModule="Willson" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="285" height="451"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbg-fN-N4a">
+                                <rect key="frame" x="30" y="289" width="225" height="29"/>
+                                <string key="text">유머러스하고 친오빠, 형같은 이미지 이지만
+센스있고 진중할 땐 진중한 타입</string>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <color key="textColor" name="brownishGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fak-O7-gtf">
+                                <rect key="frame" x="53" y="20" width="179" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="6zB-vt-2TB"/>
+                                    <constraint firstAttribute="width" constant="179" id="mYl-cg-p1s"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재치있는 타입" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6W-Sa-io2">
+                                <rect key="frame" x="30" y="243" width="225" height="24"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCheckCircleGray" translatesAutoresizingMaskIntoConstraints="NO" id="rA7-SR-L0x">
+                                <rect key="frame" x="111" y="352" width="63" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="GFs-sh-CGs"/>
+                                    <constraint firstAttribute="height" constant="63" id="gdG-xl-sJ3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fak-O7-gtf" firstAttribute="top" secondItem="AFH-JR-Mqp" secondAttribute="top" constant="20" id="1Go-qD-3ge"/>
+                            <constraint firstItem="rA7-SR-L0x" firstAttribute="centerX" secondItem="AFH-JR-Mqp" secondAttribute="centerX" id="46B-wS-lVS"/>
+                            <constraint firstItem="v6W-Sa-io2" firstAttribute="top" secondItem="fak-O7-gtf" secondAttribute="bottom" constant="44" id="5TL-ia-kn5"/>
+                            <constraint firstAttribute="trailing" secondItem="Gbg-fN-N4a" secondAttribute="trailing" constant="30" id="7ci-Q2-wgt"/>
+                            <constraint firstItem="Gbg-fN-N4a" firstAttribute="centerX" secondItem="AFH-JR-Mqp" secondAttribute="centerX" id="CHs-o6-Vgo"/>
+                            <constraint firstAttribute="bottom" secondItem="rA7-SR-L0x" secondAttribute="bottom" constant="36" id="I5i-Md-bnP"/>
+                            <constraint firstItem="Gbg-fN-N4a" firstAttribute="top" secondItem="v6W-Sa-io2" secondAttribute="bottom" constant="22" id="IMD-s2-XyK"/>
+                            <constraint firstAttribute="trailing" secondItem="v6W-Sa-io2" secondAttribute="trailing" constant="30" id="Urm-fh-h89"/>
+                            <constraint firstItem="v6W-Sa-io2" firstAttribute="centerX" secondItem="AFH-JR-Mqp" secondAttribute="centerX" id="WUR-XI-VrA"/>
+                            <constraint firstItem="fak-O7-gtf" firstAttribute="centerX" secondItem="AFH-JR-Mqp" secondAttribute="centerX" id="auK-WT-uSx"/>
+                            <constraint firstItem="v6W-Sa-io2" firstAttribute="leading" secondItem="AFH-JR-Mqp" secondAttribute="leading" constant="30" id="c6S-3x-CBm"/>
+                            <constraint firstItem="Gbg-fN-N4a" firstAttribute="leading" secondItem="AFH-JR-Mqp" secondAttribute="leading" constant="30" id="eNQ-B6-CNC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="white"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.080000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" name="00000"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AFH-JR-Mqp" secondAttribute="trailing" constant="16" id="Ewo-aR-uF4"/>
+                <constraint firstItem="AFH-JR-Mqp" firstAttribute="leading" secondItem="KLe-Dq-QCS" secondAttribute="leading" constant="16" id="YeV-ng-NBm"/>
+                <constraint firstItem="AFH-JR-Mqp" firstAttribute="top" secondItem="KLe-Dq-QCS" secondAttribute="top" constant="8" id="czo-RN-kap"/>
+                <constraint firstAttribute="bottom" secondItem="AFH-JR-Mqp" secondAttribute="bottom" constant="8" id="r8X-GK-F4q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="M1t-8A-9FM"/>
+            <connections>
+                <outlet property="bgView" destination="AFH-JR-Mqp" id="eq9-7K-NAa"/>
+                <outlet property="checkButtonImageView" destination="rA7-SR-L0x" id="dSw-lM-t7t"/>
+                <outlet property="detailLabel" destination="Gbg-fN-N4a" id="0H5-yJ-HJG"/>
+                <outlet property="imageView" destination="fak-O7-gtf" id="lU9-ki-sbi"/>
+                <outlet property="typeLabel" destination="v6W-Sa-io2" id="E0P-pz-96h"/>
+            </connections>
+            <point key="canvasLocation" x="127" y="47"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icCheckCircleGray" width="63" height="63"/>
+        <namedColor name="00000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="brownishGrey">
+            <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

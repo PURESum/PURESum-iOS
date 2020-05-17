@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HelperAuthorizationTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HelperAuthorizationTableViewCell" id="BfL-Lz-Eh1" customClass="HelperAuthorizationTableViewCell" customModule="Willson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BfL-Lz-Eh1" id="Cqx-kz-SOf">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzU-h8-Dnl">
+                        <rect key="frame" x="22" y="24" width="33" height="17"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                        <color key="textColor" name="black"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efQ-Hz-Ysx">
+                        <rect key="frame" x="368" y="20.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="3Sl-kn-T1w"/>
+                            <constraint firstAttribute="height" constant="24" id="4mS-bK-kGr"/>
+                        </constraints>
+                        <state key="normal" image="icCheckCircleGray"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BzU-h8-Dnl" firstAttribute="centerY" secondItem="Cqx-kz-SOf" secondAttribute="centerY" id="F7L-yP-16h"/>
+                    <constraint firstAttribute="trailing" secondItem="efQ-Hz-Ysx" secondAttribute="trailing" constant="22" id="Ph3-hQ-FSH"/>
+                    <constraint firstItem="efQ-Hz-Ysx" firstAttribute="centerY" secondItem="Cqx-kz-SOf" secondAttribute="centerY" id="lSp-w7-Chc"/>
+                    <constraint firstItem="BzU-h8-Dnl" firstAttribute="leading" secondItem="Cqx-kz-SOf" secondAttribute="leading" constant="22" id="tdD-7P-ugD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="efQ-Hz-Ysx" id="NBG-Qd-ls9"/>
+                <outlet property="methodLabel" destination="BzU-h8-Dnl" id="eBA-91-gIu"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icCheckCircleGray" width="63" height="63"/>
+        <namedColor name="black">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

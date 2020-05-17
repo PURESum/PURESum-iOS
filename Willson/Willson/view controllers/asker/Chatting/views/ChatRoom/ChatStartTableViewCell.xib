@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ChatStartTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatStartTableViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="ChatStartTableViewCell" customModule="Willson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0b-gp-F0A">
+                        <rect key="frame" x="22" y="10" width="331" height="1"/>
+                        <color key="backgroundColor" name="veryLightPinkTwo"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KSM-z8-svx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화를 시작해보세요 :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOp-BG-tC9">
+                        <rect key="frame" x="134" y="26" width="107" height="15"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                        <color key="textColor" name="veryLightPinkThree"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9월 18일 (수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPg-iR-iPi">
+                        <rect key="frame" x="156" y="46" width="63" height="15"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                        <color key="textColor" name="brownishGrey"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lPg-iR-iPi" secondAttribute="bottom" constant="14" id="3dV-Bo-Zet"/>
+                    <constraint firstItem="lPg-iR-iPi" firstAttribute="centerX" secondItem="cOp-BG-tC9" secondAttribute="centerX" id="FkX-xP-3qo"/>
+                    <constraint firstAttribute="trailing" secondItem="s0b-gp-F0A" secondAttribute="trailing" constant="22" id="Jd5-Ii-ROC"/>
+                    <constraint firstItem="s0b-gp-F0A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="Sbm-WB-o8d"/>
+                    <constraint firstItem="lPg-iR-iPi" firstAttribute="top" secondItem="cOp-BG-tC9" secondAttribute="bottom" constant="5" id="gb8-gV-req"/>
+                    <constraint firstItem="s0b-gp-F0A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tdI-5n-3ir"/>
+                    <constraint firstItem="cOp-BG-tC9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="yI6-d2-S73"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="announceLabel" destination="cOp-BG-tC9" id="elL-VO-U1u"/>
+                <outlet property="dateLabel" destination="lPg-iR-iPi" id="ZVX-YE-aZt"/>
+                <outlet property="lineView" destination="s0b-gp-F0A" id="WTx-LP-5dd"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="brownishGrey">
+            <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="veryLightPinkThree">
+            <color red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="veryLightPinkTwo">
+            <color red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

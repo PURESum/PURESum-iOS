@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Willson' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'SwiftLint', '~> 0.33.0'
+  pod 'Alamofire', '~> 4.8.0'
+  pod 'AlamofireObjectMapper', '~> 5.2.0'
+  pod 'Kingfisher', '~> 4.10.1'
+  pod 'DLRadioButton', '~> 1.4'
+  pod 'FBSDKLoginKit'
+  pod 'KakaoOpenSDK', '~> 1.12.1'
+  pod 'MaterialComponents/Buttons', '~> 85.2.0'
+  pod 'MaterialComponents/Buttons+Theming', '~> 85.2.0'
+  pod 'SwiftGifOrigin', '~> 1.7.0'  
+  pod 'Toast-Swift', '~> 5.0.0'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database' 
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+  pod 'GoogleSignIn', '~> 5.0.0'
+  pod 'FSCalendar'
+  pod 'ObjectMapper', '~> 3.4'
+
+  # Pods for Willson
+
+end

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AskerHomeRecommandCategoryCollectionViewCell" reuseIdentifier="AskerHomeRecommandCategoryCollectionViewCell" id="aVG-6g-evV" customClass="AskerHomeRecommandCategoryCollectionViewCell" customModule="Willson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UTV-ZT-XW2">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFo-wd-wCS" customClass="CustomView" customModule="Willson" customModuleProvider="target">
+                        <rect key="frame" x="5" y="10" width="70" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY9-tI-D3V">
+                                <rect key="frame" x="12" y="8" width="46" height="14.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <color key="textColor" name="veryLightPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hY9-tI-D3V" firstAttribute="leading" secondItem="KFo-wd-wCS" secondAttribute="leading" constant="12" id="CGy-3v-egA"/>
+                            <constraint firstItem="hY9-tI-D3V" firstAttribute="centerX" secondItem="KFo-wd-wCS" secondAttribute="centerX" id="R8z-Q6-FXg"/>
+                            <constraint firstAttribute="trailing" secondItem="hY9-tI-D3V" secondAttribute="trailing" constant="12" id="U4c-Dx-Jy0"/>
+                            <constraint firstItem="hY9-tI-D3V" firstAttribute="centerY" secondItem="KFo-wd-wCS" secondAttribute="centerY" id="pmH-54-YEm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.080000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" name="darkBlueGrey"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KFo-wd-wCS" firstAttribute="top" secondItem="UTV-ZT-XW2" secondAttribute="top" constant="10" id="DcU-DE-iEZ"/>
+                    <constraint firstAttribute="trailing" secondItem="KFo-wd-wCS" secondAttribute="trailing" constant="5" id="Eq6-3o-qdh"/>
+                    <constraint firstAttribute="bottom" secondItem="KFo-wd-wCS" secondAttribute="bottom" constant="10" id="Onr-QY-lEN"/>
+                    <constraint firstItem="KFo-wd-wCS" firstAttribute="leading" secondItem="UTV-ZT-XW2" secondAttribute="leading" constant="5" id="e6c-y1-Cc6"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="Txi-5i-7B1"/>
+            </collectionViewCellContentView>
+            <size key="customSize" width="80" height="50"/>
+            <connections>
+                <outlet property="bgView" destination="KFo-wd-wCS" id="A5h-iS-riS"/>
+                <outlet property="label" destination="hY9-tI-D3V" id="NNH-77-bY8"/>
+            </connections>
+            <point key="canvasLocation" x="170" y="94"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkBlueGrey">
+            <color red="0.10196078431372549" green="0.14901960784313725" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="veryLightPink">
+            <color red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RequestConcernFooterCollectionReusableView" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="RequestConcernFooterCollectionReusableView" id="eIe-K4-q5Z" customClass="RequestConcernFooterCollectionReusableView" customModule="Willson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcN-gA-H0r">
+                    <rect key="frame" x="0.0" y="24.5" width="375" height="1"/>
+                    <color key="backgroundColor" name="veryLightPinkTwo"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ich-FC-Rbx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QcN-gA-H0r" firstAttribute="centerY" secondItem="eIe-K4-q5Z" secondAttribute="centerY" id="Asu-HI-QZX"/>
+                <constraint firstAttribute="trailing" secondItem="QcN-gA-H0r" secondAttribute="trailing" id="aYB-1b-HnG"/>
+                <constraint firstItem="QcN-gA-H0r" firstAttribute="leading" secondItem="eIe-K4-q5Z" secondAttribute="leading" id="vln-UZ-Zax"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="tKb-3M-ewd"/>
+            <connections>
+                <outlet property="seperationView" destination="QcN-gA-H0r" id="9Od-aP-OUX"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="132"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="veryLightPinkTwo">
+            <color red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

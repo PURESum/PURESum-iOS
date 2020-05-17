@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tyy-8h-MGg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Helper Home View Controller-->
+        <scene sceneID="hU2-iL-hlh">
+            <objects>
+                <viewController storyboardIdentifier="HelperHomeViewController" id="Tyy-8h-MGg" customClass="HelperHomeViewController" customModule="Willson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EiO-hI-8pp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kU5-wE-Q0R">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdd-qn-Oh4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWillsonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pPe-Kq-LKa">
+                                                <rect key="frame" x="141.5" y="0.0" width="131" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="fiy-6G-dxG"/>
+                                                    <constraint firstAttribute="width" constant="131" id="zHX-3I-A3z"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBw-xa-1O9" customClass="CustomView" customModule="Willson" customModuleProvider="target">
+                                                <rect key="frame" x="49" y="63" width="316" height="54"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신의 경험을 나누어 보세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwe-X9-Wbl">
+                                                        <rect key="frame" x="80" y="18.5" width="156.5" height="17"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icRightArrowWhite" translatesAutoresizingMaskIntoConstraints="NO" id="69Q-O0-9vM">
+                                                        <rect key="frame" x="276" y="17" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="QXL-U0-jKi"/>
+                                                            <constraint firstAttribute="height" constant="20" id="R7O-Zf-qBj"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="darkBlueGrey"/>
+                                                <constraints>
+                                                    <constraint firstItem="qwe-X9-Wbl" firstAttribute="centerY" secondItem="DBw-xa-1O9" secondAttribute="centerY" id="3ea-vl-VS5"/>
+                                                    <constraint firstItem="69Q-O0-9vM" firstAttribute="centerY" secondItem="DBw-xa-1O9" secondAttribute="centerY" id="Tp2-Xc-dGq"/>
+                                                    <constraint firstItem="qwe-X9-Wbl" firstAttribute="centerX" secondItem="DBw-xa-1O9" secondAttribute="centerX" id="d28-Yw-hSO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="69Q-O0-9vM" secondAttribute="trailing" constant="20" id="ixf-Yw-hut"/>
+                                                    <constraint firstAttribute="width" constant="316" id="kB5-z8-IgI"/>
+                                                    <constraint firstAttribute="height" constant="54" id="rjT-Lq-71s"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="27"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="darkBlueGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="00000"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.080000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4l-tP-slz">
+                                                <rect key="frame" x="162" y="121" width="90" height="27"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                <state key="normal" title="헬퍼 등록하러 가기">
+                                                    <color key="titleColor" name="brownishGrey"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="O4l-tP-slz" firstAttribute="centerX" secondItem="DBw-xa-1O9" secondAttribute="centerX" id="3vq-Gv-Pak"/>
+                                            <constraint firstItem="O4l-tP-slz" firstAttribute="top" secondItem="DBw-xa-1O9" secondAttribute="bottom" constant="4" id="7JN-hK-zMJ"/>
+                                            <constraint firstAttribute="height" constant="300" id="RPR-Rz-WfC"/>
+                                            <constraint firstItem="pPe-Kq-LKa" firstAttribute="centerX" secondItem="Wdd-qn-Oh4" secondAttribute="centerX" id="Xfg-mG-F6h"/>
+                                            <constraint firstItem="pPe-Kq-LKa" firstAttribute="top" secondItem="Wdd-qn-Oh4" secondAttribute="top" id="Xgf-4X-Ovm"/>
+                                            <constraint firstItem="DBw-xa-1O9" firstAttribute="centerX" secondItem="Wdd-qn-Oh4" secondAttribute="centerX" id="cxf-ga-GNq"/>
+                                            <constraint firstItem="DBw-xa-1O9" firstAttribute="top" secondItem="pPe-Kq-LKa" secondAttribute="bottom" constant="28" id="tBQ-jT-cwu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Wdd-qn-Oh4" secondAttribute="trailing" id="B3T-ow-bfg"/>
+                                    <constraint firstItem="Wdd-qn-Oh4" firstAttribute="centerX" secondItem="kU5-wE-Q0R" secondAttribute="centerX" id="QF6-9Z-kjk"/>
+                                    <constraint firstItem="Wdd-qn-Oh4" firstAttribute="leading" secondItem="kU5-wE-Q0R" secondAttribute="leading" id="ap2-HV-Fsj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wdd-qn-Oh4" secondAttribute="bottom" id="elL-8q-G8R"/>
+                                    <constraint firstItem="Wdd-qn-Oh4" firstAttribute="top" secondItem="kU5-wE-Q0R" secondAttribute="top" id="tQK-0f-DjO"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kU5-wE-Q0R" firstAttribute="top" secondItem="eig-bD-5rE" secondAttribute="top" id="1Xf-8w-Ni4"/>
+                            <constraint firstItem="kU5-wE-Q0R" firstAttribute="leading" secondItem="EiO-hI-8pp" secondAttribute="leading" id="2WM-Ms-ZZR"/>
+                            <constraint firstAttribute="trailing" secondItem="kU5-wE-Q0R" secondAttribute="trailing" id="SPv-FG-nHy"/>
+                            <constraint firstItem="eig-bD-5rE" firstAttribute="bottom" secondItem="kU5-wE-Q0R" secondAttribute="bottom" id="vXu-k4-wTm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eig-bD-5rE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V8z-jD-jxD">
+                        <barButtonItem key="rightBarButtonItem" image="icAccountSwitch" id="FbH-ET-MbF">
+                            <connections>
+                                <action selector="tappedGoToAsker:" destination="Tyy-8h-MGg" id="ep2-tj-HAi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="HelperApplyButtonView" destination="DBw-xa-1O9" id="Puo-1Y-y02"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kv0-ze-aWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2360.8695652173915" y="-161.71875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icAccountSwitch" width="30" height="30"/>
+        <image name="icRightArrowWhite" width="20" height="20"/>
+        <image name="icWillsonLogo" width="131" height="35"/>
+        <namedColor name="00000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="brownishGrey">
+            <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlueGrey">
+            <color red="0.10196078431372549" green="0.14901960784313725" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

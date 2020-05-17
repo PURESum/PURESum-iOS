@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="AskerCouponTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="AskerCouponTableViewCell" rowHeight="165" id="KGk-i7-Jjw" customClass="AskerCouponTableViewCell" customModule="Willson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCoupon" translatesAutoresizingMaskIntoConstraints="NO" id="8RY-Jm-7xg">
+                        <rect key="frame" x="18.5" y="0.0" width="338" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="338" id="YWI-fL-Ha2"/>
+                            <constraint firstAttribute="height" constant="164" id="xOT-3g-eec"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVU-Hx-HFt" customClass="CustomLabel" customModule="Willson" customModuleProvider="target">
+                        <rect key="frame" x="55.5" y="37" width="27" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Ufq-0X-mnt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                        <color key="textColor" name="deepSkyBlue"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="11"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.80000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="deepSkyBlue"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsJ-lq-Ql9">
+                        <rect key="frame" x="55.5" y="67.5" width="51" height="29"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="24"/>
+                        <color key="textColor" name="black"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19.12.19 - 20.07.22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd9-sy-tql">
+                        <rect key="frame" x="55.5" y="112" width="96" height="15"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                        <color key="textColor" name="veryLightPinkThree"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8RY-Jm-7xg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="861-zJ-fAP"/>
+                    <constraint firstItem="xVU-Hx-HFt" firstAttribute="leading" secondItem="8RY-Jm-7xg" secondAttribute="leading" constant="37" id="8MG-AB-GbP"/>
+                    <constraint firstItem="8RY-Jm-7xg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kkg-od-oVy"/>
+                    <constraint firstAttribute="bottom" secondItem="8RY-Jm-7xg" secondAttribute="bottom" id="Mlt-kU-11f"/>
+                    <constraint firstItem="NsJ-lq-Ql9" firstAttribute="leading" secondItem="xVU-Hx-HFt" secondAttribute="leading" id="RiS-3b-YSA"/>
+                    <constraint firstItem="8RY-Jm-7xg" firstAttribute="bottom" secondItem="kd9-sy-tql" secondAttribute="bottom" constant="37" id="SYV-xh-TzB"/>
+                    <constraint firstItem="kd9-sy-tql" firstAttribute="leading" secondItem="xVU-Hx-HFt" secondAttribute="leading" id="cCd-UT-au3"/>
+                    <constraint firstItem="NsJ-lq-Ql9" firstAttribute="centerY" secondItem="8RY-Jm-7xg" secondAttribute="centerY" id="iIj-KH-RUT"/>
+                    <constraint firstItem="xVU-Hx-HFt" firstAttribute="top" secondItem="8RY-Jm-7xg" secondAttribute="top" constant="37" id="wUB-sj-ycN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryLabel" destination="xVU-Hx-HFt" id="2GI-4p-DWS"/>
+                <outlet property="dateLabel" destination="kd9-sy-tql" id="Ooy-wE-ntW"/>
+                <outlet property="titleLabel" destination="NsJ-lq-Ql9" id="vPu-aE-d3N"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="120.87053571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imgCoupon" width="338" height="164"/>
+        <namedColor name="black">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="deepSkyBlue">
+            <color red="0.066666666666666666" green="0.50196078431372548" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="veryLightPinkThree">
+            <color red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

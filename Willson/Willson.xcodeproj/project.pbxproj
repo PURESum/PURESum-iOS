@@ -1,0 +1,1807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9472FF8C3C10D53AF2E18C1 /* Pods_Willson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AE663FE0791050606F474A /* Pods_Willson.framework */; };
+		D9077B8A240E321400A0C9FD /* WillsonerMypageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9077B89240E321400A0C9FD /* WillsonerMypageModels.swift */; };
+		D9107C87235613CB004A3E35 /* AskerPay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9107C86235613CB004A3E35 /* AskerPay.storyboard */; };
+		D9107C8A23561482004A3E35 /* AskerPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9107C8923561482004A3E35 /* AskerPayViewController.swift */; };
+		D92001E5234E22C700C82F78 /* RequestListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92001E3234E22C700C82F78 /* RequestListCollectionViewCell.swift */; };
+		D92001E6234E22C700C82F78 /* RequestListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D92001E4234E22C700C82F78 /* RequestListCollectionViewCell.xib */; };
+		D920C5D523ED2D6100AAB1D1 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920C5D423ED2D6100AAB1D1 /* ChatModels.swift */; };
+		D92B0C1F23EBFB5B00C3D025 /* ChatServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B0C1E23EBFB5B00C3D025 /* ChatServices.swift */; };
+		D92BE62B23C2D1F7002B2786 /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE62A23C2D1F7002B2786 /* SignUpPasswordViewController.swift */; };
+		D92BE63123C2F320002B2786 /* ServerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE63023C2F320002B2786 /* ServerString.swift */; };
+		D92BE63323C2F337002B2786 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE63223C2F337002B2786 /* SignUp.swift */; };
+		D92BE63523C322D9002B2786 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE63423C322D9002B2786 /* SignInService.swift */; };
+		D92BE63723C322E5002B2786 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE63623C322E5002B2786 /* SignIn.swift */; };
+		D931BF1723F788E0005797A5 /* ChatListHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931BF1523F788E0005797A5 /* ChatListHeaderTableViewCell.swift */; };
+		D931BF1823F788E0005797A5 /* ChatListHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D931BF1623F788E0005797A5 /* ChatListHeaderTableViewCell.xib */; };
+		D93AAE6123BB136D00489030 /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AAE5F23BB136D00489030 /* MyPageTableViewCell.swift */; };
+		D93AAE6223BB136D00489030 /* MyPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93AAE6023BB136D00489030 /* MyPageTableViewCell.xib */; };
+		D93AAE6523BB237200489030 /* AskerManagePointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AAE6423BB237200489030 /* AskerManagePointViewController.swift */; };
+		D93AAE6823BB284000489030 /* AskerPointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AAE6623BB284000489030 /* AskerPointTableViewCell.swift */; };
+		D93AAE6923BB284000489030 /* AskerPointTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93AAE6723BB284000489030 /* AskerPointTableViewCell.xib */; };
+		D93AAE6B23BB2D8800489030 /* AskerEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AAE6A23BB2D8800489030 /* AskerEditProfileViewController.swift */; };
+		D93AAE6F23BB36C700489030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D93AAE6E23BB36C700489030 /* GoogleService-Info.plist */; };
+		D93BD7B3241F7E6D00FD6A6D /* ConcernListDatePickerPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD7B2241F7E6D00FD6A6D /* ConcernListDatePickerPopUpViewController.swift */; };
+		D940F64923520C4900000230 /* AskerDetailRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940F64823520C4900000230 /* AskerDetailRequestViewController.swift */; };
+		D94808B023EFCE0700D3CEB3 /* AskerApplyConcernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94808AF23EFCE0700D3CEB3 /* AskerApplyConcernViewController.swift */; };
+		D9499ED5240762330091F980 /* AskerMypageReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9499ED3240762330091F980 /* AskerMypageReviewTableViewCell.swift */; };
+		D9499ED6240762330091F980 /* AskerMypageReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9499ED4240762330091F980 /* AskerMypageReviewTableViewCell.xib */; };
+		D9499ED92407765D0091F980 /* AskerMypageNoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9499ED72407765D0091F980 /* AskerMypageNoticeTableViewCell.swift */; };
+		D9499EDA2407765D0091F980 /* AskerMypageNoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9499ED82407765D0091F980 /* AskerMypageNoticeTableViewCell.xib */; };
+		D9499EDC2407775A0091F980 /* AskerMypageNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9499EDB2407775A0091F980 /* AskerMypageNoticeViewController.swift */; };
+		D9499EDE2407A95A0091F980 /* AskerChatSelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9499EDD2407A95A0091F980 /* AskerChatSelectImageViewController.swift */; };
+		D9499EE12407AB760091F980 /* ChatReviewSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9499EDF2407AB760091F980 /* ChatReviewSelectCollectionViewCell.swift */; };
+		D9499EE22407AB760091F980 /* ChatReviewSelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9499EE02407AB760091F980 /* ChatReviewSelectCollectionViewCell.xib */; };
+		D950E7452325E5DE00658CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950E7442325E5DE00658CDD /* AppDelegate.swift */; };
+		D950E74D2325E5DE00658CDD /* Willson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D950E74B2325E5DE00658CDD /* Willson.xcdatamodeld */; };
+		D950E74F2325E5DF00658CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D950E74E2325E5DF00658CDD /* Assets.xcassets */; };
+		D950E7522325E5DF00658CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D950E7502325E5DF00658CDD /* LaunchScreen.storyboard */; };
+		D950E7652325EC7600658CDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950E7642325EC7600658CDD /* LoginViewController.swift */; };
+		D950E7692325ED5600658CDD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D950E7682325ED5600658CDD /* Login.storyboard */; };
+		D950E76B2325ED7200658CDD /* AskerTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D950E76A2325ED7200658CDD /* AskerTabbar.storyboard */; };
+		D950E76D2325ED7D00658CDD /* HelperTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D950E76C2325ED7D00658CDD /* HelperTabbar.storyboard */; };
+		D950E771232E1F0300658CDD /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950E770232E1F0300658CDD /* EmailLoginViewController.swift */; };
+		D950E773232E2EC700658CDD /* AskerHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D950E772232E2EC700658CDD /* AskerHome.storyboard */; };
+		D950E777232E2EF000658CDD /* AskerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950E776232E2EF000658CDD /* AskerHomeViewController.swift */; };
+		D950E779232E3E1F00658CDD /* AskerRequest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D950E778232E3E1F00658CDD /* AskerRequest.storyboard */; };
+		D950E77C232E3E7D00658CDD /* AskerDefaultRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950E77B232E3E7D00658CDD /* AskerDefaultRequestViewController.swift */; };
+		D950E77E232E411A00658CDD /* AskerSearchingRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950E77D232E411A00658CDD /* AskerSearchingRequestViewController.swift */; };
+		D950E780232E433500658CDD /* AskerConcernList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D950E77F232E433500658CDD /* AskerConcernList.storyboard */; };
+		D950E783232E44B800658CDD /* ConcernListCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950E782232E44B800658CDD /* ConcernListCategoryViewController.swift */; };
+		D952AB9723B4515C000B1615 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952AB9623B4515C000B1615 /* CustomView.swift */; };
+		D95308D02402533E00FEEA35 /* ChatAgreementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95308CE2402533E00FEEA35 /* ChatAgreementTableViewCell.swift */; };
+		D95308D12402533E00FEEA35 /* ChatAgreementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95308CF2402533E00FEEA35 /* ChatAgreementTableViewCell.xib */; };
+		D95FD8AE2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FD8AC2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.swift */; };
+		D95FD8AF2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95FD8AD2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.xib */; };
+		D95FD8B22432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FD8B02432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.swift */; };
+		D95FD8B32432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95FD8B12432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.xib */; };
+		D95FD8B624336A9A00497F3F /* AskerHomeReviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FD8B424336A9A00497F3F /* AskerHomeReviewCollectionViewCell.swift */; };
+		D95FD8B724336A9A00497F3F /* AskerHomeReviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95FD8B524336A9A00497F3F /* AskerHomeReviewCollectionViewCell.xib */; };
+		D95FD8BC2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FD8BA2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.swift */; };
+		D95FD8BD2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95FD8BB2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.xib */; };
+		D96188C52349B2740094D6D9 /* ConcernListSelectHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96188C42349B2740094D6D9 /* ConcernListSelectHelperViewController.swift */; };
+		D96188C72349B88B0094D6D9 /* ConcernListDirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96188C62349B88B0094D6D9 /* ConcernListDirectionViewController.swift */; };
+		D96188C92349BF910094D6D9 /* ConcernListAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96188C82349BF910094D6D9 /* ConcernListAgreementViewController.swift */; };
+		D96188CB2349C3360094D6D9 /* ConcernListFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96188CA2349C3360094D6D9 /* ConcernListFinishViewController.swift */; };
+		D96188CD2349C6C60094D6D9 /* AskerSearchHelperFailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96188CC2349C6C60094D6D9 /* AskerSearchHelperFailViewController.swift */; };
+		D96188CF2349C8A10094D6D9 /* AskerReceiveRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96188CE2349C8A10094D6D9 /* AskerReceiveRequestViewController.swift */; };
+		D9639B0D23D5856300EEF9E9 /* AskerRequestConcernListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9639B0C23D5856300EEF9E9 /* AskerRequestConcernListViewController.swift */; };
+		D9639B1023D5874E00EEF9E9 /* RequestConcernCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9639B0E23D5874E00EEF9E9 /* RequestConcernCollectionViewCell.swift */; };
+		D9639B1123D5874E00EEF9E9 /* RequestConcernCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9639B0F23D5874E00EEF9E9 /* RequestConcernCollectionViewCell.xib */; };
+		D9639B1423D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9639B1223D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.swift */; };
+		D9639B1523D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9639B1323D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.xib */; };
+		D965A33A23C418AC005BE8AD /* ConcernListDetailCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965A33923C418AC005BE8AD /* ConcernListDetailCategoryViewController.swift */; };
+		D966B84B2377AE6D00716120 /* AuthenticationIDCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D966B84A2377AE6D00716120 /* AuthenticationIDCardViewController.swift */; };
+		D966B84D2377B4B300716120 /* AuthenticationAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D966B84C2377B4B300716120 /* AuthenticationAlertViewController.swift */; };
+		D966B84F237BEDD600716120 /* HelperApplicationPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D966B84E237BEDD600716120 /* HelperApplicationPhoneNumberViewController.swift */; };
+		D966B851237BF24A00716120 /* HelperApplicationEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D966B850237BF24A00716120 /* HelperApplicationEmailViewController.swift */; };
+		D969446F2429CC18003D07A9 /* TutorialWillsonerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969446E2429CC18003D07A9 /* TutorialWillsonerViewController.swift */; };
+		D96944732429D747003D07A9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96944722429D747003D07A9 /* RootViewController.swift */; };
+		D96944752429E861003D07A9 /* TutorialChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96944742429E861003D07A9 /* TutorialChatViewController.swift */; };
+		D96944772429E957003D07A9 /* TutorialCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96944762429E957003D07A9 /* TutorialCompleteViewController.swift */; };
+		D9694479242A0043003D07A9 /* AskerMainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9694478242A0043003D07A9 /* AskerMainModels.swift */; };
+		D969447B242A0148003D07A9 /* AskerMainServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969447A242A0148003D07A9 /* AskerMainServices.swift */; };
+		D96BDF892410CEB400949EB7 /* AskerCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BDF882410CEB400949EB7 /* AskerCouponViewController.swift */; };
+		D96BDF8E2410CFB400949EB7 /* AskerCouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BDF8C2410CFB400949EB7 /* AskerCouponTableViewCell.swift */; };
+		D96BDF8F2410CFB400949EB7 /* AskerCouponTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96BDF8D2410CFB400949EB7 /* AskerCouponTableViewCell.xib */; };
+		D96BDF912414CF4800949EB7 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96BDF902414CF4800949EB7 /* KakaoOpenSDK.framework */; };
+		D96C7AC5240375060014CF4B /* ChatStartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C7AC3240375060014CF4B /* ChatStartTableViewCell.swift */; };
+		D96C7AC6240375060014CF4B /* ChatStartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96C7AC4240375060014CF4B /* ChatStartTableViewCell.xib */; };
+		D96D3F812337176B0011A840 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96D3F802337176B0011A840 /* SignUp.storyboard */; };
+		D96D3F84233718050011A840 /* SignUpRootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D3F83233718050011A840 /* SignUpRootPageViewController.swift */; };
+		D96D3F862337188C0011A840 /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D3F852337188C0011A840 /* SignUpEmailViewController.swift */; };
+		D96D4A0B243C1F2B006C6F70 /* FirebaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D4A0A243C1F2B006C6F70 /* FirebaseAuthentication.swift */; };
+		D96ED08A238115F7009642DE /* ChatAnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96ED088238115F7009642DE /* ChatAnnouncementTableViewCell.swift */; };
+		D96ED08B238115F7009642DE /* ChatAnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96ED089238115F7009642DE /* ChatAnnouncementTableViewCell.xib */; };
+		D96ED08D2381382B009642DE /* HelperChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96ED08C2381382B009642DE /* HelperChatRoomViewController.swift */; };
+		D96ED08F23822992009642DE /* AskerChatReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96ED08E23822992009642DE /* AskerChatReviewViewController.swift */; };
+		D96EEBC623B4795300BC0C74 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96EEBC523B4795300BC0C74 /* CustomButton.swift */; };
+		D96EEBC823B4D60100BC0C74 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96EEBC723B4D60100BC0C74 /* CustomImageView.swift */; };
+		D96EEBCA23B4DCEE00BC0C74 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96EEBC923B4DCEE00BC0C74 /* CustomLabel.swift */; };
+		D9718297237E6B6F0073E343 /* AskerChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9718296237E6B6F0073E343 /* AskerChatRoomViewController.swift */; };
+		D974DA082452E09200C62F35 /* ConcernPopUpAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974DA072452E09200C62F35 /* ConcernPopUpAgreementViewController.swift */; };
+		D977442B23B98A6B00CAA359 /* ConcernListApplyMethodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977442A23B98A6B00CAA359 /* ConcernListApplyMethodsViewController.swift */; };
+		D980696323E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980696223E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift */; };
+		D980696623E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980696423E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift */; };
+		D980696723E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D980696523E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.xib */; };
+		D980696C23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980696A23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.swift */; };
+		D980696D23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D980696B23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.xib */; };
+		D980697023E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980696E23E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.swift */; };
+		D980697123E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D980696F23E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.xib */; };
+		D983934D243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983934B243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.swift */; };
+		D983934E243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D983934C243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.xib */; };
+		D9839351243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983934F243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.swift */; };
+		D9839352243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9839350243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.xib */; };
+		D98898D423D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98898D223D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.swift */; };
+		D98898D523D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98898D323D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.xib */; };
+		D98898D823D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98898D623D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift */; };
+		D98898D923D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98898D723D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.xib */; };
+		D98CB22E238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98CB22D238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift */; };
+		D98EC08423B1AD8300B93D6F /* SignUpSexAndAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EC08323B1AD8300B93D6F /* SignUpSexAndAgeViewController.swift */; };
+		D98EC08623B1AE6400B93D6F /* SignUpNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EC08523B1AE6400B93D6F /* SignUpNicknameViewController.swift */; };
+		D99248CE23BB44E200AB7B9A /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99248CD23BB44E200AB7B9A /* SignUpService.swift */; };
+		D997F1CD23CED73300380912 /* HelperHashTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997F1CB23CED73300380912 /* HelperHashTagTableViewCell.swift */; };
+		D997F1CE23CED73300380912 /* HelperHashTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D997F1CC23CED73300380912 /* HelperHashTagTableViewCell.xib */; };
+		D997F1D023CED7D200380912 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997F1CF23CED7D200380912 /* CustomTextField.swift */; };
+		D999A1C22342E66E00670263 /* AskerMypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D999A1C12342E66E00670263 /* AskerMypage.storyboard */; };
+		D999A1C52342E6E900670263 /* AskerMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999A1C42342E6E900670263 /* AskerMyPageViewController.swift */; };
+		D999A1C723449A5B00670263 /* AskerChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D999A1C623449A5B00670263 /* AskerChat.storyboard */; };
+		D999A1CA23449A9500670263 /* AskerChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999A1C923449A9500670263 /* AskerChatListViewController.swift */; };
+		D99E1D6E243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E1D6C243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift */; };
+		D99E1D6F243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99E1D6D243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib */; };
+		D99E1D7124358B45001FE017 /* AskerPayModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E1D7024358B45001FE017 /* AskerPayModels.swift */; };
+		D99E1D7324358C35001FE017 /* AskerPayServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E1D7224358C35001FE017 /* AskerPayServices.swift */; };
+		D9A087CC2406A6DA000DB08F /* PurchaseListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A087CA2406A6DA000DB08F /* PurchaseListTableViewCell.swift */; };
+		D9A087CD2406A6DA000DB08F /* PurchaseListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A087CB2406A6DA000DB08F /* PurchaseListTableViewCell.xib */; };
+		D9A9E05523491D6B0011E08C /* ChatListRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9E05323491D6B0011E08C /* ChatListRoomTableViewCell.swift */; };
+		D9A9E05623491D6B0011E08C /* ChatListRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A9E05423491D6B0011E08C /* ChatListRoomTableViewCell.xib */; };
+		D9ACDEC92407522D001A57F4 /* chatHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ACDEC72407522D001A57F4 /* chatHistoryTableViewCell.swift */; };
+		D9ACDECA2407522D001A57F4 /* chatHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ACDEC82407522D001A57F4 /* chatHistoryTableViewCell.xib */; };
+		D9ACDECC240755B0001A57F4 /* AskerChatHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ACDECB240755B0001A57F4 /* AskerChatHistoryViewController.swift */; };
+		D9ACDECE24075A8E001A57F4 /* AskerMypageReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ACDECD24075A8E001A57F4 /* AskerMypageReviewViewController.swift */; };
+		D9AD4D7D2383815400B9391F /* HelperApplicationExperienceLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD4D7C2383815400B9391F /* HelperApplicationExperienceLinkViewController.swift */; };
+		D9AD4D7F2383841400B9391F /* HelperApplicationAdditionalAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD4D7E2383841400B9391F /* HelperApplicationAdditionalAuthViewController.swift */; };
+		D9BBE32A234930F800F7F896 /* ConcernListCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BBE328234930F800F7F896 /* ConcernListCategoryCollectionViewCell.swift */; };
+		D9BBE32B234930F800F7F896 /* ConcernListCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BBE329234930F800F7F896 /* ConcernListCategoryCollectionViewCell.xib */; };
+		D9BBE32D2349361900F7F896 /* ConcernListFeelingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BBE32C2349361900F7F896 /* ConcernListFeelingViewController.swift */; };
+		D9BBE3302349911100F7F896 /* ConcernListDetailCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BBE32E2349911100F7F896 /* ConcernListDetailCategoryTableViewCell.swift */; };
+		D9BBE3312349911100F7F896 /* ConcernListDetailCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BBE32F2349911100F7F896 /* ConcernListDetailCategoryTableViewCell.xib */; };
+		D9BBE3352349A80E00F7F896 /* ConcernListWriteStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BBE3342349A80E00F7F896 /* ConcernListWriteStoryViewController.swift */; };
+		D9C107BC23FA37AE00DDB126 /* UserChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C107BA23FA37AE00DDB126 /* UserChatTableViewCell.swift */; };
+		D9C107BD23FA37AE00DDB126 /* UserChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C107BB23FA37AE00DDB126 /* UserChatTableViewCell.xib */; };
+		D9C107C423FA3FB100DDB126 /* OtherChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C107C223FA3FB100DDB126 /* OtherChatTableViewCell.swift */; };
+		D9C107C523FA3FB100DDB126 /* OtherChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C107C323FA3FB100DDB126 /* OtherChatTableViewCell.xib */; };
+		D9C4E5EC2406A10E00D69789 /* MyPageFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C4E5EA2406A10E00D69789 /* MyPageFooterTableViewCell.swift */; };
+		D9C4E5ED2406A10E00D69789 /* MyPageFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C4E5EB2406A10E00D69789 /* MyPageFooterTableViewCell.xib */; };
+		D9C64D2B240B9FF30029139A /* HelperRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C64D2A240B9FF30029139A /* HelperRequestViewController.swift */; };
+		D9CAFBED2429C013005EDD0B /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CAFBEC2429C013005EDD0B /* Tutorial.storyboard */; };
+		D9CAFBF02429C0C4005EDD0B /* TutorialConcernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAFBEF2429C0C4005EDD0B /* TutorialConcernViewController.swift */; };
+		D9CC1A3B245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC1A39245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift */; };
+		D9CC1A3C245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9CC1A3A245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib */; };
+		D9CD629F236A9361009E5703 /* AskerPayAmountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD629D236A9361009E5703 /* AskerPayAmountTableViewCell.swift */; };
+		D9CD62A0236A9361009E5703 /* AskerPayAmountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9CD629E236A9361009E5703 /* AskerPayAmountTableViewCell.xib */; };
+		D9CD62A2236A9A80009E5703 /* AskerPayMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD62A1236A9A80009E5703 /* AskerPayMethodViewController.swift */; };
+		D9CF2EBA23D41D6600877341 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF2EB923D41D6600877341 /* FindPasswordViewController.swift */; };
+		D9CFD683246A6D6E0012F38A /* AskerPayFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFD682246A6D6E0012F38A /* AskerPayFinalViewController.swift */; };
+		D9CFD685246A77430012F38A /* AskerSearchingWillsonerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFD684246A77430012F38A /* AskerSearchingWillsonerViewController.swift */; };
+		D9CFD687246A80F70012F38A /* SignUpAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFD686246A80F70012F38A /* SignUpAgeViewController.swift */; };
+		D9D9B11023AF71F100143541 /* ConcernListSelectDateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9B10F23AF71F100143541 /* ConcernListSelectDateTimeViewController.swift */; };
+		D9D9C273238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9C272238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift */; };
+		D9D9C275238A756D00597D85 /* HelperReceivedRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9C274238A756D00597D85 /* HelperReceivedRequestViewController.swift */; };
+		D9E9F7B7236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */; };
+		D9E9F7B8236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */; };
+		D9E9F7C2236ED2C700B37341 /* HelperHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */; };
+		D9E9F7C5236ED34C00B37341 /* HelperHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F7C4236ED34C00B37341 /* HelperHomeViewController.swift */; };
+		D9EE260E23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE260C23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.swift */; };
+		D9EE260F23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9EE260D23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.xib */; };
+		D9EE261123530E250054BC04 /* HelperApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EE261023530E250054BC04 /* HelperApplication.storyboard */; };
+		D9EE261423530EF00054BC04 /* HelperApplicationCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE261323530EF00054BC04 /* HelperApplicationCategoryViewController.swift */; };
+		D9EE2616235313970054BC04 /* HelperApplicationDetailCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE2615235313970054BC04 /* HelperApplicationDetailCategoryViewController.swift */; };
+		D9EE2618235316C30054BC04 /* HelperApplicationExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE2617235316C30054BC04 /* HelperApplicationExperienceViewController.swift */; };
+		D9EE261A2353185F0054BC04 /* HelperApplicationImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE26192353185F0054BC04 /* HelperApplicationImageSelectViewController.swift */; };
+		D9EE261E23531A4C0054BC04 /* HelperImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE261C23531A4C0054BC04 /* HelperImageCollectionViewCell.swift */; };
+		D9EE261F23531A4C0054BC04 /* HelperImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9EE261D23531A4C0054BC04 /* HelperImageCollectionViewCell.xib */; };
+		D9EE2621235320920054BC04 /* HelperApplicationAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE2620235320920054BC04 /* HelperApplicationAuthorizationViewController.swift */; };
+		D9EE26242353220C0054BC04 /* HelperAuthorizationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE26222353220C0054BC04 /* HelperAuthorizationTableViewCell.swift */; };
+		D9EE26252353220C0054BC04 /* HelperAuthorizationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9EE26232353220C0054BC04 /* HelperAuthorizationTableViewCell.xib */; };
+		D9F247CF23B8807D003801BE /* ConcernListConcernTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F247CD23B8807D003801BE /* ConcernListConcernTableViewCell.swift */; };
+		D9F247D023B8807D003801BE /* ConcernListConcernTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F247CE23B8807D003801BE /* ConcernListConcernTableViewCell.xib */; };
+		D9F247D323B8A1A7003801BE /* ConcernListDirectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F247D123B8A1A7003801BE /* ConcernListDirectionTableViewCell.swift */; };
+		D9F247D423B8A1A7003801BE /* ConcernListDirectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F247D223B8A1A7003801BE /* ConcernListDirectionTableViewCell.xib */; };
+		D9F5D597240FA4CA003A96DC /* AskerMypageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D596240FA4CA003A96DC /* AskerMypageServices.swift */; };
+		D9F5D599240FDCF8003A96DC /* AskerRequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D598240FDCF8003A96DC /* AskerRequestModels.swift */; };
+		D9F5D59B240FE0CF003A96DC /* AskerConcernModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D59A240FE0CF003A96DC /* AskerConcernModels.swift */; };
+		D9F5D59D240FE906003A96DC /* AskerMypageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D59C240FE906003A96DC /* AskerMypageModels.swift */; };
+		D9F5D59F240FEACB003A96DC /* WillsonerRegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D59E240FEACB003A96DC /* WillsonerRegisterModels.swift */; };
+		D9F5D5A1240FEB40003A96DC /* WillsonerConcernModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A0240FEB40003A96DC /* WillsonerConcernModels.swift */; };
+		D9F5D5A3240FED46003A96DC /* WillsonerMypageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A2240FED45003A96DC /* WillsonerMypageServices.swift */; };
+		D9F5D5A5240FEE8B003A96DC /* AskerRequestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A4240FEE8B003A96DC /* AskerRequestServices.swift */; };
+		D9F5D5A7240FEF7A003A96DC /* AskerConcernServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A6240FEF7A003A96DC /* AskerConcernServices.swift */; };
+		D9F5D5A9240FF0DD003A96DC /* WillsonerRegisterServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5A8240FF0DD003A96DC /* WillsonerRegisterServices.swift */; };
+		D9F5D5AB240FF18E003A96DC /* WillsonerConcernServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5D5AA240FF18E003A96DC /* WillsonerConcernServices.swift */; };
+		D9FB5FEF234F9BE300EDEEB4 /* AskerConfirmTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FEE234F9BE300EDEEB4 /* AskerConfirmTalkViewController.swift */; };
+		D9FB5FF1234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FF0234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift */; };
+		D9FB5FF3234F9EA800EDEEB4 /* HelperRequest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FB5FF2234F9EA800EDEEB4 /* HelperRequest.storyboard */; };
+		D9FB5FF6234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FF5234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift */; };
+		D9FB5FF8234FA0ED00EDEEB4 /* HelperMypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FB5FF7234FA0ED00EDEEB4 /* HelperMypage.storyboard */; };
+		D9FB5FFB234FA16900EDEEB4 /* HelperMypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FFA234FA16900EDEEB4 /* HelperMypageViewController.swift */; };
+		D9FB5FFD234FA21B00EDEEB4 /* HelperChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FB5FFC234FA21B00EDEEB4 /* HelperChat.storyboard */; };
+		D9FB6000234FA25900EDEEB4 /* HelperChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB5FFF234FA25900EDEEB4 /* HelperChatListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF19E405A22D6176D3E23606 /* Pods-Willson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Willson.debug.xcconfig"; path = "Target Support Files/Pods-Willson/Pods-Willson.debug.xcconfig"; sourceTree = "<group>"; };
+		B43A2E00858F1BD2BD4BAA6B /* Pods-Willson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Willson.release.xcconfig"; path = "Target Support Files/Pods-Willson/Pods-Willson.release.xcconfig"; sourceTree = "<group>"; };
+		C4AE663FE0791050606F474A /* Pods_Willson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Willson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9077B89240E321400A0C9FD /* WillsonerMypageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerMypageModels.swift; sourceTree = "<group>"; };
+		D9107C86235613CB004A3E35 /* AskerPay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerPay.storyboard; sourceTree = "<group>"; };
+		D9107C8923561482004A3E35 /* AskerPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayViewController.swift; sourceTree = "<group>"; };
+		D92001E3234E22C700C82F78 /* RequestListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D92001E4234E22C700C82F78 /* RequestListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D920C5D423ED2D6100AAB1D1 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		D92B0C1E23EBFB5B00C3D025 /* ChatServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServices.swift; sourceTree = "<group>"; };
+		D92BE62A23C2D1F7002B2786 /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
+		D92BE63023C2F320002B2786 /* ServerString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerString.swift; sourceTree = "<group>"; };
+		D92BE63223C2F337002B2786 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		D92BE63423C322D9002B2786 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		D92BE63623C322E5002B2786 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		D931BF1523F788E0005797A5 /* ChatListHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		D931BF1623F788E0005797A5 /* ChatListHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		D93AAE5F23BB136D00489030 /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
+		D93AAE6023BB136D00489030 /* MyPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageTableViewCell.xib; sourceTree = "<group>"; };
+		D93AAE6423BB237200489030 /* AskerManagePointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerManagePointViewController.swift; sourceTree = "<group>"; };
+		D93AAE6623BB284000489030 /* AskerPointTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPointTableViewCell.swift; sourceTree = "<group>"; };
+		D93AAE6723BB284000489030 /* AskerPointTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerPointTableViewCell.xib; sourceTree = "<group>"; };
+		D93AAE6A23BB2D8800489030 /* AskerEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerEditProfileViewController.swift; sourceTree = "<group>"; };
+		D93AAE6E23BB36C700489030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D93BD7B2241F7E6D00FD6A6D /* ConcernListDatePickerPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListDatePickerPopUpViewController.swift; sourceTree = "<group>"; };
+		D940F64823520C4900000230 /* AskerDetailRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerDetailRequestViewController.swift; sourceTree = "<group>"; };
+		D94808AF23EFCE0700D3CEB3 /* AskerApplyConcernViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerApplyConcernViewController.swift; sourceTree = "<group>"; };
+		D9499ED3240762330091F980 /* AskerMypageReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMypageReviewTableViewCell.swift; sourceTree = "<group>"; };
+		D9499ED4240762330091F980 /* AskerMypageReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerMypageReviewTableViewCell.xib; sourceTree = "<group>"; };
+		D9499ED72407765D0091F980 /* AskerMypageNoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMypageNoticeTableViewCell.swift; sourceTree = "<group>"; };
+		D9499ED82407765D0091F980 /* AskerMypageNoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerMypageNoticeTableViewCell.xib; sourceTree = "<group>"; };
+		D9499EDB2407775A0091F980 /* AskerMypageNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMypageNoticeViewController.swift; sourceTree = "<group>"; };
+		D9499EDD2407A95A0091F980 /* AskerChatSelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerChatSelectImageViewController.swift; sourceTree = "<group>"; };
+		D9499EDF2407AB760091F980 /* ChatReviewSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReviewSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9499EE02407AB760091F980 /* ChatReviewSelectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatReviewSelectCollectionViewCell.xib; sourceTree = "<group>"; };
+		D950E7412325E5DE00658CDD /* Willson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Willson.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D950E7442325E5DE00658CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D950E74C2325E5DE00658CDD /* Willson.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Willson.xcdatamodel; sourceTree = "<group>"; };
+		D950E74E2325E5DF00658CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D950E7512325E5DF00658CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D950E7532325E5DF00658CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D950E7642325EC7600658CDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D950E7682325ED5600658CDD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D950E76A2325ED7200658CDD /* AskerTabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerTabbar.storyboard; sourceTree = "<group>"; };
+		D950E76C2325ED7D00658CDD /* HelperTabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperTabbar.storyboard; sourceTree = "<group>"; };
+		D950E770232E1F0300658CDD /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		D950E772232E2EC700658CDD /* AskerHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerHome.storyboard; sourceTree = "<group>"; };
+		D950E776232E2EF000658CDD /* AskerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeViewController.swift; sourceTree = "<group>"; };
+		D950E778232E3E1F00658CDD /* AskerRequest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerRequest.storyboard; sourceTree = "<group>"; };
+		D950E77B232E3E7D00658CDD /* AskerDefaultRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerDefaultRequestViewController.swift; sourceTree = "<group>"; };
+		D950E77D232E411A00658CDD /* AskerSearchingRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerSearchingRequestViewController.swift; sourceTree = "<group>"; };
+		D950E77F232E433500658CDD /* AskerConcernList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerConcernList.storyboard; sourceTree = "<group>"; };
+		D950E782232E44B800658CDD /* ConcernListCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListCategoryViewController.swift; sourceTree = "<group>"; };
+		D952AB9623B4515C000B1615 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		D95308CE2402533E00FEEA35 /* ChatAgreementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAgreementTableViewCell.swift; sourceTree = "<group>"; };
+		D95308CF2402533E00FEEA35 /* ChatAgreementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatAgreementTableViewCell.xib; sourceTree = "<group>"; };
+		D95FD8AC2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeRecommandWillsonerCollectionViewCell.swift; sourceTree = "<group>"; };
+		D95FD8AD2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeRecommandWillsonerCollectionViewCell.xib; sourceTree = "<group>"; };
+		D95FD8B02432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeInterviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		D95FD8B12432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeInterviewCollectionViewCell.xib; sourceTree = "<group>"; };
+		D95FD8B424336A9A00497F3F /* AskerHomeReviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeReviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		D95FD8B524336A9A00497F3F /* AskerHomeReviewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeReviewCollectionViewCell.xib; sourceTree = "<group>"; };
+		D95FD8BA2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeWillsonerStoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D95FD8BB2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeWillsonerStoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D96188C42349B2740094D6D9 /* ConcernListSelectHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListSelectHelperViewController.swift; sourceTree = "<group>"; };
+		D96188C62349B88B0094D6D9 /* ConcernListDirectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListDirectionViewController.swift; sourceTree = "<group>"; };
+		D96188C82349BF910094D6D9 /* ConcernListAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListAgreementViewController.swift; sourceTree = "<group>"; };
+		D96188CA2349C3360094D6D9 /* ConcernListFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListFinishViewController.swift; sourceTree = "<group>"; };
+		D96188CC2349C6C60094D6D9 /* AskerSearchHelperFailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerSearchHelperFailViewController.swift; sourceTree = "<group>"; };
+		D96188CE2349C8A10094D6D9 /* AskerReceiveRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerReceiveRequestViewController.swift; sourceTree = "<group>"; };
+		D9639B0C23D5856300EEF9E9 /* AskerRequestConcernListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerRequestConcernListViewController.swift; sourceTree = "<group>"; };
+		D9639B0E23D5874E00EEF9E9 /* RequestConcernCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConcernCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9639B0F23D5874E00EEF9E9 /* RequestConcernCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestConcernCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9639B1223D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConcernHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9639B1323D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestConcernHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		D965A33923C418AC005BE8AD /* ConcernListDetailCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListDetailCategoryViewController.swift; sourceTree = "<group>"; };
+		D966B84A2377AE6D00716120 /* AuthenticationIDCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationIDCardViewController.swift; sourceTree = "<group>"; };
+		D966B84C2377B4B300716120 /* AuthenticationAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAlertViewController.swift; sourceTree = "<group>"; };
+		D966B84E237BEDD600716120 /* HelperApplicationPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		D966B850237BF24A00716120 /* HelperApplicationEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationEmailViewController.swift; sourceTree = "<group>"; };
+		D969446E2429CC18003D07A9 /* TutorialWillsonerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialWillsonerViewController.swift; sourceTree = "<group>"; };
+		D96944722429D747003D07A9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		D96944742429E861003D07A9 /* TutorialChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialChatViewController.swift; sourceTree = "<group>"; };
+		D96944762429E957003D07A9 /* TutorialCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCompleteViewController.swift; sourceTree = "<group>"; };
+		D9694478242A0043003D07A9 /* AskerMainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMainModels.swift; sourceTree = "<group>"; };
+		D969447A242A0148003D07A9 /* AskerMainServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMainServices.swift; sourceTree = "<group>"; };
+		D96BDF882410CEB400949EB7 /* AskerCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerCouponViewController.swift; sourceTree = "<group>"; };
+		D96BDF8C2410CFB400949EB7 /* AskerCouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerCouponTableViewCell.swift; sourceTree = "<group>"; };
+		D96BDF8D2410CFB400949EB7 /* AskerCouponTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerCouponTableViewCell.xib; sourceTree = "<group>"; };
+		D96BDF902414CF4800949EB7 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		D96C7AC3240375060014CF4B /* ChatStartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStartTableViewCell.swift; sourceTree = "<group>"; };
+		D96C7AC4240375060014CF4B /* ChatStartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatStartTableViewCell.xib; sourceTree = "<group>"; };
+		D96D3F802337176B0011A840 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		D96D3F83233718050011A840 /* SignUpRootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRootPageViewController.swift; sourceTree = "<group>"; };
+		D96D3F852337188C0011A840 /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewController.swift; sourceTree = "<group>"; };
+		D96D4A0A243C1F2B006C6F70 /* FirebaseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthentication.swift; sourceTree = "<group>"; };
+		D96ED088238115F7009642DE /* ChatAnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAnnouncementTableViewCell.swift; sourceTree = "<group>"; };
+		D96ED089238115F7009642DE /* ChatAnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatAnnouncementTableViewCell.xib; sourceTree = "<group>"; };
+		D96ED08C2381382B009642DE /* HelperChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperChatRoomViewController.swift; sourceTree = "<group>"; };
+		D96ED08E23822992009642DE /* AskerChatReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerChatReviewViewController.swift; sourceTree = "<group>"; };
+		D96EEBC523B4795300BC0C74 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D96EEBC723B4D60100BC0C74 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		D96EEBC923B4DCEE00BC0C74 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		D9718296237E6B6F0073E343 /* AskerChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerChatRoomViewController.swift; sourceTree = "<group>"; };
+		D974DA072452E09200C62F35 /* ConcernPopUpAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernPopUpAgreementViewController.swift; sourceTree = "<group>"; };
+		D977442A23B98A6B00CAA359 /* ConcernListApplyMethodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListApplyMethodsViewController.swift; sourceTree = "<group>"; };
+		D980696223E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerRequestWillsonerListViewController.swift; sourceTree = "<group>"; };
+		D980696423E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWillsonerListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D980696523E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestWillsonerListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D980696A23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerListHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D980696B23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WillsonerListHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		D980696E23E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerListFooterCollectionReusableView.swift; sourceTree = "<group>"; };
+		D980696F23E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WillsonerListFooterCollectionReusableView.xib; sourceTree = "<group>"; };
+		D983934A2430368400049EC3 /* Willson.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Willson.entitlements; sourceTree = "<group>"; };
+		D983934B243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeRequestConcernCollectionViewCell.swift; sourceTree = "<group>"; };
+		D983934C243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeRequestConcernCollectionViewCell.xib; sourceTree = "<group>"; };
+		D983934F243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeCategoryConcernCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9839350243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeCategoryConcernCollectionViewCell.xib; sourceTree = "<group>"; };
+		D98898D223D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConcernHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D98898D323D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestConcernHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		D98898D623D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConcernFooterCollectionReusableView.swift; sourceTree = "<group>"; };
+		D98898D723D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestConcernFooterCollectionReusableView.xib; sourceTree = "<group>"; };
+		D98CB22D238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperDetailRequestViewController.swift; sourceTree = "<group>"; };
+		D98EC08223B1A76E00B93D6F /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		D98EC08323B1AD8300B93D6F /* SignUpSexAndAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSexAndAgeViewController.swift; sourceTree = "<group>"; };
+		D98EC08523B1AE6400B93D6F /* SignUpNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNicknameViewController.swift; sourceTree = "<group>"; };
+		D99248CD23BB44E200AB7B9A /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		D997F1CB23CED73300380912 /* HelperHashTagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperHashTagTableViewCell.swift; sourceTree = "<group>"; };
+		D997F1CC23CED73300380912 /* HelperHashTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelperHashTagTableViewCell.xib; sourceTree = "<group>"; };
+		D997F1CF23CED7D200380912 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D999A1C12342E66E00670263 /* AskerMypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerMypage.storyboard; sourceTree = "<group>"; };
+		D999A1C42342E6E900670263 /* AskerMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMyPageViewController.swift; sourceTree = "<group>"; };
+		D999A1C623449A5B00670263 /* AskerChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskerChat.storyboard; sourceTree = "<group>"; };
+		D999A1C923449A9500670263 /* AskerChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerChatListViewController.swift; sourceTree = "<group>"; };
+		D99E1D6C243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayWillsonerCollectionViewCell.swift; sourceTree = "<group>"; };
+		D99E1D6D243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerPayWillsonerCollectionViewCell.xib; sourceTree = "<group>"; };
+		D99E1D7024358B45001FE017 /* AskerPayModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayModels.swift; sourceTree = "<group>"; };
+		D99E1D7224358C35001FE017 /* AskerPayServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayServices.swift; sourceTree = "<group>"; };
+		D9A087CA2406A6DA000DB08F /* PurchaseListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseListTableViewCell.swift; sourceTree = "<group>"; };
+		D9A087CB2406A6DA000DB08F /* PurchaseListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseListTableViewCell.xib; sourceTree = "<group>"; };
+		D9A9E05323491D6B0011E08C /* ChatListRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListRoomTableViewCell.swift; sourceTree = "<group>"; };
+		D9A9E05423491D6B0011E08C /* ChatListRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListRoomTableViewCell.xib; sourceTree = "<group>"; };
+		D9ACDEC72407522D001A57F4 /* chatHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		D9ACDEC82407522D001A57F4 /* chatHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = chatHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		D9ACDECB240755B0001A57F4 /* AskerChatHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerChatHistoryViewController.swift; sourceTree = "<group>"; };
+		D9ACDECD24075A8E001A57F4 /* AskerMypageReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMypageReviewViewController.swift; sourceTree = "<group>"; };
+		D9AD4D7C2383815400B9391F /* HelperApplicationExperienceLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationExperienceLinkViewController.swift; sourceTree = "<group>"; };
+		D9AD4D7E2383841400B9391F /* HelperApplicationAdditionalAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationAdditionalAuthViewController.swift; sourceTree = "<group>"; };
+		D9BBE328234930F800F7F896 /* ConcernListCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9BBE329234930F800F7F896 /* ConcernListCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConcernListCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9BBE32C2349361900F7F896 /* ConcernListFeelingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListFeelingViewController.swift; sourceTree = "<group>"; };
+		D9BBE32E2349911100F7F896 /* ConcernListDetailCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListDetailCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		D9BBE32F2349911100F7F896 /* ConcernListDetailCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConcernListDetailCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		D9BBE3342349A80E00F7F896 /* ConcernListWriteStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListWriteStoryViewController.swift; sourceTree = "<group>"; };
+		D9C107BA23FA37AE00DDB126 /* UserChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChatTableViewCell.swift; sourceTree = "<group>"; };
+		D9C107BB23FA37AE00DDB126 /* UserChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserChatTableViewCell.xib; sourceTree = "<group>"; };
+		D9C107C223FA3FB100DDB126 /* OtherChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherChatTableViewCell.swift; sourceTree = "<group>"; };
+		D9C107C323FA3FB100DDB126 /* OtherChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherChatTableViewCell.xib; sourceTree = "<group>"; };
+		D9C4E5EA2406A10E00D69789 /* MyPageFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageFooterTableViewCell.swift; sourceTree = "<group>"; };
+		D9C4E5EB2406A10E00D69789 /* MyPageFooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageFooterTableViewCell.xib; sourceTree = "<group>"; };
+		D9C64D2A240B9FF30029139A /* HelperRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRequestViewController.swift; sourceTree = "<group>"; };
+		D9CAFBEC2429C013005EDD0B /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		D9CAFBEF2429C0C4005EDD0B /* TutorialConcernViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialConcernViewController.swift; sourceTree = "<group>"; };
+		D9CC1A39245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDefaultCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9CC1A3A245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestDefaultCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9CD629D236A9361009E5703 /* AskerPayAmountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayAmountTableViewCell.swift; sourceTree = "<group>"; };
+		D9CD629E236A9361009E5703 /* AskerPayAmountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerPayAmountTableViewCell.xib; sourceTree = "<group>"; };
+		D9CD62A1236A9A80009E5703 /* AskerPayMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayMethodViewController.swift; sourceTree = "<group>"; };
+		D9CF2EB923D41D6600877341 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
+		D9CFD682246A6D6E0012F38A /* AskerPayFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerPayFinalViewController.swift; sourceTree = "<group>"; };
+		D9CFD684246A77430012F38A /* AskerSearchingWillsonerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerSearchingWillsonerViewController.swift; sourceTree = "<group>"; };
+		D9CFD686246A80F70012F38A /* SignUpAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAgeViewController.swift; sourceTree = "<group>"; };
+		D9D9B10F23AF71F100143541 /* ConcernListSelectDateTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListSelectDateTimeViewController.swift; sourceTree = "<group>"; };
+		D9D9C272238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationPhotoVideoAuthViewController.swift; sourceTree = "<group>"; };
+		D9D9C274238A756D00597D85 /* HelperReceivedRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperReceivedRequestViewController.swift; sourceTree = "<group>"; };
+		D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeRecommandCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeRecommandCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperHome.storyboard; sourceTree = "<group>"; };
+		D9E9F7C4236ED34C00B37341 /* HelperHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperHomeViewController.swift; sourceTree = "<group>"; };
+		D9EE260C23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerRequestReviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9EE260D23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerRequestReviewCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9EE261023530E250054BC04 /* HelperApplication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperApplication.storyboard; sourceTree = "<group>"; };
+		D9EE261323530EF00054BC04 /* HelperApplicationCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationCategoryViewController.swift; sourceTree = "<group>"; };
+		D9EE2615235313970054BC04 /* HelperApplicationDetailCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationDetailCategoryViewController.swift; sourceTree = "<group>"; };
+		D9EE2617235316C30054BC04 /* HelperApplicationExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationExperienceViewController.swift; sourceTree = "<group>"; };
+		D9EE26192353185F0054BC04 /* HelperApplicationImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationImageSelectViewController.swift; sourceTree = "<group>"; };
+		D9EE261C23531A4C0054BC04 /* HelperImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9EE261D23531A4C0054BC04 /* HelperImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelperImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9EE2620235320920054BC04 /* HelperApplicationAuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationAuthorizationViewController.swift; sourceTree = "<group>"; };
+		D9EE26222353220C0054BC04 /* HelperAuthorizationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAuthorizationTableViewCell.swift; sourceTree = "<group>"; };
+		D9EE26232353220C0054BC04 /* HelperAuthorizationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelperAuthorizationTableViewCell.xib; sourceTree = "<group>"; };
+		D9F247CD23B8807D003801BE /* ConcernListConcernTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListConcernTableViewCell.swift; sourceTree = "<group>"; };
+		D9F247CE23B8807D003801BE /* ConcernListConcernTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConcernListConcernTableViewCell.xib; sourceTree = "<group>"; };
+		D9F247D123B8A1A7003801BE /* ConcernListDirectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernListDirectionTableViewCell.swift; sourceTree = "<group>"; };
+		D9F247D223B8A1A7003801BE /* ConcernListDirectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConcernListDirectionTableViewCell.xib; sourceTree = "<group>"; };
+		D9F5D596240FA4CA003A96DC /* AskerMypageServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMypageServices.swift; sourceTree = "<group>"; };
+		D9F5D598240FDCF8003A96DC /* AskerRequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerRequestModels.swift; sourceTree = "<group>"; };
+		D9F5D59A240FE0CF003A96DC /* AskerConcernModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerConcernModels.swift; sourceTree = "<group>"; };
+		D9F5D59C240FE906003A96DC /* AskerMypageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerMypageModels.swift; sourceTree = "<group>"; };
+		D9F5D59E240FEACB003A96DC /* WillsonerRegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerRegisterModels.swift; sourceTree = "<group>"; };
+		D9F5D5A0240FEB40003A96DC /* WillsonerConcernModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerConcernModels.swift; sourceTree = "<group>"; };
+		D9F5D5A2240FED45003A96DC /* WillsonerMypageServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerMypageServices.swift; sourceTree = "<group>"; };
+		D9F5D5A4240FEE8B003A96DC /* AskerRequestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerRequestServices.swift; sourceTree = "<group>"; };
+		D9F5D5A6240FEF7A003A96DC /* AskerConcernServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerConcernServices.swift; sourceTree = "<group>"; };
+		D9F5D5A8240FF0DD003A96DC /* WillsonerRegisterServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerRegisterServices.swift; sourceTree = "<group>"; };
+		D9F5D5AA240FF18E003A96DC /* WillsonerConcernServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerConcernServices.swift; sourceTree = "<group>"; };
+		D9FB5FEE234F9BE300EDEEB4 /* AskerConfirmTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerConfirmTalkViewController.swift; sourceTree = "<group>"; };
+		D9FB5FF0234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerAlreadyMatchingViewController.swift; sourceTree = "<group>"; };
+		D9FB5FF2234F9EA800EDEEB4 /* HelperRequest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperRequest.storyboard; sourceTree = "<group>"; };
+		D9FB5FF5234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRequestDefaultViewController.swift; sourceTree = "<group>"; };
+		D9FB5FF7234FA0ED00EDEEB4 /* HelperMypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperMypage.storyboard; sourceTree = "<group>"; };
+		D9FB5FFA234FA16900EDEEB4 /* HelperMypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMypageViewController.swift; sourceTree = "<group>"; };
+		D9FB5FFC234FA21B00EDEEB4 /* HelperChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperChat.storyboard; sourceTree = "<group>"; };
+		D9FB5FFF234FA25900EDEEB4 /* HelperChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperChatListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D950E73E2325E5DE00658CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9472FF8C3C10D53AF2E18C1 /* Pods_Willson.framework in Frameworks */,
+				D96BDF912414CF4800949EB7 /* KakaoOpenSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		809D2A6678B8AD7AE1693405 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF19E405A22D6176D3E23606 /* Pods-Willson.debug.xcconfig */,
+				B43A2E00858F1BD2BD4BAA6B /* Pods-Willson.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9107C8823561465004A3E35 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				D9CD629C236A83D8009E5703 /* views */,
+				D9107C8923561482004A3E35 /* AskerPayViewController.swift */,
+				D9CD62A1236A9A80009E5703 /* AskerPayMethodViewController.swift */,
+				D9CFD682246A6D6E0012F38A /* AskerPayFinalViewController.swift */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		D92001E2234E225D00C82F78 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE260C23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.swift */,
+				D9EE260D23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.xib */,
+				D9639B1223D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.swift */,
+				D9639B1323D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.xib */,
+				D980696823E2B2B10082B6C5 /* concernList */,
+				D980696923E2B2BC0082B6C5 /* willsonerList */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D931BF1923F788EF005797A5 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				D931BF1523F788E0005797A5 /* ChatListHeaderTableViewCell.swift */,
+				D931BF1623F788E0005797A5 /* ChatListHeaderTableViewCell.xib */,
+				D9A9E05323491D6B0011E08C /* ChatListRoomTableViewCell.swift */,
+				D9A9E05423491D6B0011E08C /* ChatListRoomTableViewCell.xib */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		D931BF1A23F788F6005797A5 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				D96ED088238115F7009642DE /* ChatAnnouncementTableViewCell.swift */,
+				D96ED089238115F7009642DE /* ChatAnnouncementTableViewCell.xib */,
+				D95308CE2402533E00FEEA35 /* ChatAgreementTableViewCell.swift */,
+				D95308CF2402533E00FEEA35 /* ChatAgreementTableViewCell.xib */,
+				D96C7AC3240375060014CF4B /* ChatStartTableViewCell.swift */,
+				D96C7AC4240375060014CF4B /* ChatStartTableViewCell.xib */,
+				D9C107BA23FA37AE00DDB126 /* UserChatTableViewCell.swift */,
+				D9C107BB23FA37AE00DDB126 /* UserChatTableViewCell.xib */,
+				D9C107C223FA3FB100DDB126 /* OtherChatTableViewCell.swift */,
+				D9C107C323FA3FB100DDB126 /* OtherChatTableViewCell.xib */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		D93AAE6323BB13D300489030 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D9C4E5E524069FAE00D69789 /* main */,
+				D9C4E5EE2406A16A00D69789 /* ticket */,
+				D96BDF8A2410CF7B00949EB7 /* coupon_history_review */,
+				D96BDF8B2410CF9000949EB7 /* table */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D9499EEB2407F6360091F980 /* asker */ = {
+			isa = PBXGroup;
+			children = (
+				D9694478242A0043003D07A9 /* AskerMainModels.swift */,
+				D9F5D598240FDCF8003A96DC /* AskerRequestModels.swift */,
+				D99E1D7024358B45001FE017 /* AskerPayModels.swift */,
+				D9F5D59A240FE0CF003A96DC /* AskerConcernModels.swift */,
+				D9F5D59C240FE906003A96DC /* AskerMypageModels.swift */,
+			);
+			path = asker;
+			sourceTree = "<group>";
+		};
+		D9499EEC2407F63F0091F980 /* willsoner */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5D59E240FEACB003A96DC /* WillsonerRegisterModels.swift */,
+				D9F5D5A0240FEB40003A96DC /* WillsonerConcernModels.swift */,
+				D9077B89240E321400A0C9FD /* WillsonerMypageModels.swift */,
+			);
+			path = willsoner;
+			sourceTree = "<group>";
+		};
+		D9499EED2407F6C90091F980 /* asker */ = {
+			isa = PBXGroup;
+			children = (
+				D969447A242A0148003D07A9 /* AskerMainServices.swift */,
+				D9F5D5A4240FEE8B003A96DC /* AskerRequestServices.swift */,
+				D99E1D7224358C35001FE017 /* AskerPayServices.swift */,
+				D9F5D5A6240FEF7A003A96DC /* AskerConcernServices.swift */,
+				D9F5D596240FA4CA003A96DC /* AskerMypageServices.swift */,
+			);
+			path = asker;
+			sourceTree = "<group>";
+		};
+		D9499EEE2407F6CE0091F980 /* willsoner */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5D5A8240FF0DD003A96DC /* WillsonerRegisterServices.swift */,
+				D9F5D5AA240FF18E003A96DC /* WillsonerConcernServices.swift */,
+				D9F5D5A2240FED45003A96DC /* WillsonerMypageServices.swift */,
+			);
+			path = willsoner;
+			sourceTree = "<group>";
+		};
+		D950E7382325E5DE00658CDD = {
+			isa = PBXGroup;
+			children = (
+				D950E7432325E5DE00658CDD /* Willson */,
+				D950E7422325E5DE00658CDD /* Products */,
+				809D2A6678B8AD7AE1693405 /* Pods */,
+				EA0FC5F39E905A8AE7FC4668 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D950E7422325E5DE00658CDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D950E7412325E5DE00658CDD /* Willson.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D950E7432325E5DE00658CDD /* Willson */ = {
+			isa = PBXGroup;
+			children = (
+				D983934A2430368400049EC3 /* Willson.entitlements */,
+				D99248CA23BB43AF00AB7B9A /* models */,
+				D99248C923BB43A700AB7B9A /* services */,
+				D950E75A2325EA5B00658CDD /* storyboards */,
+				D950E75B2325EA7E00658CDD /* view controllers */,
+				D950E7592325EA4700658CDD /* supporting files */,
+			);
+			path = Willson;
+			sourceTree = "<group>";
+		};
+		D950E7592325EA4700658CDD /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D965BE7724021D6200EF9A11 /* trash */,
+				D952AB9523B4514B000B1615 /* custom */,
+				D98EC08223B1A76E00B93D6F /* KakaoOpenSDK-Bridging-Header.h */,
+				D950E7442325E5DE00658CDD /* AppDelegate.swift */,
+				D950E74E2325E5DF00658CDD /* Assets.xcassets */,
+				D950E7502325E5DF00658CDD /* LaunchScreen.storyboard */,
+				D950E7532325E5DF00658CDD /* Info.plist */,
+				D93AAE6E23BB36C700489030 /* GoogleService-Info.plist */,
+				D950E74B2325E5DE00658CDD /* Willson.xcdatamodeld */,
+				D92BE63023C2F320002B2786 /* ServerString.swift */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		D950E75A2325EA5B00658CDD /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D9CAFBEC2429C013005EDD0B /* Tutorial.storyboard */,
+				D950E7682325ED5600658CDD /* Login.storyboard */,
+				D96D3F802337176B0011A840 /* SignUp.storyboard */,
+				D950E75C2325EA8E00658CDD /* asker */,
+				D950E75D2325EB5000658CDD /* helper */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		D950E75B2325EA7E00658CDD /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9CAFBEE2429C0A5005EDD0B /* Tutorial */,
+				D950E774232E2ECF00658CDD /* Login */,
+				D96D3F82233717C00011A840 /* SignUp */,
+				D950E75F2325EB6100658CDD /* asker */,
+				D950E75E2325EB5B00658CDD /* willsoner */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		D950E75C2325EA8E00658CDD /* asker */ = {
+			isa = PBXGroup;
+			children = (
+				D950E76A2325ED7200658CDD /* AskerTabbar.storyboard */,
+				D950E772232E2EC700658CDD /* AskerHome.storyboard */,
+				D950E77F232E433500658CDD /* AskerConcernList.storyboard */,
+				D9107C86235613CB004A3E35 /* AskerPay.storyboard */,
+				D950E778232E3E1F00658CDD /* AskerRequest.storyboard */,
+				D999A1C623449A5B00670263 /* AskerChat.storyboard */,
+				D999A1C12342E66E00670263 /* AskerMypage.storyboard */,
+			);
+			path = asker;
+			sourceTree = "<group>";
+		};
+		D950E75D2325EB5000658CDD /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				D950E76C2325ED7D00658CDD /* HelperTabbar.storyboard */,
+				D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */,
+				D9EE261023530E250054BC04 /* HelperApplication.storyboard */,
+				D9FB5FF2234F9EA800EDEEB4 /* HelperRequest.storyboard */,
+				D9FB5FFC234FA21B00EDEEB4 /* HelperChat.storyboard */,
+				D9FB5FF7234FA0ED00EDEEB4 /* HelperMypage.storyboard */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		D950E75E2325EB5B00658CDD /* willsoner */ = {
+			isa = PBXGroup;
+			children = (
+				D9E9F7C3236ED33100B37341 /* Home */,
+				D9EE261223530ED50054BC04 /* Application */,
+				D9FB5FF4234F9EB000EDEEB4 /* Request */,
+				D9FB5FFE234FA24400EDEEB4 /* Chatting */,
+				D9FB5FF9234FA15600EDEEB4 /* Mypage */,
+			);
+			path = willsoner;
+			sourceTree = "<group>";
+		};
+		D950E75F2325EB6100658CDD /* asker */ = {
+			isa = PBXGroup;
+			children = (
+				D950E775232E2EDA00658CDD /* Home */,
+				D950E781232E435400658CDD /* ConcernList */,
+				D950E77A232E3E3300658CDD /* Request */,
+				D9107C8823561465004A3E35 /* Pay */,
+				D999A1C823449A7000670263 /* Chatting */,
+				D999A1C32342E6D000670263 /* MyPage */,
+			);
+			path = asker;
+			sourceTree = "<group>";
+		};
+		D950E774232E2ECF00658CDD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D950E7642325EC7600658CDD /* LoginViewController.swift */,
+				D950E770232E1F0300658CDD /* EmailLoginViewController.swift */,
+				D9CF2EB923D41D6600877341 /* FindPasswordViewController.swift */,
+				D96D4A0A243C1F2B006C6F70 /* FirebaseAuthentication.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D950E775232E2EDA00658CDD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D9E9F7AE236EA7E500B37341 /* views */,
+				D950E776232E2EF000658CDD /* AskerHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D950E77A232E3E3300658CDD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D92001E2234E225D00C82F78 /* views */,
+				D97354B723E7EF8A002273DB /* flow */,
+				D950E77D232E411A00658CDD /* AskerSearchingRequestViewController.swift */,
+				D96188CC2349C6C60094D6D9 /* AskerSearchHelperFailViewController.swift */,
+				D96188CE2349C8A10094D6D9 /* AskerReceiveRequestViewController.swift */,
+				D9FB5FEE234F9BE300EDEEB4 /* AskerConfirmTalkViewController.swift */,
+				D9FB5FF0234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift */,
+				D9CFD684246A77430012F38A /* AskerSearchingWillsonerViewController.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D950E781232E435400658CDD /* ConcernList */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBE327234930D400F7F896 /* views */,
+				D950E782232E44B800658CDD /* ConcernListCategoryViewController.swift */,
+				D965A33923C418AC005BE8AD /* ConcernListDetailCategoryViewController.swift */,
+				D9BBE32C2349361900F7F896 /* ConcernListFeelingViewController.swift */,
+				D9BBE3342349A80E00F7F896 /* ConcernListWriteStoryViewController.swift */,
+				D96188C42349B2740094D6D9 /* ConcernListSelectHelperViewController.swift */,
+				D96188C62349B88B0094D6D9 /* ConcernListDirectionViewController.swift */,
+				D977442A23B98A6B00CAA359 /* ConcernListApplyMethodsViewController.swift */,
+				D9D9B10F23AF71F100143541 /* ConcernListSelectDateTimeViewController.swift */,
+				D93BD7B2241F7E6D00FD6A6D /* ConcernListDatePickerPopUpViewController.swift */,
+				D96188C82349BF910094D6D9 /* ConcernListAgreementViewController.swift */,
+				D974DA072452E09200C62F35 /* ConcernPopUpAgreementViewController.swift */,
+				D96188CA2349C3360094D6D9 /* ConcernListFinishViewController.swift */,
+			);
+			path = ConcernList;
+			sourceTree = "<group>";
+		};
+		D952AB9523B4514B000B1615 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				D952AB9623B4515C000B1615 /* CustomView.swift */,
+				D96EEBC523B4795300BC0C74 /* CustomButton.swift */,
+				D96EEBC723B4D60100BC0C74 /* CustomImageView.swift */,
+				D96EEBC923B4DCEE00BC0C74 /* CustomLabel.swift */,
+				D997F1CF23CED7D200380912 /* CustomTextField.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		D95FD8B9243376D800497F3F /* 윌스너의이야기 */ = {
+			isa = PBXGroup;
+			children = (
+				D95FD8BA2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.swift */,
+				D95FD8BB2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.xib */,
+			);
+			name = "윌스너의이야기";
+			path = "윐";
+			sourceTree = "<group>";
+		};
+		D965BE7724021D6200EF9A11 /* trash */ = {
+			isa = PBXGroup;
+			children = (
+				D9FB5FF5234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift */,
+				D9D9C274238A756D00597D85 /* HelperReceivedRequestViewController.swift */,
+				D950E77B232E3E7D00658CDD /* AskerDefaultRequestViewController.swift */,
+				D9639B0C23D5856300EEF9E9 /* AskerRequestConcernListViewController.swift */,
+			);
+			path = trash;
+			sourceTree = "<group>";
+		};
+		D96BDF862410CE3D00949EB7 /* table */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		D96BDF872410CE6C00949EB7 /* coupon_history_review */ = {
+			isa = PBXGroup;
+			children = (
+				D96BDF882410CEB400949EB7 /* AskerCouponViewController.swift */,
+				D9ACDECB240755B0001A57F4 /* AskerChatHistoryViewController.swift */,
+				D9ACDECD24075A8E001A57F4 /* AskerMypageReviewViewController.swift */,
+			);
+			path = coupon_history_review;
+			sourceTree = "<group>";
+		};
+		D96BDF8A2410CF7B00949EB7 /* coupon_history_review */ = {
+			isa = PBXGroup;
+			children = (
+				D96BDF8C2410CFB400949EB7 /* AskerCouponTableViewCell.swift */,
+				D96BDF8D2410CFB400949EB7 /* AskerCouponTableViewCell.xib */,
+				D9ACDEC72407522D001A57F4 /* chatHistoryTableViewCell.swift */,
+				D9ACDEC82407522D001A57F4 /* chatHistoryTableViewCell.xib */,
+				D9499ED3240762330091F980 /* AskerMypageReviewTableViewCell.swift */,
+				D9499ED4240762330091F980 /* AskerMypageReviewTableViewCell.xib */,
+			);
+			path = coupon_history_review;
+			sourceTree = "<group>";
+		};
+		D96BDF8B2410CF9000949EB7 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				D9499ED72407765D0091F980 /* AskerMypageNoticeTableViewCell.swift */,
+				D9499ED82407765D0091F980 /* AskerMypageNoticeTableViewCell.xib */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		D96D3F82233717C00011A840 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D96D3F83233718050011A840 /* SignUpRootPageViewController.swift */,
+				D96D3F852337188C0011A840 /* SignUpEmailViewController.swift */,
+				D92BE62A23C2D1F7002B2786 /* SignUpPasswordViewController.swift */,
+				D98EC08323B1AD8300B93D6F /* SignUpSexAndAgeViewController.swift */,
+				D98EC08523B1AE6400B93D6F /* SignUpNicknameViewController.swift */,
+				D9CFD686246A80F70012F38A /* SignUpAgeViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		D9726D9B23E12B39009A0F0A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D92001E3234E22C700C82F78 /* RequestListCollectionViewCell.swift */,
+				D92001E4234E22C700C82F78 /* RequestListCollectionViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D97354B723E7EF8A002273DB /* flow */ = {
+			isa = PBXGroup;
+			children = (
+				D94808AF23EFCE0700D3CEB3 /* AskerApplyConcernViewController.swift */,
+				D980696223E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift */,
+				D940F64823520C4900000230 /* AskerDetailRequestViewController.swift */,
+			);
+			path = flow;
+			sourceTree = "<group>";
+		};
+		D980696823E2B2B10082B6C5 /* concernList */ = {
+			isa = PBXGroup;
+			children = (
+				D9639B0E23D5874E00EEF9E9 /* RequestConcernCollectionViewCell.swift */,
+				D9639B0F23D5874E00EEF9E9 /* RequestConcernCollectionViewCell.xib */,
+				D98898D223D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.swift */,
+				D98898D323D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.xib */,
+				D98898D623D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift */,
+				D98898D723D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.xib */,
+				D9CC1A39245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift */,
+				D9CC1A3A245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib */,
+			);
+			path = concernList;
+			sourceTree = "<group>";
+		};
+		D980696923E2B2BC0082B6C5 /* willsonerList */ = {
+			isa = PBXGroup;
+			children = (
+				D980696423E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift */,
+				D980696523E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.xib */,
+				D980696A23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.swift */,
+				D980696B23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.xib */,
+				D980696E23E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.swift */,
+				D980696F23E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.xib */,
+			);
+			path = willsonerList;
+			sourceTree = "<group>";
+		};
+		D9839353243077E400049EC3 /* 당신의고민은무엇인가요? */ = {
+			isa = PBXGroup;
+			children = (
+				D983934B243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.swift */,
+				D983934C243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.xib */,
+			);
+			name = "당신의고민은무엇인가요?";
+			path = "당신의고민은무엇인가요?";
+			sourceTree = "<group>";
+		};
+		D9839354243077EF00049EC3 /* 주제별고민 */ = {
+			isa = PBXGroup;
+			children = (
+				D983934F243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.swift */,
+				D9839350243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.xib */,
+			);
+			name = "주제별고민";
+			path = "주제별고민";
+			sourceTree = "<group>";
+		};
+		D9839355243077F600049EC3 /* 추천윌스너들 */ = {
+			isa = PBXGroup;
+			children = (
+				D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */,
+				D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */,
+				D95FD8AC2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.swift */,
+				D95FD8AD2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.xib */,
+			);
+			name = "추천윌스너들";
+			path = "추천윌스너들";
+			sourceTree = "<group>";
+		};
+		D9839356243077FC00049EC3 /* 후기인터뷰 */ = {
+			isa = PBXGroup;
+			children = (
+				D95FD8B02432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.swift */,
+				D95FD8B12432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.xib */,
+			);
+			name = "후기인터뷰";
+			path = "후기인터뷰";
+			sourceTree = "<group>";
+		};
+		D98393572430780500049EC3 /* 질문자후기 */ = {
+			isa = PBXGroup;
+			children = (
+				D95FD8B424336A9A00497F3F /* AskerHomeReviewCollectionViewCell.swift */,
+				D95FD8B524336A9A00497F3F /* AskerHomeReviewCollectionViewCell.xib */,
+			);
+			name = "질문자후기";
+			path = "질문자후기";
+			sourceTree = "<group>";
+		};
+		D99248C923BB43A700AB7B9A /* services */ = {
+			isa = PBXGroup;
+			children = (
+				D99248CD23BB44E200AB7B9A /* SignUpService.swift */,
+				D92BE63423C322D9002B2786 /* SignInService.swift */,
+				D92B0C1E23EBFB5B00C3D025 /* ChatServices.swift */,
+				D9499EED2407F6C90091F980 /* asker */,
+				D9499EEE2407F6CE0091F980 /* willsoner */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		D99248CA23BB43AF00AB7B9A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D92BE63223C2F337002B2786 /* SignUp.swift */,
+				D92BE63623C322E5002B2786 /* SignIn.swift */,
+				D920C5D423ED2D6100AAB1D1 /* ChatModels.swift */,
+				D9499EEB2407F6360091F980 /* asker */,
+				D9499EEC2407F63F0091F980 /* willsoner */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		D999A1C32342E6D000670263 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				D93AAE6323BB13D300489030 /* views */,
+				D999A1C42342E6E900670263 /* AskerMyPageViewController.swift */,
+				D93AAE6A23BB2D8800489030 /* AskerEditProfileViewController.swift */,
+				D93AAE6423BB237200489030 /* AskerManagePointViewController.swift */,
+				D96BDF872410CE6C00949EB7 /* coupon_history_review */,
+				D96BDF862410CE3D00949EB7 /* table */,
+				D9499EDB2407775A0091F980 /* AskerMypageNoticeViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		D999A1C823449A7000670263 /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				D9A9E04E23491C720011E08C /* views */,
+				D999A1C923449A9500670263 /* AskerChatListViewController.swift */,
+				D9718296237E6B6F0073E343 /* AskerChatRoomViewController.swift */,
+				D96ED08E23822992009642DE /* AskerChatReviewViewController.swift */,
+				D9499EDD2407A95A0091F980 /* AskerChatSelectImageViewController.swift */,
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		D9A9E04E23491C720011E08C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D931BF1923F788EF005797A5 /* ChatList */,
+				D931BF1A23F788F6005797A5 /* ChatRoom */,
+				D9499EDF2407AB760091F980 /* ChatReviewSelectCollectionViewCell.swift */,
+				D9499EE02407AB760091F980 /* ChatReviewSelectCollectionViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D9AD4D812383847600B9391F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE2620235320920054BC04 /* HelperApplicationAuthorizationViewController.swift */,
+				D966B84A2377AE6D00716120 /* AuthenticationIDCardViewController.swift */,
+				D966B84C2377B4B300716120 /* AuthenticationAlertViewController.swift */,
+				D966B84E237BEDD600716120 /* HelperApplicationPhoneNumberViewController.swift */,
+				D966B850237BF24A00716120 /* HelperApplicationEmailViewController.swift */,
+				D9AD4D822383891900B9391F /* Additional */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D9AD4D822383891900B9391F /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD4D7E2383841400B9391F /* HelperApplicationAdditionalAuthViewController.swift */,
+				D9AD4D7C2383815400B9391F /* HelperApplicationExperienceLinkViewController.swift */,
+				D9D9C272238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
+		D9BBE327234930D400F7F896 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBE328234930F800F7F896 /* ConcernListCategoryCollectionViewCell.swift */,
+				D9BBE329234930F800F7F896 /* ConcernListCategoryCollectionViewCell.xib */,
+				D9BBE32E2349911100F7F896 /* ConcernListDetailCategoryTableViewCell.swift */,
+				D9BBE32F2349911100F7F896 /* ConcernListDetailCategoryTableViewCell.xib */,
+				D9F247CD23B8807D003801BE /* ConcernListConcernTableViewCell.swift */,
+				D9F247CE23B8807D003801BE /* ConcernListConcernTableViewCell.xib */,
+				D9F247D123B8A1A7003801BE /* ConcernListDirectionTableViewCell.swift */,
+				D9F247D223B8A1A7003801BE /* ConcernListDirectionTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D9C4E5E524069FAE00D69789 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				D93AAE5F23BB136D00489030 /* MyPageTableViewCell.swift */,
+				D93AAE6023BB136D00489030 /* MyPageTableViewCell.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		D9C4E5EE2406A16A00D69789 /* ticket */ = {
+			isa = PBXGroup;
+			children = (
+				D93AAE6623BB284000489030 /* AskerPointTableViewCell.swift */,
+				D93AAE6723BB284000489030 /* AskerPointTableViewCell.xib */,
+				D9C4E5EA2406A10E00D69789 /* MyPageFooterTableViewCell.swift */,
+				D9C4E5EB2406A10E00D69789 /* MyPageFooterTableViewCell.xib */,
+				D9A087CA2406A6DA000DB08F /* PurchaseListTableViewCell.swift */,
+				D9A087CB2406A6DA000DB08F /* PurchaseListTableViewCell.xib */,
+			);
+			path = ticket;
+			sourceTree = "<group>";
+		};
+		D9CAFBEE2429C0A5005EDD0B /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				D96944722429D747003D07A9 /* RootViewController.swift */,
+				D9CAFBEF2429C0C4005EDD0B /* TutorialConcernViewController.swift */,
+				D969446E2429CC18003D07A9 /* TutorialWillsonerViewController.swift */,
+				D96944742429E861003D07A9 /* TutorialChatViewController.swift */,
+				D96944762429E957003D07A9 /* TutorialCompleteViewController.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		D9CD629C236A83D8009E5703 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D99E1D6C243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift */,
+				D99E1D6D243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib */,
+				D9CD629D236A9361009E5703 /* AskerPayAmountTableViewCell.swift */,
+				D9CD629E236A9361009E5703 /* AskerPayAmountTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D9E9F7AE236EA7E500B37341 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D9839353243077E400049EC3 /* 당신의고민은무엇인가요? */,
+				D9839354243077EF00049EC3 /* 주제별고민 */,
+				D9839355243077F600049EC3 /* 추천윌스너들 */,
+				D9839356243077FC00049EC3 /* 후기인터뷰 */,
+				D98393572430780500049EC3 /* 질문자후기 */,
+				D95FD8B9243376D800497F3F /* 윌스너의이야기 */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D9E9F7C3236ED33100B37341 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D9E9F7C4236ED34C00B37341 /* HelperHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D9EE261223530ED50054BC04 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE261B23531A2F0054BC04 /* views */,
+				D9EE261323530EF00054BC04 /* HelperApplicationCategoryViewController.swift */,
+				D9EE2615235313970054BC04 /* HelperApplicationDetailCategoryViewController.swift */,
+				D9EE2617235316C30054BC04 /* HelperApplicationExperienceViewController.swift */,
+				D9EE26192353185F0054BC04 /* HelperApplicationImageSelectViewController.swift */,
+				D9AD4D812383847600B9391F /* Auth */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D9EE261B23531A2F0054BC04 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE261C23531A4C0054BC04 /* HelperImageCollectionViewCell.swift */,
+				D9EE261D23531A4C0054BC04 /* HelperImageCollectionViewCell.xib */,
+				D9EE26222353220C0054BC04 /* HelperAuthorizationTableViewCell.swift */,
+				D9EE26232353220C0054BC04 /* HelperAuthorizationTableViewCell.xib */,
+				D997F1CB23CED73300380912 /* HelperHashTagTableViewCell.swift */,
+				D997F1CC23CED73300380912 /* HelperHashTagTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D9FB5FF4234F9EB000EDEEB4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D9726D9B23E12B39009A0F0A /* views */,
+				D9C64D2A240B9FF30029139A /* HelperRequestViewController.swift */,
+				D98CB22D238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D9FB5FF9234FA15600EDEEB4 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				D9FB5FFA234FA16900EDEEB4 /* HelperMypageViewController.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		D9FB5FFE234FA24400EDEEB4 /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				D9FB5FFF234FA25900EDEEB4 /* HelperChatListViewController.swift */,
+				D96ED08C2381382B009642DE /* HelperChatRoomViewController.swift */,
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		EA0FC5F39E905A8AE7FC4668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D96BDF902414CF4800949EB7 /* KakaoOpenSDK.framework */,
+				C4AE663FE0791050606F474A /* Pods_Willson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D950E7402325E5DE00658CDD /* Willson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D950E7562325E5DF00658CDD /* Build configuration list for PBXNativeTarget "Willson" */;
+			buildPhases = (
+				329B7147A1594B5479BB8C10 /* [CP] Check Pods Manifest.lock */,
+				D950E73D2325E5DE00658CDD /* Sources */,
+				D950E73E2325E5DE00658CDD /* Frameworks */,
+				D950E73F2325E5DE00658CDD /* Resources */,
+				421D2B429E6771B9AF88D84A /* [CP] Embed Pods Frameworks */,
+				7E544AA9E0DF0EA2267E7F38 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Willson;
+			productName = Willson;
+			productReference = D950E7412325E5DE00658CDD /* Willson.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D950E7392325E5DE00658CDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				TargetAttributes = {
+					D950E7402325E5DE00658CDD = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = D950E73C2325E5DE00658CDD /* Build configuration list for PBXProject "Willson" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D950E7382325E5DE00658CDD;
+			productRefGroup = D950E7422325E5DE00658CDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D950E7402325E5DE00658CDD /* Willson */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D950E73F2325E5DE00658CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96ED08B238115F7009642DE /* ChatAnnouncementTableViewCell.xib in Resources */,
+				D9E9F7B8236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib in Resources */,
+				D95FD8AF2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.xib in Resources */,
+				D980696723E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.xib in Resources */,
+				D9A9E05623491D6B0011E08C /* ChatListRoomTableViewCell.xib in Resources */,
+				D98898D923D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.xib in Resources */,
+				D96BDF8F2410CFB400949EB7 /* AskerCouponTableViewCell.xib in Resources */,
+				D980696D23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.xib in Resources */,
+				D997F1CE23CED73300380912 /* HelperHashTagTableViewCell.xib in Resources */,
+				D93AAE6F23BB36C700489030 /* GoogleService-Info.plist in Resources */,
+				D9C107C523FA3FB100DDB126 /* OtherChatTableViewCell.xib in Resources */,
+				D9ACDECA2407522D001A57F4 /* chatHistoryTableViewCell.xib in Resources */,
+				D980697123E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.xib in Resources */,
+				D96C7AC6240375060014CF4B /* ChatStartTableViewCell.xib in Resources */,
+				D9EE261123530E250054BC04 /* HelperApplication.storyboard in Resources */,
+				D9639B1123D5874E00EEF9E9 /* RequestConcernCollectionViewCell.xib in Resources */,
+				D9499ED6240762330091F980 /* AskerMypageReviewTableViewCell.xib in Resources */,
+				D999A1C723449A5B00670263 /* AskerChat.storyboard in Resources */,
+				D9F247D023B8807D003801BE /* ConcernListConcernTableViewCell.xib in Resources */,
+				D950E7522325E5DF00658CDD /* LaunchScreen.storyboard in Resources */,
+				D9CAFBED2429C013005EDD0B /* Tutorial.storyboard in Resources */,
+				D9CD62A0236A9361009E5703 /* AskerPayAmountTableViewCell.xib in Resources */,
+				D950E76D2325ED7D00658CDD /* HelperTabbar.storyboard in Resources */,
+				D96D3F812337176B0011A840 /* SignUp.storyboard in Resources */,
+				D950E779232E3E1F00658CDD /* AskerRequest.storyboard in Resources */,
+				D9FB5FF3234F9EA800EDEEB4 /* HelperRequest.storyboard in Resources */,
+				D9EE26252353220C0054BC04 /* HelperAuthorizationTableViewCell.xib in Resources */,
+				D9FB5FF8234FA0ED00EDEEB4 /* HelperMypage.storyboard in Resources */,
+				D9CC1A3C245E66B400269BE7 /* RequestDefaultCollectionViewCell.xib in Resources */,
+				D9BBE32B234930F800F7F896 /* ConcernListCategoryCollectionViewCell.xib in Resources */,
+				D9C107BD23FA37AE00DDB126 /* UserChatTableViewCell.xib in Resources */,
+				D931BF1823F788E0005797A5 /* ChatListHeaderTableViewCell.xib in Resources */,
+				D95FD8BD2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.xib in Resources */,
+				D9EE260F23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.xib in Resources */,
+				D95FD8B32432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.xib in Resources */,
+				D99E1D6F243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.xib in Resources */,
+				D9F247D423B8A1A7003801BE /* ConcernListDirectionTableViewCell.xib in Resources */,
+				D950E7692325ED5600658CDD /* Login.storyboard in Resources */,
+				D9A087CD2406A6DA000DB08F /* PurchaseListTableViewCell.xib in Resources */,
+				D95308D12402533E00FEEA35 /* ChatAgreementTableViewCell.xib in Resources */,
+				D9499EDA2407765D0091F980 /* AskerMypageNoticeTableViewCell.xib in Resources */,
+				D950E780232E433500658CDD /* AskerConcernList.storyboard in Resources */,
+				D999A1C22342E66E00670263 /* AskerMypage.storyboard in Resources */,
+				D983934E243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.xib in Resources */,
+				D9EE261F23531A4C0054BC04 /* HelperImageCollectionViewCell.xib in Resources */,
+				D92001E6234E22C700C82F78 /* RequestListCollectionViewCell.xib in Resources */,
+				D9FB5FFD234FA21B00EDEEB4 /* HelperChat.storyboard in Resources */,
+				D95FD8B724336A9A00497F3F /* AskerHomeReviewCollectionViewCell.xib in Resources */,
+				D93AAE6923BB284000489030 /* AskerPointTableViewCell.xib in Resources */,
+				D9E9F7C2236ED2C700B37341 /* HelperHome.storyboard in Resources */,
+				D9839352243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.xib in Resources */,
+				D9107C87235613CB004A3E35 /* AskerPay.storyboard in Resources */,
+				D950E773232E2EC700658CDD /* AskerHome.storyboard in Resources */,
+				D93AAE6223BB136D00489030 /* MyPageTableViewCell.xib in Resources */,
+				D9639B1523D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.xib in Resources */,
+				D9499EE22407AB760091F980 /* ChatReviewSelectCollectionViewCell.xib in Resources */,
+				D950E74F2325E5DF00658CDD /* Assets.xcassets in Resources */,
+				D98898D523D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.xib in Resources */,
+				D9BBE3312349911100F7F896 /* ConcernListDetailCategoryTableViewCell.xib in Resources */,
+				D950E76B2325ED7200658CDD /* AskerTabbar.storyboard in Resources */,
+				D9C4E5ED2406A10E00D69789 /* MyPageFooterTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		329B7147A1594B5479BB8C10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Willson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		421D2B429E6771B9AF88D84A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Willson/Pods-Willson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Willson/Pods-Willson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Willson/Pods-Willson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E544AA9E0DF0EA2267E7F38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Willson/Pods-Willson-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Willson/Pods-Willson-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Willson/Pods-Willson-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D950E73D2325E5DE00658CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BBE32A234930F800F7F896 /* ConcernListCategoryCollectionViewCell.swift in Sources */,
+				D950E771232E1F0300658CDD /* EmailLoginViewController.swift in Sources */,
+				D9BBE3352349A80E00F7F896 /* ConcernListWriteStoryViewController.swift in Sources */,
+				D9BBE32D2349361900F7F896 /* ConcernListFeelingViewController.swift in Sources */,
+				D9F5D5A1240FEB40003A96DC /* WillsonerConcernModels.swift in Sources */,
+				D9F5D59B240FE0CF003A96DC /* AskerConcernModels.swift in Sources */,
+				D96188C92349BF910094D6D9 /* ConcernListAgreementViewController.swift in Sources */,
+				D9FB5FF1234F9C0C00EDEEB4 /* AskerAlreadyMatchingViewController.swift in Sources */,
+				D9718297237E6B6F0073E343 /* AskerChatRoomViewController.swift in Sources */,
+				D95308D02402533E00FEEA35 /* ChatAgreementTableViewCell.swift in Sources */,
+				D9F5D5A5240FEE8B003A96DC /* AskerRequestServices.swift in Sources */,
+				D950E7652325EC7600658CDD /* LoginViewController.swift in Sources */,
+				D92BE63123C2F320002B2786 /* ServerString.swift in Sources */,
+				D96188C52349B2740094D6D9 /* ConcernListSelectHelperViewController.swift in Sources */,
+				D966B851237BF24A00716120 /* HelperApplicationEmailViewController.swift in Sources */,
+				D966B84B2377AE6D00716120 /* AuthenticationIDCardViewController.swift in Sources */,
+				D9EE26242353220C0054BC04 /* HelperAuthorizationTableViewCell.swift in Sources */,
+				D969446F2429CC18003D07A9 /* TutorialWillsonerViewController.swift in Sources */,
+				D9F5D5AB240FF18E003A96DC /* WillsonerConcernServices.swift in Sources */,
+				D920C5D523ED2D6100AAB1D1 /* ChatModels.swift in Sources */,
+				D9839351243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.swift in Sources */,
+				D98898D423D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.swift in Sources */,
+				D9CF2EBA23D41D6600877341 /* FindPasswordViewController.swift in Sources */,
+				D950E77C232E3E7D00658CDD /* AskerDefaultRequestViewController.swift in Sources */,
+				D980696323E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift in Sources */,
+				D9C107BC23FA37AE00DDB126 /* UserChatTableViewCell.swift in Sources */,
+				D9BBE3302349911100F7F896 /* ConcernListDetailCategoryTableViewCell.swift in Sources */,
+				D9CFD687246A80F70012F38A /* SignUpAgeViewController.swift in Sources */,
+				D96D3F84233718050011A840 /* SignUpRootPageViewController.swift in Sources */,
+				D974DA082452E09200C62F35 /* ConcernPopUpAgreementViewController.swift in Sources */,
+				D9639B1023D5874E00EEF9E9 /* RequestConcernCollectionViewCell.swift in Sources */,
+				D99E1D6E243586D5001FE017 /* AskerPayWillsonerCollectionViewCell.swift in Sources */,
+				D98CB22E238EBEAE00F1EC55 /* HelperDetailRequestViewController.swift in Sources */,
+				D9A9E05523491D6B0011E08C /* ChatListRoomTableViewCell.swift in Sources */,
+				D9F247D323B8A1A7003801BE /* ConcernListDirectionTableViewCell.swift in Sources */,
+				D9F5D5A7240FEF7A003A96DC /* AskerConcernServices.swift in Sources */,
+				D9EE2618235316C30054BC04 /* HelperApplicationExperienceViewController.swift in Sources */,
+				D997F1D023CED7D200380912 /* CustomTextField.swift in Sources */,
+				D96944772429E957003D07A9 /* TutorialCompleteViewController.swift in Sources */,
+				D9107C8A23561482004A3E35 /* AskerPayViewController.swift in Sources */,
+				D9CD62A2236A9A80009E5703 /* AskerPayMethodViewController.swift in Sources */,
+				D93BD7B3241F7E6D00FD6A6D /* ConcernListDatePickerPopUpViewController.swift in Sources */,
+				D980697023E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.swift in Sources */,
+				D9EE261423530EF00054BC04 /* HelperApplicationCategoryViewController.swift in Sources */,
+				D96188CD2349C6C60094D6D9 /* AskerSearchHelperFailViewController.swift in Sources */,
+				D977442B23B98A6B00CAA359 /* ConcernListApplyMethodsViewController.swift in Sources */,
+				D93AAE6823BB284000489030 /* AskerPointTableViewCell.swift in Sources */,
+				D9EE260E23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.swift in Sources */,
+				D965A33A23C418AC005BE8AD /* ConcernListDetailCategoryViewController.swift in Sources */,
+				D9F5D5A3240FED46003A96DC /* WillsonerMypageServices.swift in Sources */,
+				D95FD8B22432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.swift in Sources */,
+				D98EC08623B1AE6400B93D6F /* SignUpNicknameViewController.swift in Sources */,
+				D9D9C275238A756D00597D85 /* HelperReceivedRequestViewController.swift in Sources */,
+				D9499ED5240762330091F980 /* AskerMypageReviewTableViewCell.swift in Sources */,
+				D92001E5234E22C700C82F78 /* RequestListCollectionViewCell.swift in Sources */,
+				D96ED08A238115F7009642DE /* ChatAnnouncementTableViewCell.swift in Sources */,
+				D9EE261A2353185F0054BC04 /* HelperApplicationImageSelectViewController.swift in Sources */,
+				D92BE62B23C2D1F7002B2786 /* SignUpPasswordViewController.swift in Sources */,
+				D99E1D7324358C35001FE017 /* AskerPayServices.swift in Sources */,
+				D95FD8BC2433770200497F3F /* AskerHomeWillsonerStoryCollectionViewCell.swift in Sources */,
+				D966B84D2377B4B300716120 /* AuthenticationAlertViewController.swift in Sources */,
+				D94808B023EFCE0700D3CEB3 /* AskerApplyConcernViewController.swift in Sources */,
+				D9499EE12407AB760091F980 /* ChatReviewSelectCollectionViewCell.swift in Sources */,
+				D9639B1423D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.swift in Sources */,
+				D96188CB2349C3360094D6D9 /* ConcernListFinishViewController.swift in Sources */,
+				D93AAE6123BB136D00489030 /* MyPageTableViewCell.swift in Sources */,
+				D9D9C273238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift in Sources */,
+				D96944752429E861003D07A9 /* TutorialChatViewController.swift in Sources */,
+				D9ACDECE24075A8E001A57F4 /* AskerMypageReviewViewController.swift in Sources */,
+				D980696623E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift in Sources */,
+				D9FB5FFB234FA16900EDEEB4 /* HelperMypageViewController.swift in Sources */,
+				D940F64923520C4900000230 /* AskerDetailRequestViewController.swift in Sources */,
+				D9F5D597240FA4CA003A96DC /* AskerMypageServices.swift in Sources */,
+				D96944732429D747003D07A9 /* RootViewController.swift in Sources */,
+				D9F5D5A9240FF0DD003A96DC /* WillsonerRegisterServices.swift in Sources */,
+				D96188C72349B88B0094D6D9 /* ConcernListDirectionViewController.swift in Sources */,
+				D9F5D599240FDCF8003A96DC /* AskerRequestModels.swift in Sources */,
+				D92BE63523C322D9002B2786 /* SignInService.swift in Sources */,
+				D9A087CC2406A6DA000DB08F /* PurchaseListTableViewCell.swift in Sources */,
+				D950E783232E44B800658CDD /* ConcernListCategoryViewController.swift in Sources */,
+				D966B84F237BEDD600716120 /* HelperApplicationPhoneNumberViewController.swift in Sources */,
+				D9ACDECC240755B0001A57F4 /* AskerChatHistoryViewController.swift in Sources */,
+				D96C7AC5240375060014CF4B /* ChatStartTableViewCell.swift in Sources */,
+				D9C64D2B240B9FF30029139A /* HelperRequestViewController.swift in Sources */,
+				D9EE2621235320920054BC04 /* HelperApplicationAuthorizationViewController.swift in Sources */,
+				D92BE63723C322E5002B2786 /* SignIn.swift in Sources */,
+				D98898D823D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift in Sources */,
+				D969447B242A0148003D07A9 /* AskerMainServices.swift in Sources */,
+				D96EEBCA23B4DCEE00BC0C74 /* CustomLabel.swift in Sources */,
+				D9499ED92407765D0091F980 /* AskerMypageNoticeTableViewCell.swift in Sources */,
+				D9AD4D7F2383841400B9391F /* HelperApplicationAdditionalAuthViewController.swift in Sources */,
+				D9FB6000234FA25900EDEEB4 /* HelperChatListViewController.swift in Sources */,
+				D9F5D59D240FE906003A96DC /* AskerMypageModels.swift in Sources */,
+				D98EC08423B1AD8300B93D6F /* SignUpSexAndAgeViewController.swift in Sources */,
+				D99248CE23BB44E200AB7B9A /* SignUpService.swift in Sources */,
+				D999A1CA23449A9500670263 /* AskerChatListViewController.swift in Sources */,
+				D9499EDE2407A95A0091F980 /* AskerChatSelectImageViewController.swift in Sources */,
+				D950E74D2325E5DE00658CDD /* Willson.xcdatamodeld in Sources */,
+				D96D4A0B243C1F2B006C6F70 /* FirebaseAuthentication.swift in Sources */,
+				D9639B0D23D5856300EEF9E9 /* AskerRequestConcernListViewController.swift in Sources */,
+				D952AB9723B4515C000B1615 /* CustomView.swift in Sources */,
+				D983934D243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.swift in Sources */,
+				D9FB5FEF234F9BE300EDEEB4 /* AskerConfirmTalkViewController.swift in Sources */,
+				D96EEBC823B4D60100BC0C74 /* CustomImageView.swift in Sources */,
+				D96BDF892410CEB400949EB7 /* AskerCouponViewController.swift in Sources */,
+				D9ACDEC92407522D001A57F4 /* chatHistoryTableViewCell.swift in Sources */,
+				D96ED08D2381382B009642DE /* HelperChatRoomViewController.swift in Sources */,
+				D9FB5FF6234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift in Sources */,
+				D950E7452325E5DE00658CDD /* AppDelegate.swift in Sources */,
+				D96D3F862337188C0011A840 /* SignUpEmailViewController.swift in Sources */,
+				D9CFD683246A6D6E0012F38A /* AskerPayFinalViewController.swift in Sources */,
+				D93AAE6B23BB2D8800489030 /* AskerEditProfileViewController.swift in Sources */,
+				D9F247CF23B8807D003801BE /* ConcernListConcernTableViewCell.swift in Sources */,
+				D950E77E232E411A00658CDD /* AskerSearchingRequestViewController.swift in Sources */,
+				D96ED08F23822992009642DE /* AskerChatReviewViewController.swift in Sources */,
+				D9CD629F236A9361009E5703 /* AskerPayAmountTableViewCell.swift in Sources */,
+				D96BDF8E2410CFB400949EB7 /* AskerCouponTableViewCell.swift in Sources */,
+				D999A1C52342E6E900670263 /* AskerMyPageViewController.swift in Sources */,
+				D9CC1A3B245E66B400269BE7 /* RequestDefaultCollectionViewCell.swift in Sources */,
+				D9D9B11023AF71F100143541 /* ConcernListSelectDateTimeViewController.swift in Sources */,
+				D9EE2616235313970054BC04 /* HelperApplicationDetailCategoryViewController.swift in Sources */,
+				D9C4E5EC2406A10E00D69789 /* MyPageFooterTableViewCell.swift in Sources */,
+				D931BF1723F788E0005797A5 /* ChatListHeaderTableViewCell.swift in Sources */,
+				D96188CF2349C8A10094D6D9 /* AskerReceiveRequestViewController.swift in Sources */,
+				D9E9F7C5236ED34C00B37341 /* HelperHomeViewController.swift in Sources */,
+				D99E1D7124358B45001FE017 /* AskerPayModels.swift in Sources */,
+				D9EE261E23531A4C0054BC04 /* HelperImageCollectionViewCell.swift in Sources */,
+				D9499EDC2407775A0091F980 /* AskerMypageNoticeViewController.swift in Sources */,
+				D950E777232E2EF000658CDD /* AskerHomeViewController.swift in Sources */,
+				D92B0C1F23EBFB5B00C3D025 /* ChatServices.swift in Sources */,
+				D9CAFBF02429C0C4005EDD0B /* TutorialConcernViewController.swift in Sources */,
+				D96EEBC623B4795300BC0C74 /* CustomButton.swift in Sources */,
+				D95FD8B624336A9A00497F3F /* AskerHomeReviewCollectionViewCell.swift in Sources */,
+				D9F5D59F240FEACB003A96DC /* WillsonerRegisterModels.swift in Sources */,
+				D9077B8A240E321400A0C9FD /* WillsonerMypageModels.swift in Sources */,
+				D9AD4D7D2383815400B9391F /* HelperApplicationExperienceLinkViewController.swift in Sources */,
+				D997F1CD23CED73300380912 /* HelperHashTagTableViewCell.swift in Sources */,
+				D95FD8AE2432DB2A00497F3F /* AskerHomeRecommandWillsonerCollectionViewCell.swift in Sources */,
+				D9E9F7B7236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift in Sources */,
+				D980696C23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.swift in Sources */,
+				D9C107C423FA3FB100DDB126 /* OtherChatTableViewCell.swift in Sources */,
+				D9694479242A0043003D07A9 /* AskerMainModels.swift in Sources */,
+				D93AAE6523BB237200489030 /* AskerManagePointViewController.swift in Sources */,
+				D9CFD685246A77430012F38A /* AskerSearchingWillsonerViewController.swift in Sources */,
+				D92BE63323C2F337002B2786 /* SignUp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D950E7502325E5DF00658CDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D950E7512325E5DF00658CDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D950E7542325E5DF00658CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D950E7552325E5DF00658CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D950E7572325E5DF00658CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF19E405A22D6176D3E23606 /* Pods-Willson.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Willson/Willson.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.7;
+				DEVELOPMENT_TEAM = 3R397P7C4Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AlamofireObjectMapper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DLRadioButton\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FSCalendar\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestoreSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftGifOrigin\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_ROOT}/KakaoOpenSDK\"",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Willson/supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.willson;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Willson/supporting files/KakaoOpenSDK-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D950E7582325E5DF00658CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43A2E00858F1BD2BD4BAA6B /* Pods-Willson.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Willson/Willson.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.7;
+				DEVELOPMENT_TEAM = 3R397P7C4Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AlamofireObjectMapper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DLRadioButton\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FSCalendar\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestoreSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftGifOrigin\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_ROOT}/KakaoOpenSDK\"",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Willson/supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.willson;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Willson/supporting files/KakaoOpenSDK-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D950E73C2325E5DE00658CDD /* Build configuration list for PBXProject "Willson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D950E7542325E5DF00658CDD /* Debug */,
+				D950E7552325E5DF00658CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D950E7562325E5DF00658CDD /* Build configuration list for PBXNativeTarget "Willson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D950E7572325E5DF00658CDD /* Debug */,
+				D950E7582325E5DF00658CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D950E74B2325E5DE00658CDD /* Willson.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D950E74C2325E5DE00658CDD /* Willson.xcdatamodel */,
+			);
+			currentVersion = D950E74C2325E5DE00658CDD /* Willson.xcdatamodel */;
+			path = Willson.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D950E7392325E5DE00658CDD /* Project object */;
+}

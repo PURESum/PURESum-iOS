@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U3w-N7-fqH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AskerMyPageViewController-->
+        <scene sceneID="bua-ce-JYD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AskerMypage" referencedIdentifier="AskerMyPageViewController" id="kQv-P3-ZOv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="c4B-kX-Uar"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jqa-N3-dde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="236"/>
+        </scene>
+        <!--AskerApplyConcernViewController-->
+        <scene sceneID="sao-Fd-NRw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AskerRequest" referencedIdentifier="AskerApplyConcernViewController" id="qfJ-yr-MqJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lbe-Pm-xFB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmb-HB-Tpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.7826086956522" y="-508.25892857142856"/>
+        </scene>
+        <!--AskerHomeViewController-->
+        <scene sceneID="877-qa-efi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AskerHome" referencedIdentifier="AskerHomeViewController" id="QBU-wZ-ytb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="k3f-1a-gVc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hf3-E3-3rO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326" y="-508"/>
+        </scene>
+        <!--AskerChatListViewController-->
+        <scene sceneID="QA6-XE-rFc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AskerChat" referencedIdentifier="AskerChatListViewController" id="TGz-OT-WQQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bEY-bz-4p1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eza-F0-hzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326" y="236"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="n9Q-cL-z7B">
+            <objects>
+                <tabBarController storyboardIdentifier="AskerTabbarController" id="U3w-N7-fqH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="ljO-6Q-H8P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="darkBlueGrey"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="darkBlueGrey"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="v9R-pY-RkH" kind="relationship" relationship="viewControllers" id="Kbf-9N-cGc"/>
+                        <segue destination="OIG-L7-GhS" kind="relationship" relationship="viewControllers" id="f69-Se-07Q"/>
+                        <segue destination="mZq-Rl-ovX" kind="relationship" relationship="viewControllers" id="fce-hg-CXK"/>
+                        <segue destination="2W1-pG-dVI" kind="relationship" relationship="viewControllers" id="I4r-c8-H5B"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCR-3Q-tPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-152"/>
+        </scene>
+        <!--고민신청-->
+        <scene sceneID="KDP-iN-7XQ">
+            <objects>
+                <navigationController storyboardIdentifier="AskerApplyConcernNavi" automaticallyAdjustsScrollViewInsets="NO" id="OIG-L7-GhS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="고민신청" image="icTabListGray" selectedImage="icTabListNavy" id="yUK-S1-PMu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bdb-4B-ZIJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qfJ-yr-MqJ" kind="relationship" relationship="rootViewController" id="TuJ-Qc-69d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4v-4i-Vnw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="-507.58928571428567"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="IRA-xF-X8M">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="v9R-pY-RkH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="홈" image="icTabHomeGray" selectedImage="icTabHomeNavy" id="vrB-lS-Rfs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bHw-T5-BRn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QBU-wZ-ytb" kind="relationship" relationship="rootViewController" id="xp8-re-JF8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vS4-5F-JzQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-959" y="-508"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="uZL-tF-ig7">
+            <objects>
+                <navigationController storyboardIdentifier="AskerMypageNavi" automaticallyAdjustsScrollViewInsets="NO" id="2W1-pG-dVI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="icTabMyGray" selectedImage="icTabMyNavy" id="Aeq-J5-81Y"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Y2-NO-Xfc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kQv-P3-ZOv" kind="relationship" relationship="rootViewController" id="pYB-Jt-CK3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKZ-LB-zOL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="236"/>
+        </scene>
+        <!--채팅-->
+        <scene sceneID="pUf-HO-aQA">
+            <objects>
+                <navigationController storyboardIdentifier="AskerChatNavi" automaticallyAdjustsScrollViewInsets="NO" id="mZq-Rl-ovX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="채팅" image="icTabChatGray" selectedImage="icTabChatNavy" id="QYQ-eK-tlK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0rZ-W3-zTJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TGz-OT-WQQ" kind="relationship" relationship="rootViewController" id="dZR-8U-NiW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1b-8A-k44" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-959" y="236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icTabChatGray" width="30" height="30"/>
+        <image name="icTabChatNavy" width="30" height="30"/>
+        <image name="icTabHomeGray" width="30" height="30"/>
+        <image name="icTabHomeNavy" width="30" height="30"/>
+        <image name="icTabListGray" width="30" height="30"/>
+        <image name="icTabListNavy" width="30" height="30"/>
+        <image name="icTabMyGray" width="30" height="30"/>
+        <image name="icTabMyNavy" width="30" height="30"/>
+        <namedColor name="darkBlueGrey">
+            <color red="0.10196078431372549" green="0.14901960784313725" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
