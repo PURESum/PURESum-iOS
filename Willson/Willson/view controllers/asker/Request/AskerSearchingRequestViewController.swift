@@ -22,9 +22,7 @@ class AskerSearchingRequestViewController: UIViewController {
     // MARK: - properties
     var timeSeconds: Int = 0
     var timer = Timer()
-    
-    var concernIndex: Int?
-    
+
     // predict response model
     var predict: Predict?
     // 재희 매칭 response model
@@ -88,10 +86,11 @@ class AskerSearchingRequestViewController: UIViewController {
             print("POST /predict 통신 성공")
             print(String(describing: self.predict))
             
-            guard let concernIndex: Int = self.concernIndex else {
-                print("matching(): concernIndex 할당 오류")
+            guard let concernIndex: Int = UserDefaults.standard.value(forKey: "concernIndex") as? Int else {
+                print("matching() - concernIndex 할당 오류")
                 return
             }
+            print("matching() - concernIndex: \(concernIndex)")
             
             var willsonerIndex: [Int] = []
             if let counselors = self.predict?.data.predict.counselor {
@@ -100,15 +99,16 @@ class AskerSearchingRequestViewController: UIViewController {
                 }
                 
                 guard let willsonerIndex: [Int] = willsonerIndex else {
-                    print("willsonerIndex 할당 오류")
+                    print("matching() - willsonerIndex 할당 오류")
                     return
                 }
-                print("willsonerIndex: \(willsonerIndex)")
+                print("matching() - willsonerIndex: \(willsonerIndex)")
                 
                 AskerRequestServices.shared.postMatchPredict(concernIndex: concernIndex, willsonerIndex: willsonerIndex) { matchPredict in
                     self.matchPredict = matchPredict
                     print("========")
                     print("POST 재희 매칭 통신 성공")
+                    print(self.matchPredict)
                     self.timeLimitStop()
                 }
             }
@@ -135,7 +135,6 @@ class AskerSearchingRequestViewController: UIViewController {
             print("AskerApplyConcernViewController 할당 오류")
             return
         }
-        vc.concernIndex = self.concernIndex
         
         let tabbarStoryboard = UIStoryboard(name: "AskerTabbar", bundle: nil)
         guard let tabBarController: UITabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "AskerTabbarController") as? UITabBarController else { return }

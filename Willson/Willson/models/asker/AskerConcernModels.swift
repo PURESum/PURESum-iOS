@@ -72,7 +72,7 @@ struct ConcernSubcategory: Codable {
 // MARK: - ConcernMatch
 struct ConcernMatch: Codable {
     let code, message: String
-    let data: [ConcernMatchRows]
+    let data: [ConcernMatchRows]?
 }
 
 // MARK: - ConcernMatchRows

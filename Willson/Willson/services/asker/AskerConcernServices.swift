@@ -11,7 +11,7 @@ struct AskerConcernServices {
     static let shared = AskerConcernServices()
     
     // 재히 리스트보기
-    // [GET] ~/api/v1/asker/list/matches/:concern_idx
+    // [GET] /asker/list/matches/:concern_idx
     func getWillsonerList(concernIndex: Int, completion: @escaping (ConcernMatch) -> Void) {
         // 헤더 타입 및 토큰 할당
         guard let token = UserDefaults.standard.value(forKey: "token") else {
@@ -22,7 +22,7 @@ struct AskerConcernServices {
         let headers = ["Content-Type": "application/json",
                       "x-token": "\(token)"]
         // GET 통신
-        Alamofire.request("\(SERVER_URL)/api/v1/asker/list/matches/\(concernIndex)",
+        Alamofire.request("\(SERVER_URL)/asker/list/matches/\(concernIndex)",
             method: .get,
             parameters: nil,
             encoding: JSONEncoding.default,

@@ -43,7 +43,7 @@ struct AskerRequestServices {
     }
     
     // 재희 매칭
-    // [POST] ~/api/v1/asker/list/matches/:concern_idx
+    // [POST] /asker/list/matches/:concern_idx
     func postMatchPredict(concernIndex: Int, willsonerIndex: [Int], completion: @escaping(MatchPredict) -> Void) {
         // 파라미터와 헤더 타입, 토큰 할당
         let params = ["willsoner_idx": willsonerIndex]
@@ -55,7 +55,7 @@ struct AskerRequestServices {
         let headers = ["Content-Type": "application/json",
                       "x-token": "\(token)"]
         // POST 통신
-        Alamofire.request("\(SERVER_URL)/api/v1/asker/list/matches/\(concernIndex)",
+        Alamofire.request("\(SERVER_URL)/asker/list/matches/\(concernIndex)",
             method: .post,
             parameters: params,
             encoding: JSONEncoding.default,

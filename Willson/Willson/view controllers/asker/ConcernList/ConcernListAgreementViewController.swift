@@ -83,8 +83,8 @@ class ConcernListAgreementViewController: UIViewController {
                 print("concern index 할당 오류")
                 return
             }
-            // 고민 인덱스 넘기기
-            vc.concernIndex = concernIndex
+            // 고민 인덱스 UserDefault 저장
+            UserDefaults.standard.set(concernIndex, forKey: "concernIndex")
             
             self.navigationController?.show(vc, sender: nil)
         }

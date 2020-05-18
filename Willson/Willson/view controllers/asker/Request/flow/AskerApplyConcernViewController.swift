@@ -10,19 +10,12 @@ import UIKit
 class AskerApplyConcernViewController: UIViewController {
 
     // MARK: - properties
-    // 고민 인덱스
-    var concernIndex: Int?
-    
     // 고민에 대한 윌스너 매치 목록 response model
     var concernMatch: ConcernMatch?
     var concernMatchRows: [ConcernMatchRows]?
     
     // collectionview cell identifier
-    let cellIdentifier: String = "RequestConcernCollectionViewCell"
-    let headerViewIdentifier: String = "RequestConcernHeaderCollectionReusableView"
-    let footerViewIdentifier: String = "RequestConcernFooterCollectionReusableView"
-    
-    let defaultCellIdentifier: String = "RequestDefaultCollectionViewCell"
+    let cellIdentifier: String = "RequestWillsonerListCollectionViewCell"
     
     // MARK: - IBOutlet
     @IBOutlet weak var countLabel: UILabel!
@@ -72,10 +65,11 @@ class AskerApplyConcernViewController: UIViewController {
 
     // MARK: - Methods
     private func getWillsonerList() {
-        guard let concernIndex: Int = self.concernIndex else {
+        guard let concernIndex: Int = UserDefaults.standard.value(forKey: "concernIndex") as? Int else {
             print("getWillsonerList(): concernIndex 할당 오류")
             return
         }
+        print("getWillsonerList() - concernIndex: \(concernIndex)")
         
         AskerConcernServices.shared.getWillsonerList(concernIndex: concernIndex) { concernMatch in
             self.concernMatch = concernMatch
@@ -85,8 +79,16 @@ class AskerApplyConcernViewController: UIViewController {
             print("재히 고민 리스트 통신 성공 !")
             print(self.concernMatch)
             
-            self.countLabel.text = "3"
-            self.collectionView.reloadData()
+            if let count = self.concernMatchRows?.count {
+                self.countLabel.text = "3"
+                self.collectionView.isHidden = false
+                self.contentView.isHidden = true
+                self.collectionView.reloadData()
+            } else {
+                self.countLabel.text = "0"
+                self.collectionView.isHidden = true
+                self.contentView.isHidden = false
+            }
         }
     }
     
