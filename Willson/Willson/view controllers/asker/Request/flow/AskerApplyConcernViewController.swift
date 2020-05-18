@@ -205,10 +205,6 @@ extension AskerApplyConcernViewController: UICollectionViewDelegate {
             return
         }
         */
-        guard let searchingVC: AskerSearchingWillsonerViewController = UIStoryboard(name: "AskerRequest", bundle: nil).instantiateViewController(withIdentifier: "AskerSearchingWillsonerViewController") as? AskerSearchingWillsonerViewController else {
-            print("did selected itme at: AskerSearchingWillsonerViewController 할당 오류")
-            return
-        }
         guard let listVC: AskerRequestWillsonerListViewController = UIStoryboard(name: "AskerRequest", bundle: nil).instantiateViewController(withIdentifier: "AskerRequestWillsonerListViewController") as? AskerRequestWillsonerListViewController else {
             print("didSelectItemAt: AskerRequestWillsonerListViewController 할당 오류")
             return
@@ -236,12 +232,6 @@ extension AskerApplyConcernViewController: UICollectionViewDelegate {
                         listVC.index = index
                         self.navigationController?.pushViewController(listVC, animated: true)
                     }
-                }
-                else {
-                    searchingVC.remainingSeconds = remainingSeconds
-                    // self.navigationController?.pushViewController(searchingVC, animated: true)
-                    searchingVC.modalPresentationStyle = .overFullScreen
-                    self.present(searchingVC, animated: false, completion: nil)
                 }
             }
         case 1:

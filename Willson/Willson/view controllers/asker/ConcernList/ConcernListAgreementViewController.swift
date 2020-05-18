@@ -86,21 +86,7 @@ class ConcernListAgreementViewController: UIViewController {
             // 고민 인덱스 넘기기
             vc.concernIndex = concernIndex
             
-            // 화면 이동
-            let tabbarStoryboard = UIStoryboard(name: "AskerTabbar", bundle: nil)
-            guard let tabBarController: UITabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "AskerTabbarController") as? UITabBarController else { return }
-            
-            tabBarController.selectedIndex = 1
-            
-            let navi = UIStoryboard(name: "AskerTabbar", bundle: nil).instantiateViewController(withIdentifier: "AskerApplyConcernNavi")
-            
-            tabBarController.viewControllers?[1] = navi
-            tabBarController.tabBar.items?[1].image = UIImage(named: "icTabListGray")
-            tabBarController.tabBar.items?[1].selectedImage = UIImage(named: "icTabListNavy")
-            tabBarController.tabBar.items?[1].title = "상담신청"
-            
-            tabBarController.modalPresentationStyle = .fullScreen
-            self.present(tabBarController, animated: true)
+            self.navigationController?.show(vc, sender: nil)
         }
     }
     
