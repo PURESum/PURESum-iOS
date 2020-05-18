@@ -154,6 +154,8 @@
 		D9DF967B247281DF00D96BB6 /* ConcernListCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9DF9675247281DE00D96BB6 /* ConcernListCategoryCollectionViewCell.xib */; };
 		D9DF968124729F2A00D96BB6 /* Predict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF968024729F2A00D96BB6 /* Predict.swift */; };
 		D9DF968324729FA300D96BB6 /* PredictServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF968224729FA300D96BB6 /* PredictServices.swift */; };
+		D9DF96852473051C00D96BB6 /* WillsonerConcernModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF96842473051C00D96BB6 /* WillsonerConcernModels.swift */; };
+		D9DF96872473054700D96BB6 /* WillsonerConcernServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF96862473054700D96BB6 /* WillsonerConcernServices.swift */; };
 		D9E9F7B7236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */; };
 		D9E9F7B8236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */; };
 		D9E9F7C2236ED2C700B37341 /* HelperHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */; };
@@ -342,6 +344,8 @@
 		D9DF9675247281DE00D96BB6 /* ConcernListCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcernListCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9DF968024729F2A00D96BB6 /* Predict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
 		D9DF968224729FA300D96BB6 /* PredictServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictServices.swift; sourceTree = "<group>"; };
+		D9DF96842473051C00D96BB6 /* WillsonerConcernModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerConcernModels.swift; sourceTree = "<group>"; };
+		D9DF96862473054700D96BB6 /* WillsonerConcernServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerConcernServices.swift; sourceTree = "<group>"; };
 		D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeRecommandCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeRecommandCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperHome.storyboard; sourceTree = "<group>"; };
@@ -466,6 +470,7 @@
 			children = (
 				D9F5D59E240FEACB003A96DC /* WillsonerRegisterModels.swift */,
 				D9077B89240E321400A0C9FD /* WillsonerMypageModels.swift */,
+				D9DF96842473051C00D96BB6 /* WillsonerConcernModels.swift */,
 			);
 			path = willsoner;
 			sourceTree = "<group>";
@@ -486,6 +491,7 @@
 			children = (
 				D9F5D5A8240FF0DD003A96DC /* WillsonerRegisterServices.swift */,
 				D9F5D5A2240FED45003A96DC /* WillsonerMypageServices.swift */,
+				D9DF96862473054700D96BB6 /* WillsonerConcernServices.swift */,
 			);
 			path = willsoner;
 			sourceTree = "<group>";
@@ -1250,6 +1256,7 @@
 				D980697023E2B5460082B6C5 /* WillsonerListFooterCollectionReusableView.swift in Sources */,
 				D9EE261423530EF00054BC04 /* HelperApplicationCategoryViewController.swift in Sources */,
 				D93AAE6823BB284000489030 /* AskerPointTableViewCell.swift in Sources */,
+				D9DF96872473054700D96BB6 /* WillsonerConcernServices.swift in Sources */,
 				D9EE260E23530C1A0054BC04 /* AskerRequestReviewCollectionViewCell.swift in Sources */,
 				D9F5D5A3240FED46003A96DC /* WillsonerMypageServices.swift in Sources */,
 				D95FD8B22432E4AA00497F3F /* AskerHomeInterviewCollectionViewCell.swift in Sources */,
@@ -1285,6 +1292,7 @@
 				D96C7AC5240375060014CF4B /* ChatStartTableViewCell.swift in Sources */,
 				D9EE2621235320920054BC04 /* HelperApplicationAuthorizationViewController.swift in Sources */,
 				D92BE63723C322E5002B2786 /* SignIn.swift in Sources */,
+				D9DF96852473051C00D96BB6 /* WillsonerConcernModels.swift in Sources */,
 				D98898D823D943F200FFC8AA /* RequestConcernFooterCollectionReusableView.swift in Sources */,
 				D969447B242A0148003D07A9 /* AskerMainServices.swift in Sources */,
 				D96EEBCA23B4DCEE00BC0C74 /* CustomLabel.swift in Sources */,

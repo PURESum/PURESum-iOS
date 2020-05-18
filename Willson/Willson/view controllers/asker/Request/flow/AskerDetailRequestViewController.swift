@@ -25,6 +25,9 @@ class AskerDetailRequestViewController: UIViewController {
     // 이전 화면에서 받아오기
     var matchIndex: Int?
     
+    // 윌스너 수락
+    var select: WillsonerRealtimeSelect?
+    
     // 윌스너 선택 (최종 수락) response model
     var matchSuccess: MatchSuccess?
     var matchSuccessData: MatchSuccessData?
@@ -85,57 +88,65 @@ class AskerDetailRequestViewController: UIViewController {
         }
         
         // PATCH 통신
-        AskerConcernServices.shared.patchMatchSuccess(matchIndex: matchIndex) { matchSuccess in
-            self.matchSuccess = matchSuccess
+        WillsonerConcernServices.shared.patchSelect(matchIndex: matchIndex) { select in
+            self.select = select
+            print(self.select ?? "")
+            print("==============")
+            print("매칭 수락 통신 성공")
             
-            print("====================")
-            print("윌스너 선택 (최종 수락) 통신 성공")
-            
-            // 채팅방 개설
-            // room key
-            guard let roomkey = self.matchSuccess?.data?.roomkey else {
-                print("self.matchSuccess?.data.roomkey 할당 오류")
-                return
-            }
-            
-            // Add a new document with a generated ID
-            var ref: DocumentReference? = nil
-            ref = self.db.collection("chatrooms").document(roomkey).collection("chats").document("start")
-            ref?.setData([
-                "uid" : "start",
-                "message" : "",
-                "timeStamp" : FieldValue.serverTimestamp()
-            ]) { err in
-                if let err = err {
-                    print("Error adding document: \(err)")
-                    // 토스트 띄우기
-                    self.view.makeToast("실패!",
-                                        duration: 3.0,
-                                        position: .bottom,
-                                         style: ToastStyle())
-                } else {
-                    print("Document added with ID: \(ref!.documentID)")
+            // PATCH 통신
+            AskerConcernServices.shared.patchMatchSuccess(matchIndex: matchIndex) { matchSuccess in
+                self.matchSuccess = matchSuccess
+                print(self.matchSuccess)
+                print("====================")
+                print("윌스너 선택 (최종 수락) 통신 성공")
+                
+                // 채팅방 개설
+                // room key
+                guard let roomkey = self.matchSuccess?.data?.roomkey else {
+                    print("self.matchSuccess?.data.roomkey 할당 오류")
+                    return
                 }
+                
+                // Add a new document with a generated ID
+                var ref: DocumentReference? = nil
+                ref = self.db.collection("chatrooms").document(roomkey).collection("chats").document("start")
+                ref?.setData([
+                    "uid" : "start",
+                    "message" : "",
+                    "timeStamp" : FieldValue.serverTimestamp()
+                ]) { err in
+                    if let err = err {
+                        print("Error adding document: \(err)")
+                        // 토스트 띄우기
+                        self.view.makeToast("실패!",
+                                            duration: 3.0,
+                                            position: .bottom,
+                                             style: ToastStyle())
+                    } else {
+                        print("Document added with ID: \(ref!.documentID)")
+                    }
+                }
+                
+                /*
+                // 토스트 띄우기
+                self.view.makeToast("대화 성공!",
+                                    duration: 3.0,
+                                    position: .bottom,
+                                     style: ToastStyle())
+                */
+                
+                // 화면 이동
+                guard let vc: AskerConfirmTalkViewController = UIStoryboard(name: "AskerRequest", bundle: nil).instantiateViewController(withIdentifier: "AskerConfirmTalkViewController") as? AskerConfirmTalkViewController else {
+                    print("AskerConfirmTalkViewController 할당 오류")
+                    return
+                }
+                
+                vc.matchSuccessData = self.matchSuccessData
+                
+                vc.modalPresentationStyle = .overFullScreen
+                self.present(vc, animated: false)
             }
-            
-            /*
-            // 토스트 띄우기
-            self.view.makeToast("대화 성공!",
-                                duration: 3.0,
-                                position: .bottom,
-                                 style: ToastStyle())
-            */
-            
-            // 화면 이동
-            guard let vc: AskerConfirmTalkViewController = UIStoryboard(name: "AskerRequest", bundle: nil).instantiateViewController(withIdentifier: "AskerConfirmTalkViewController") as? AskerConfirmTalkViewController else {
-                print("AskerConfirmTalkViewController 할당 오류")
-                return
-            }
-            
-            vc.matchSuccessData = self.matchSuccessData
-            
-            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: false)
         }
     }
     

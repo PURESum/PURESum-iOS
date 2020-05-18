@@ -158,9 +158,10 @@ struct MatchSuccess: Codable {
 
 // MARK: - MatchSuccessData
 struct MatchSuccessData: Codable {
-    let createdAt, updatedAt, idx: Int
-    let status, roomkey: String
-    let concernIdx, willsonerIdx: Int
+    let createdAt, updatedAt, idx: Int?
+    let status: String?
+    let roomkey: String
+    let concernIdx, willsonerIdx: Int?
     let dateIdx: Int?
 
     enum CodingKeys: String, CodingKey {
