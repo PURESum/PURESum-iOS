@@ -10,9 +10,9 @@ import Alamofire
 struct AskerConcernServices {
     static let shared = AskerConcernServices()
     
-    // 받은 요청 - 고민 목록
-    // GET asker/list/concerns
-    func getConcerns(completion: @escaping (Concern) -> Void) {
+    // 재히 리스트보기
+    // [GET] ~/api/v1/asker/list/matches/:concern_idx
+    func getWillsonerList(concernIndex: Int, completion: @escaping (ConcernMatch) -> Void) {
         // 헤더 타입 및 토큰 할당
         guard let token = UserDefaults.standard.value(forKey: "token") else {
             print("===================")
@@ -22,38 +22,7 @@ struct AskerConcernServices {
         let headers = ["Content-Type": "application/json",
                       "x-token": "\(token)"]
         // GET 통신
-        Alamofire.request("\(SERVER_URL)/asker/list/concerns",
-            method: .get,
-            parameters: nil,
-            encoding: JSONEncoding.default,
-            headers: headers).responseData { dataResponse in
-                switch dataResponse.result {
-                case .success(let data):
-                    do {
-                        let concerns = try JSONDecoder().decode(Concern.self, from: data)
-                        completion(concerns)
-                    } catch {
-                        print("Got and error: \(error)")
-                    }
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-        }
-    }
-    
-    // 질문자 실시간 윌스너 리스트
-    // GET /asker/list/concerns/realtime/:concern_idx
-    func getRealtimeWillsonerList(concernIndex: Int, completion: @escaping (ConcernMatch) -> Void) {
-        // 헤더 타입 및 토큰 할당
-        guard let token = UserDefaults.standard.value(forKey: "token") else {
-            print("===================")
-            print("UserDefaults - token 할당 오류")
-            return
-        }
-        let headers = ["Content-Type": "application/json",
-                      "x-token": "\(token)"]
-        // GET 통신
-        Alamofire.request("\(SERVER_URL)/asker/list/concerns/realtime/\(concernIndex)",
+        Alamofire.request("\(SERVER_URL)/api/v1/asker/list/matches/\(concernIndex)",
             method: .get,
             parameters: nil,
             encoding: JSONEncoding.default,

@@ -98,7 +98,6 @@
 		D96EEBCA23B4DCEE00BC0C74 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96EEBC923B4DCEE00BC0C74 /* CustomLabel.swift */; };
 		D9718297237E6B6F0073E343 /* AskerChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9718296237E6B6F0073E343 /* AskerChatRoomViewController.swift */; };
 		D974DA082452E09200C62F35 /* ConcernPopUpAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974DA072452E09200C62F35 /* ConcernPopUpAgreementViewController.swift */; };
-		D980696323E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980696223E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift */; };
 		D980696623E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980696423E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift */; };
 		D980696723E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D980696523E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.xib */; };
 		D980696C23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980696A23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.swift */; };
@@ -285,7 +284,6 @@
 		D96EEBC923B4DCEE00BC0C74 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		D9718296237E6B6F0073E343 /* AskerChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerChatRoomViewController.swift; sourceTree = "<group>"; };
 		D974DA072452E09200C62F35 /* ConcernPopUpAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernPopUpAgreementViewController.swift; sourceTree = "<group>"; };
-		D980696223E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerRequestWillsonerListViewController.swift; sourceTree = "<group>"; };
 		D980696423E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWillsonerListCollectionViewCell.swift; sourceTree = "<group>"; };
 		D980696523E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestWillsonerListCollectionViewCell.xib; sourceTree = "<group>"; };
 		D980696A23E2B3130082B6C5 /* WillsonerListHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillsonerListHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
@@ -745,7 +743,6 @@
 			isa = PBXGroup;
 			children = (
 				D94808AF23EFCE0700D3CEB3 /* AskerApplyConcernViewController.swift */,
-				D980696223E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift */,
 				D940F64823520C4900000230 /* AskerDetailRequestViewController.swift */,
 			);
 			path = flow;
@@ -1240,7 +1237,6 @@
 				D98898D423D6A90700FFC8AA /* RequestConcernHeaderCollectionReusableView.swift in Sources */,
 				D9CF2EBA23D41D6600877341 /* FindPasswordViewController.swift in Sources */,
 				D950E77C232E3E7D00658CDD /* AskerDefaultRequestViewController.swift in Sources */,
-				D980696323E2AD910082B6C5 /* AskerRequestWillsonerListViewController.swift in Sources */,
 				D9C107BC23FA37AE00DDB126 /* UserChatTableViewCell.swift in Sources */,
 				D9CFD687246A80F70012F38A /* SignUpAgeViewController.swift in Sources */,
 				D96D3F84233718050011A840 /* SignUpRootPageViewController.swift in Sources */,

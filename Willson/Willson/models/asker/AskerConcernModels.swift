@@ -67,20 +67,12 @@ struct ConcernSubcategory: Codable {
     let category: NameData
 }
 
-// 질문자 실시간 윌스너 리스트
-// GET /asker/list/concern/realtime/:concern_idx
-
+// 재히 리스트보기
+// [GET] ~/api/v1/asker/list/matches/:concern_idx
 // MARK: - ConcernMatch
 struct ConcernMatch: Codable {
     let code, message: String
-    let data: ConcernMatchData?
-}
-
-// MARK: - ConcernMatchData
-struct ConcernMatchData: Codable {
-    let timer: Int
-    let category: String
-    let matches: [ConcernMatchRows]
+    let data: [ConcernMatchRows]
 }
 
 // MARK: - ConcernMatchRows

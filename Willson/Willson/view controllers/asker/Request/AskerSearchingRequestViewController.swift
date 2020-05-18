@@ -89,7 +89,7 @@ class AskerSearchingRequestViewController: UIViewController {
             print(String(describing: self.predict))
             
             guard let concernIndex: Int = self.concernIndex else {
-                print("concernIndex 할당 오류")
+                print("matching(): concernIndex 할당 오류")
                 return
             }
             
@@ -131,6 +131,12 @@ class AskerSearchingRequestViewController: UIViewController {
         timer.invalidate()
         
         // 화면 이동
+        guard let vc = UIStoryboard(name: "AskerRequest", bundle: nil).instantiateViewController(withIdentifier: "AskerApplyConcernViewController") as? AskerApplyConcernViewController else {
+            print("AskerApplyConcernViewController 할당 오류")
+            return
+        }
+        vc.concernIndex = self.concernIndex
+        
         let tabbarStoryboard = UIStoryboard(name: "AskerTabbar", bundle: nil)
         guard let tabBarController: UITabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "AskerTabbarController") as? UITabBarController else { return }
         

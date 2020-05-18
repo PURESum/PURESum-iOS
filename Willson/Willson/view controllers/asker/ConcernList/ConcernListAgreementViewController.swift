@@ -73,7 +73,7 @@ class ConcernListAgreementViewController: UIViewController {
             self.requestComplete = requestComplete
             print(self.requestComplete ?? "")
             
-            // 결제 페이지로 이동
+            // 로딩 화면으로 이동
             guard let vc: AskerSearchingRequestViewController = UIStoryboard(name: "AskerRequest", bundle: nil).instantiateViewController(withIdentifier: "AskerSearchingRequestViewController") as? AskerSearchingRequestViewController else {
                 print("AskerSearchingRequestViewController 할당 오류")
                 return
