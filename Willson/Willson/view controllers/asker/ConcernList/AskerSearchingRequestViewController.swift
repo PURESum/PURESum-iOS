@@ -109,7 +109,7 @@ class AskerSearchingRequestViewController: UIViewController {
                     print("========")
                     print("POST 재희 매칭 통신 성공")
                     print(self.matchPredict)
-                    self.timeLimitStop()
+                    
                 }
             }
         }

@@ -74,7 +74,7 @@ class ConcernListAgreementViewController: UIViewController {
             print(self.requestComplete ?? "")
             
             // 로딩 화면으로 이동
-            guard let vc: AskerSearchingRequestViewController = UIStoryboard(name: "AskerRequest", bundle: nil).instantiateViewController(withIdentifier: "AskerSearchingRequestViewController") as? AskerSearchingRequestViewController else {
+            guard let vc: AskerSearchingRequestViewController = UIStoryboard(name: "AskerConcernList", bundle: nil).instantiateViewController(withIdentifier: "AskerSearchingRequestViewController") as? AskerSearchingRequestViewController else {
                 print("AskerSearchingRequestViewController 할당 오류")
                 return
             }

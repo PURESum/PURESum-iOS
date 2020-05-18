@@ -80,14 +80,16 @@ class AskerApplyConcernViewController: UIViewController {
             print(self.concernMatch)
             
             if let count = self.concernMatchRows?.count {
-                self.countLabel.text = "3"
+                self.countLabel.text = "\(count)"
+                self.view.backgroundColor = .white
                 self.collectionView.isHidden = false
-                self.contentView.isHidden = true
+                
                 self.collectionView.reloadData()
             } else {
+                // 고민 없을 때
                 self.countLabel.text = "0"
+                self.view.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9647058824, blue: 0.9647058824, alpha: 1)
                 self.collectionView.isHidden = true
-                self.contentView.isHidden = false
             }
         }
     }
@@ -114,7 +116,7 @@ extension AskerApplyConcernViewController: UICollectionViewDelegate {
             return
         }
         vc.matchIndex = matchIndex
-        self.navigationController?.show(vc, sender: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -132,6 +134,15 @@ extension AskerApplyConcernViewController: UICollectionViewDataSource {
         guard let cell: RequestWillsonerListCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? RequestWillsonerListCollectionViewCell else {
             print("")
             return UICollectionViewCell()
+        }
+        
+        // 이미지
+        if let urlString = concernMatchRows?[indexPath.item].willsoner.image?.pic {
+            let url = URL(string: urlString)
+            cell.imageView.kf.setImage(with: url)
+        } else {
+            print("setUpViews: urlString 할당 오류")
+            cell.imageView.image = UIImage()
         }
         
         guard let name = concernMatchRows?[indexPath.item].willsoner.asker.nickname else {
@@ -173,6 +184,14 @@ extension AskerApplyConcernViewController: UICollectionViewDataSource {
         }
         cell.hashTagLabel.text = keywordString
         
+        // 별점
+        if let rate = concernMatchRows?[indexPath.item].willsoner.avgRating {
+            if rate == "NaN" {
+                cell.rateLabel.text = "0점"
+            } else {
+                cell.rateLabel.text = "\(rate)점"
+            }
+        }
         return cell
     }
     
