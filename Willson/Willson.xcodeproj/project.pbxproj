@@ -153,6 +153,8 @@
 		D9DF9679247281DF00D96BB6 /* RequestListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF9673247281DE00D96BB6 /* RequestListCollectionViewCell.swift */; };
 		D9DF967A247281DF00D96BB6 /* RequestListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9DF9674247281DE00D96BB6 /* RequestListCollectionViewCell.xib */; };
 		D9DF967B247281DF00D96BB6 /* ConcernListCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9DF9675247281DE00D96BB6 /* ConcernListCategoryCollectionViewCell.xib */; };
+		D9DF968124729F2A00D96BB6 /* Predict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF968024729F2A00D96BB6 /* Predict.swift */; };
+		D9DF968324729FA300D96BB6 /* PredictServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF968224729FA300D96BB6 /* PredictServices.swift */; };
 		D9E9F7B7236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */; };
 		D9E9F7B8236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */; };
 		D9E9F7C2236ED2C700B37341 /* HelperHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */; };
@@ -340,6 +342,8 @@
 		D9DF9673247281DE00D96BB6 /* RequestListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9DF9674247281DE00D96BB6 /* RequestListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestListCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9DF9675247281DE00D96BB6 /* ConcernListCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcernListCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9DF968024729F2A00D96BB6 /* Predict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
+		D9DF968224729FA300D96BB6 /* PredictServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictServices.swift; sourceTree = "<group>"; };
 		D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeRecommandCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeRecommandCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperHome.storyboard; sourceTree = "<group>"; };
@@ -833,6 +837,7 @@
 				D99248CD23BB44E200AB7B9A /* SignUpService.swift */,
 				D92BE63423C322D9002B2786 /* SignInService.swift */,
 				D92B0C1E23EBFB5B00C3D025 /* ChatServices.swift */,
+				D9DF968224729FA300D96BB6 /* PredictServices.swift */,
 				D9499EED2407F6C90091F980 /* asker */,
 				D9499EEE2407F6CE0091F980 /* willsoner */,
 			);
@@ -845,6 +850,7 @@
 				D92BE63223C2F337002B2786 /* SignUp.swift */,
 				D92BE63623C322E5002B2786 /* SignIn.swift */,
 				D920C5D423ED2D6100AAB1D1 /* ChatModels.swift */,
+				D9DF968024729F2A00D96BB6 /* Predict.swift */,
 				D9499EEB2407F6360091F980 /* asker */,
 				D9499EEC2407F63F0091F980 /* willsoner */,
 			);
@@ -1265,6 +1271,7 @@
 				D9639B1423D58D4700EEF9E9 /* RequestConcernHeaderCollectionViewCell.swift in Sources */,
 				D93AAE6123BB136D00489030 /* MyPageTableViewCell.swift in Sources */,
 				D9D9C273238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift in Sources */,
+				D9DF968324729FA300D96BB6 /* PredictServices.swift in Sources */,
 				D96944752429E861003D07A9 /* TutorialChatViewController.swift in Sources */,
 				D9ACDECE24075A8E001A57F4 /* AskerMypageReviewViewController.swift in Sources */,
 				D980696623E2AF820082B6C5 /* RequestWillsonerListCollectionViewCell.swift in Sources */,
@@ -1326,6 +1333,7 @@
 				D96EEBC623B4795300BC0C74 /* CustomButton.swift in Sources */,
 				D95FD8B624336A9A00497F3F /* AskerHomeReviewCollectionViewCell.swift in Sources */,
 				D9F5D59F240FEACB003A96DC /* WillsonerRegisterModels.swift in Sources */,
+				D9DF968124729F2A00D96BB6 /* Predict.swift in Sources */,
 				D9077B8A240E321400A0C9FD /* WillsonerMypageModels.swift in Sources */,
 				D9AD4D7D2383815400B9391F /* HelperApplicationExperienceLinkViewController.swift in Sources */,
 				D997F1CD23CED73300380912 /* HelperHashTagTableViewCell.swift in Sources */,

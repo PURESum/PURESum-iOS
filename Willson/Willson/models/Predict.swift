@@ -1,9 +1,8 @@
 //
 //  Predict.swift
-//  MatchingService
+//  Willson
 //
-//  Created by JHKim on 2020/05/06.
-//  Copyright © 2020 zhi. All rights reserved.
+//  Created by JHKim on 2020/05/18.
 //
 
 import Foundation

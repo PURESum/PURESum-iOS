@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fff-fl-a0b">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfg-rS-0P4" customClass="CustomButton" customModule="Willson" customModuleProvider="target">
                                                 <rect key="frame" x="312" y="78" width="80" height="25"/>
@@ -134,7 +134,7 @@
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tIL-Zp-RPW">
-                                                <rect key="frame" x="0.0" y="309.5" width="414" height="490.5"/>
+                                                <rect key="frame" x="0.0" y="309.5" width="414" height="390.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell contentMode="scaleToFill" restorationIdentifier="MyPageTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyPageTableViewCell" id="CaP-Dp-4NW" customClass="MyPageTableViewCell" customModule="Willson" customModuleProvider="target">
@@ -229,8 +229,8 @@
                                                         <color key="textColor" name="brownishGrey"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ej-kW-g6s">
-                                                        <rect key="frame" x="126.5" y="19" width="19.5" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ej-kW-g6s">
+                                                        <rect key="frame" x="126.5" y="19" width="17.5" height="17"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
                                                         <color key="textColor" name="deepSkyBlue"/>
                                                         <nil key="highlightedColor"/>
@@ -285,7 +285,7 @@
                                             <constraint firstAttribute="trailing" secondItem="nk5-Tp-aP0" secondAttribute="trailing" constant="22" id="cy5-zl-yX9"/>
                                             <constraint firstAttribute="bottom" secondItem="tIL-Zp-RPW" secondAttribute="bottom" id="dQN-15-7FY"/>
                                             <constraint firstAttribute="trailing" secondItem="TIq-5a-4Pt" secondAttribute="trailing" constant="22" id="fZr-3j-ueo"/>
-                                            <constraint firstAttribute="height" constant="800" id="g0x-2D-Fr0"/>
+                                            <constraint firstAttribute="height" constant="700" id="g0x-2D-Fr0"/>
                                             <constraint firstItem="X2f-U0-pIs" firstAttribute="leading" secondItem="fff-fl-a0b" secondAttribute="leading" constant="22" id="g1e-FB-rXD"/>
                                             <constraint firstItem="tIL-Zp-RPW" firstAttribute="top" secondItem="Kgk-U0-Bjt" secondAttribute="bottom" constant="12" id="hKu-HU-WtP"/>
                                             <constraint firstItem="Kgk-U0-Bjt" firstAttribute="centerX" secondItem="fff-fl-a0b" secondAttribute="centerX" id="nok-8V-0Tk"/>

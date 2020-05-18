@@ -113,7 +113,7 @@ extension ResultViewController: UICollectionViewDataSource {
         }
         
         // index
-        if let index = predict?.data.predict.counselor[indexPath.item].index {
+        if let index = predict?.data.predict.counselor[indexPath.item].willsonerIdx {
             cell.indexLabel.text = "\(index)번 상담사"
         } else {
             cell.indexLabel.text = "0번 상담사"
@@ -127,7 +127,7 @@ extension ResultViewController: UICollectionViewDataSource {
         }
         
         // text
-        if let text = predict?.data.predict.counselor[indexPath.item].data {
+        if let text = predict?.data.predict.counselor[indexPath.item].experience {
             cell.textView.text = text
         } else {
             cell.textView.text = ""
