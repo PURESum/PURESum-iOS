@@ -65,20 +65,6 @@ class WriteConcernViewController: UIViewController {
                     }
                 }
             }
-            
-            /*
-            let alert = UIAlertController(title: nil, message: "내용을 입력해 주세요.", preferredStyle: .alert)
-            alert.view.backgroundColor = .black
-            alert.view.alpha = 0.7
-            alert.view.layer.cornerRadius = 20
-            
-            self.present(alert, animated: true, completion: nil)
-            
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
-                alert.dismiss(animated: true, completion: nil)
-                return
-            }
-            */
         } else {
             guard let vc: WaitingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WaitingViewController") as? WaitingViewController else {
                 return
