@@ -651,9 +651,9 @@
 			isa = PBXGroup;
 			children = (
 				D9DF966F247281CE00D96BB6 /* views */,
+				D969DBBD24719C3900370E19 /* ConcernWriteViewController.swift */,
 				D96188C82349BF910094D6D9 /* ConcernListAgreementViewController.swift */,
 				D974DA072452E09200C62F35 /* ConcernPopUpAgreementViewController.swift */,
-				D969DBBD24719C3900370E19 /* ConcernWriteViewController.swift */,
 			);
 			path = ConcernList;
 			sourceTree = "<group>";

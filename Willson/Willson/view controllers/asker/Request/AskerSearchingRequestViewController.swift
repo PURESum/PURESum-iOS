@@ -13,6 +13,8 @@ class AskerSearchingRequestViewController: UIViewController {
     var remainingSeconds: Int?
     var timer = Timer()
     
+    var concernIndex: Int?
+    
     // MARK: - IBOutlet
     @IBOutlet weak var timeLabel: UILabel!
     
@@ -21,7 +23,7 @@ class AskerSearchingRequestViewController: UIViewController {
         super.viewDidLoad()
 
         // timer
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timeLimit), userInfo: nil, repeats: true)
+//        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timeLimit), userInfo: nil, repeats: true)
     }
 
     // MARK: - Methods

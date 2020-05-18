@@ -39,6 +39,11 @@ class ConcernWriteViewController: UIViewController {
             return
         }
         
+        if let content = textView.text {
+            UserDefaults.standard.set(content, forKey: "content")
+            print("tappedNextButton - content: \n\(String(describing: UserDefaults.standard.value(forKey: "content")))")
+        }
+        
         self.navigationController?.show(vc, sender: nil)
     }
     

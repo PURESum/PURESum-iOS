@@ -45,23 +45,15 @@ struct RequestComplete: Codable {
 
 // MARK: - DataClass
 struct RequestCompleteData: Codable {
-    let createdAt, updatedAt, idx, askerIdx: Int
-    let subcategoryIdx: Int
-    let content, wilGender: String
-    let directionIdx: Int
-    let type, time: String
+    let createdAt, updatedAt, idx, askerIdx: Int?
+    let content: String
 
     enum CodingKeys: String, CodingKey {
         case createdAt = "created_at"
         case updatedAt = "updated_at"
         case idx
         case askerIdx = "asker_idx"
-        case subcategoryIdx = "subcategory_idx"
         case content
-        case wilGender = "wil_gender"
-        case directionIdx = "direction_idx"
-        case type
-        case time
     }
 }
 

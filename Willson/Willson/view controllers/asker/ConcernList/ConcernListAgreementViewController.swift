@@ -57,61 +57,25 @@ class ConcernListAgreementViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: false, completion: nil)
     }
-  /*
+  
     @IBAction func tappedCompleteButton(_ sender: Any) {
         // 로딩중 시작
         self.activityIndicator.startAnimating()
 
         // POST 통신
-        guard let subCategoryIndex: Int = UserDefaults.standard.value(forKey: "subCategoryIndex") as? Int else {
-            print("UserDefaults - subCategoryIndex 할당 오류")
-            return
-        }
-        print("UserDefaults - subCategoryIndex: \(subCategoryIndex)")
-        
-        guard let feelingIndex: [Int] = UserDefaults.standard.value(forKey: "feelingIndex") as? [Int] else {
-            print("UserDefaults - feelingIndex 할당 오류")
-            return
-        }
-        print("UserDefaults - feeling: \(feelingIndex)")
-        
         guard let content: String = UserDefaults.standard.value(forKey: "content") as? String else {
             print("UserDefaults - content 할당 오류")
             return
         }
         print("UserDefaults - content: \n\(content)")
-        
-        guard let willGender: String = UserDefaults.standard.value(forKey: "willGender") as? String else {
-            print("UserDefaults - willGender 할당 오류")
-            return
-        }
-        print("UserDefaults - subCategoryIndex: \(willGender)")
-        
-        guard let personalityIndex: [Int] = UserDefaults.standard.value(forKey: "personalityIndex") as? [Int] else {
-            print("UserDefaults - personalityIndex 할당 오류")
-            return
-        }
-        print("UserDefaults - personalityIndex: \(personalityIndex)")
-        
-        guard let directionIndex: Int = UserDefaults.standard.value(forKey: "directionIndex") as? Int else {
-            print("UserDefaults - directionIndex 할당 오류")
-            return
-        }
-        print("UserDefaults - directionIndex: \(directionIndex)")
-        
-        guard let type: String = UserDefaults.standard.value(forKey: "type") as? String else {
-            print("UserDefaults - type 할당 오류")
-            return
-        }
-        print("UserDefaults - type: \(type)")
-        
-        AskerRequestServices.shared.postRequestComplete(subCategoryIdx: subCategoryIndex, feelingIdx: feelingIndex, keywordIdx: [1, 3], content: content, willGender: willGender, personalityIdx: personalityIndex, directionIdx: directionIndex, type: type, fromDate: "2020-01-12", toDate: "2020-03-27", time: "9PM", agreement: 1) { requestComplete in
+
+        AskerRequestServices.shared.postRequestComplete(content: content) { requestComplete in
             self.requestComplete = requestComplete
             print(self.requestComplete ?? "")
             
             // 결제 페이지로 이동
-            guard let vc: AskerPayViewController = UIStoryboard(name: "AskerPay", bundle: nil).instantiateViewController(withIdentifier: "AskerPayViewController") as? AskerPayViewController else {
-                print("AskerPayViewController 할당 오류")
+            guard let vc: AskerSearchingRequestViewController = UIStoryboard(name: "AskerRequest", bundle: nil).instantiateViewController(withIdentifier: "AskerSearchingRequestViewController") as? AskerSearchingRequestViewController else {
+                print("AskerSearchingRequestViewController 할당 오류")
                 return
             }
             
@@ -123,11 +87,23 @@ class ConcernListAgreementViewController: UIViewController {
             vc.concernIndex = concernIndex
             
             // 화면 이동
-//            self.present(navi, animated: true, completion: nil)
-            self.navigationController?.show(vc, sender: nil)
+            let tabbarStoryboard = UIStoryboard(name: "AskerTabbar", bundle: nil)
+            guard let tabBarController: UITabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "AskerTabbarController") as? UITabBarController else { return }
+            
+            tabBarController.selectedIndex = 1
+            
+            let navi = UIStoryboard(name: "AskerTabbar", bundle: nil).instantiateViewController(withIdentifier: "AskerApplyConcernNavi")
+            
+            tabBarController.viewControllers?[1] = navi
+            tabBarController.tabBar.items?[1].image = UIImage(named: "icTabListGray")
+            tabBarController.tabBar.items?[1].selectedImage = UIImage(named: "icTabListNavy")
+            tabBarController.tabBar.items?[1].title = "상담신청"
+            
+            tabBarController.modalPresentationStyle = .fullScreen
+            self.present(tabBarController, animated: true)
         }
     }
-    */
+    
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
