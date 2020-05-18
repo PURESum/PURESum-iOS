@@ -57,3 +57,10 @@ struct RequestCompleteData: Codable {
     }
 }
 
+// 재희 매칭
+// [POST] ~/api/v1/asker/list/matches/:concern_idx
+// MARK: - MatchPredict
+struct MatchPredict: Codable {
+    let code, message: String
+    let data: String?
+}
