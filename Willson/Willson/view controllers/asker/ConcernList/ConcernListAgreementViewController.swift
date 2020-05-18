@@ -57,7 +57,7 @@ class ConcernListAgreementViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: false, completion: nil)
     }
-    
+  /*
     @IBAction func tappedCompleteButton(_ sender: Any) {
         // 로딩중 시작
         self.activityIndicator.startAnimating()
@@ -127,7 +127,7 @@ class ConcernListAgreementViewController: UIViewController {
             self.navigationController?.show(vc, sender: nil)
         }
     }
-    
+    */
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()

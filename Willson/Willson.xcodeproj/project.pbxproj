@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A9472FF8C3C10D53AF2E18C1 /* Pods_Willson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AE663FE0791050606F474A /* Pods_Willson.framework */; };
 		D9077B8A240E321400A0C9FD /* WillsonerMypageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9077B89240E321400A0C9FD /* WillsonerMypageModels.swift */; };
-		D9107C87235613CB004A3E35 /* AskerPay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9107C86235613CB004A3E35 /* AskerPay.storyboard */; };
 		D920C5D523ED2D6100AAB1D1 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920C5D423ED2D6100AAB1D1 /* ChatModels.swift */; };
 		D92B0C1F23EBFB5B00C3D025 /* ChatServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B0C1E23EBFB5B00C3D025 /* ChatServices.swift */; };
 		D92BE62B23C2D1F7002B2786 /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE62A23C2D1F7002B2786 /* SignUpPasswordViewController.swift */; };
@@ -150,6 +149,12 @@
 		D9CFD687246A80F70012F38A /* SignUpAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFD686246A80F70012F38A /* SignUpAgeViewController.swift */; };
 		D9D9C273238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9C272238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift */; };
 		D9D9C275238A756D00597D85 /* HelperReceivedRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9C274238A756D00597D85 /* HelperReceivedRequestViewController.swift */; };
+		D9DF9676247281DF00D96BB6 /* ConcernListCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF9670247281DD00D96BB6 /* ConcernListCategoryCollectionViewCell.swift */; };
+		D9DF9677247281DF00D96BB6 /* ConcernListDetailCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF9671247281DE00D96BB6 /* ConcernListDetailCategoryTableViewCell.swift */; };
+		D9DF9678247281DF00D96BB6 /* ConcernListDetailCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9DF9672247281DE00D96BB6 /* ConcernListDetailCategoryTableViewCell.xib */; };
+		D9DF9679247281DF00D96BB6 /* RequestListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF9673247281DE00D96BB6 /* RequestListCollectionViewCell.swift */; };
+		D9DF967A247281DF00D96BB6 /* RequestListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9DF9674247281DE00D96BB6 /* RequestListCollectionViewCell.xib */; };
+		D9DF967B247281DF00D96BB6 /* ConcernListCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9DF9675247281DE00D96BB6 /* ConcernListCategoryCollectionViewCell.xib */; };
 		D9E9F7B7236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */; };
 		D9E9F7B8236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */; };
 		D9E9F7C2236ED2C700B37341 /* HelperHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */; };
@@ -333,6 +338,12 @@
 		D9CFD686246A80F70012F38A /* SignUpAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAgeViewController.swift; sourceTree = "<group>"; };
 		D9D9C272238A700E00597D85 /* HelperApplicationPhotoVideoAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApplicationPhotoVideoAuthViewController.swift; sourceTree = "<group>"; };
 		D9D9C274238A756D00597D85 /* HelperReceivedRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperReceivedRequestViewController.swift; sourceTree = "<group>"; };
+		D9DF9670247281DD00D96BB6 /* ConcernListCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcernListCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9DF9671247281DE00D96BB6 /* ConcernListDetailCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcernListDetailCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		D9DF9672247281DE00D96BB6 /* ConcernListDetailCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcernListDetailCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		D9DF9673247281DE00D96BB6 /* RequestListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9DF9674247281DE00D96BB6 /* RequestListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9DF9675247281DE00D96BB6 /* ConcernListCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcernListCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9E9F7B5236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerHomeRecommandCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9E9F7B6236EC26600B37341 /* AskerHomeRecommandCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskerHomeRecommandCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9E9F7C1236ED2C700B37341 /* HelperHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelperHome.storyboard; sourceTree = "<group>"; };
@@ -639,6 +650,7 @@
 		D950E781232E435400658CDD /* ConcernList */ = {
 			isa = PBXGroup;
 			children = (
+				D9DF966F247281CE00D96BB6 /* views */,
 				D96188C82349BF910094D6D9 /* ConcernListAgreementViewController.swift */,
 				D974DA072452E09200C62F35 /* ConcernPopUpAgreementViewController.swift */,
 				D969DBBD24719C3900370E19 /* ConcernWriteViewController.swift */,
@@ -939,6 +951,19 @@
 			path = Tutorial;
 			sourceTree = "<group>";
 		};
+		D9DF966F247281CE00D96BB6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D9DF9670247281DD00D96BB6 /* ConcernListCategoryCollectionViewCell.swift */,
+				D9DF9675247281DE00D96BB6 /* ConcernListCategoryCollectionViewCell.xib */,
+				D9DF9671247281DE00D96BB6 /* ConcernListDetailCategoryTableViewCell.swift */,
+				D9DF9672247281DE00D96BB6 /* ConcernListDetailCategoryTableViewCell.xib */,
+				D9DF9673247281DE00D96BB6 /* RequestListCollectionViewCell.swift */,
+				D9DF9674247281DE00D96BB6 /* RequestListCollectionViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		D9E9F7AE236EA7E500B37341 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1090,6 +1115,7 @@
 				D9639B1123D5874E00EEF9E9 /* RequestConcernCollectionViewCell.xib in Resources */,
 				D9499ED6240762330091F980 /* AskerMypageReviewTableViewCell.xib in Resources */,
 				D999A1C723449A5B00670263 /* AskerChat.storyboard in Resources */,
+				D9DF967A247281DF00D96BB6 /* RequestListCollectionViewCell.xib in Resources */,
 				D950E7522325E5DF00658CDD /* LaunchScreen.storyboard in Resources */,
 				D9CAFBED2429C013005EDD0B /* Tutorial.storyboard in Resources */,
 				D950E76D2325ED7D00658CDD /* HelperTabbar.storyboard in Resources */,
@@ -1109,10 +1135,12 @@
 				D9499EDA2407765D0091F980 /* AskerMypageNoticeTableViewCell.xib in Resources */,
 				D950E780232E433500658CDD /* AskerConcernList.storyboard in Resources */,
 				D999A1C22342E66E00670263 /* AskerMypage.storyboard in Resources */,
+				D9DF9678247281DF00D96BB6 /* ConcernListDetailCategoryTableViewCell.xib in Resources */,
 				D983934E243067BC00049EC3 /* AskerHomeRequestConcernCollectionViewCell.xib in Resources */,
 				D9EE261F23531A4C0054BC04 /* HelperImageCollectionViewCell.xib in Resources */,
 				D9FB5FFD234FA21B00EDEEB4 /* HelperChat.storyboard in Resources */,
 				D95FD8B724336A9A00497F3F /* AskerHomeReviewCollectionViewCell.xib in Resources */,
+				D9DF967B247281DF00D96BB6 /* ConcernListCategoryCollectionViewCell.xib in Resources */,
 				D93AAE6923BB284000489030 /* AskerPointTableViewCell.xib in Resources */,
 				D9E9F7C2236ED2C700B37341 /* HelperHome.storyboard in Resources */,
 				D9839352243069A700049EC3 /* AskerHomeCategoryConcernCollectionViewCell.xib in Resources */,
@@ -1203,6 +1231,7 @@
 				D950E7652325EC7600658CDD /* LoginViewController.swift in Sources */,
 				D92BE63123C2F320002B2786 /* ServerString.swift in Sources */,
 				D966B851237BF24A00716120 /* HelperApplicationEmailViewController.swift in Sources */,
+				D9DF9676247281DF00D96BB6 /* ConcernListCategoryCollectionViewCell.swift in Sources */,
 				D966B84B2377AE6D00716120 /* AuthenticationIDCardViewController.swift in Sources */,
 				D9EE26242353220C0054BC04 /* HelperAuthorizationTableViewCell.swift in Sources */,
 				D969446F2429CC18003D07A9 /* TutorialWillsonerViewController.swift in Sources */,
@@ -1255,6 +1284,7 @@
 				D92BE63523C322D9002B2786 /* SignInService.swift in Sources */,
 				D9A087CC2406A6DA000DB08F /* PurchaseListTableViewCell.swift in Sources */,
 				D966B84F237BEDD600716120 /* HelperApplicationPhoneNumberViewController.swift in Sources */,
+				D9DF9679247281DF00D96BB6 /* RequestListCollectionViewCell.swift in Sources */,
 				D9ACDECC240755B0001A57F4 /* AskerChatHistoryViewController.swift in Sources */,
 				D96C7AC5240375060014CF4B /* ChatStartTableViewCell.swift in Sources */,
 				D9EE2621235320920054BC04 /* HelperApplicationAuthorizationViewController.swift in Sources */,
@@ -1283,6 +1313,7 @@
 				D9FB5FF6234F9FB200EDEEB4 /* HelperRequestDefaultViewController.swift in Sources */,
 				D950E7452325E5DE00658CDD /* AppDelegate.swift in Sources */,
 				D96D3F862337188C0011A840 /* SignUpEmailViewController.swift in Sources */,
+				D9DF9677247281DF00D96BB6 /* ConcernListDetailCategoryTableViewCell.swift in Sources */,
 				D93AAE6B23BB2D8800489030 /* AskerEditProfileViewController.swift in Sources */,
 				D950E77E232E411A00658CDD /* AskerSearchingRequestViewController.swift in Sources */,
 				D96ED08F23822992009642DE /* AskerChatReviewViewController.swift in Sources */,
