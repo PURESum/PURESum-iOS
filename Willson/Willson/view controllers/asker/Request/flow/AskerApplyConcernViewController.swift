@@ -65,33 +65,37 @@ class AskerApplyConcernViewController: UIViewController {
 
     // MARK: - Methods
     private func getWillsonerList() {
-        guard let concernIndex: Int = UserDefaults.standard.value(forKey: "concernIndex") as? Int else {
-            print("getWillsonerList(): concernIndex 할당 오류")
-            return
-        }
-        print("getWillsonerList() - concernIndex: \(concernIndex)")
-        
-        AskerConcernServices.shared.getWillsonerList(concernIndex: concernIndex) { concernMatch in
-            self.concernMatch = concernMatch
-            self.concernMatchRows = self.concernMatch?.data
+        if let concernIndex: Int = UserDefaults.standard.value(forKey: "concernIndex") as? Int {
+            print("getWillsonerList() - concernIndex: \(concernIndex)")
             
-            print("==================")
-            print("재히 고민 리스트 통신 성공 !")
-            print(self.concernMatch)
-            
-            if let count = self.concernMatchRows?.count {
-                self.countLabel.text = "\(count)"
-                self.view.backgroundColor = .white
-                self.collectionView.isHidden = false
+            AskerConcernServices.shared.getWillsonerList(concernIndex: concernIndex) { concernMatch in
+                self.concernMatch = concernMatch
+                self.concernMatchRows = self.concernMatch?.data
                 
-                self.collectionView.reloadData()
-            } else {
-                // 고민 없을 때
-                self.countLabel.text = "0"
-                self.view.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9647058824, blue: 0.9647058824, alpha: 1)
-                self.collectionView.isHidden = true
+                print("==================")
+                print("재히 고민 리스트 통신 성공 !")
+                print(self.concernMatch)
+                
+                if let count = self.concernMatchRows?.count {
+                    self.countLabel.text = "\(count)"
+                    self.view.backgroundColor = .white
+                    self.collectionView.isHidden = false
+                    
+                    self.collectionView.reloadData()
+                } else {
+                    // 고민 없을 때
+                    self.countLabel.text = "0"
+                    self.view.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9647058824, blue: 0.9647058824, alpha: 1)
+                    self.collectionView.isHidden = true
+                }
             }
+        } else {
+            // 고민 없을 때
+            self.countLabel.text = "0"
+            self.view.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9647058824, blue: 0.9647058824, alpha: 1)
+            self.collectionView.isHidden = true
         }
+        
     }
     
     // apply button action
