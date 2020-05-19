@@ -12,9 +12,10 @@ struct AskerRequestServices {
     
     // 고민신청 완료
     // POST /asker/request/complete
-    func postRequestComplete(content: String, completion: @escaping (RequestComplete) -> Void) {
+    func postRequestComplete(content: String, type: String, completion: @escaping (RequestComplete) -> Void) {
         // 파라미터와 헤더 타입, 토큰 할당
-        let params = ["content": content]
+        let params = ["content": content,
+                      "type": type]
         guard let token = UserDefaults.standard.value(forKey: "token") else {
             print("===================")
             print("UserDefaults - token 할당 오류")

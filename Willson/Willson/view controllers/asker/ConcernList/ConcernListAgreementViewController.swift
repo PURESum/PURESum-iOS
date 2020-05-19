@@ -69,7 +69,7 @@ class ConcernListAgreementViewController: UIViewController {
         }
         print("UserDefaults - content: \n\(content)")
 
-        AskerRequestServices.shared.postRequestComplete(content: content) { requestComplete in
+        AskerRequestServices.shared.postRequestComplete(content: content, type: "realtime") { requestComplete in
             self.requestComplete = requestComplete
             print(self.requestComplete ?? "")
             
