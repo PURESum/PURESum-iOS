@@ -139,7 +139,6 @@ struct ChatServices {
     func postReviewComplete(matchIndex: Int, willsonerIndex: Int, title: String, content: String, rating: Float, imageIndex: Int, completion: @escaping (ReviewComplete) -> Void) {
         // 파라미터와 헤더 타입, 토큰 할당
         let params = ["match_idx": matchIndex,
-                      "willsoner_idx": willsonerIndex,
                       "title": title,
                       "content": content,
                       "rating": rating,

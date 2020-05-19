@@ -137,6 +137,8 @@ class AskerDetailRequestViewController: UIViewController {
             
             vc.matchSuccessData = self.matchSuccessData
             
+            UserDefaults.standard.removeObject(forKey: "concernIndex")
+            
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: false)
         }
