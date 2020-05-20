@@ -18,7 +18,7 @@ struct PredictServices {
         let headers = ["Content-Type": "application/json"]
         
         // POST 통신
-        Alamofire.request("\(SERVER_URL)/predict",
+        Alamofire.request("\(TEMP_URL)/predict",
             method: .post,
             parameters: params,
             encoding: JSONEncoding.default,

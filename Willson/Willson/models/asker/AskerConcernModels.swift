@@ -144,7 +144,7 @@ struct ReviewsRow: Codable {
     let idx: Int
     let title, content: String
     let rating: Double
-    let category, date: String
+    let category, date: String?
 }
 
 // 윌스너 선택 (최종 수락)

@@ -136,6 +136,7 @@ class AskerDetailRequestViewController: UIViewController {
             }
             
             vc.matchSuccessData = self.matchSuccessData
+            vc.willsonerDetailMatch = self.willsonerDetailMatch
             
             UserDefaults.standard.removeObject(forKey: "concernIndex")
             

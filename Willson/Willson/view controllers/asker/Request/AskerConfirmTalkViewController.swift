@@ -13,6 +13,8 @@ class AskerConfirmTalkViewController: UIViewController {
     // 윌스너 선택 (최종 수락) response model
     var matchSuccessData: MatchSuccessData?
     
+    var willsonerDetailMatch: WillsonerDetailMatch?
+    
     // MARK: - IBOutlet
     @IBOutlet weak var cancelButton: UIButton!
     
@@ -66,7 +68,62 @@ class AskerConfirmTalkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // set up
+        setUp()
     }
+    
+    // MARK: - Methods
+    private func setUp() {
+        // 이미지
+        if let urlString = willsonerDetailMatch?.willsoner.image?.pic {
+            let url = URL(string: urlString)
+            imageView.kf.setImage(with: url)
+        } else {
+            print("setUpViews: urlString 할당 오류")
+            imageView.image = UIImage()
+        }
+        
+        // 닉네임
+        if let nickname = willsonerDetailMatch?.willsoner.asker.nickname {
+            nicknameLabel.text = nickname
+        } else {
+            print("setUpViews: nickname 할당 오류")
+            nicknameLabel.text = ""
+        }
+        
+        // 나이 / 성별
+        if let age = willsonerDetailMatch?.willsoner.asker.age {
+            if let gender = willsonerDetailMatch?.willsoner.asker.gender {
+                ageAndGenderLabel.text = "\(age) / \(gender)"
+            } else {
+                print("setUpViews: 성별 할당 오류")
+                ageAndGenderLabel.text = "\(age)"
+            }
+        } else {
+            print("setUpViews: 나이 할당 오류")
+            ageAndGenderLabel.text = ""
+        }
+        
+        // 성격
+        if let keywords = willsonerDetailMatch?.willsoner.keywords {
+            var keywordString = ""
+            for keyword in keywords {
+                keywordString = "#\(keyword.name) "
+            }
+            personalitiesLabel.text = keywordString
+        } else {
+            print("setUpViews: 키워드 할당 오류")
+            personalitiesLabel.text = ""
+        }
+        
+        // 카테고리
+        if let category = willsonerDetailMatch?.willsoner.subcategories[0].category.name {
+            categoryLabel.text = category
+        } else {
+            print("setUpViews: 카테고리 할당 오류")
+            categoryLabel.text = ""
+        }
+    }
+    
 
 }

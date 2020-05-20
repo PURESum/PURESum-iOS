@@ -162,7 +162,7 @@ struct ReviewComplete: Codable {
 struct ReviewCompleteData: Codable {
     let createdAt, updatedAt, idx, matchIdx: Int
     let title, content: String
-    let rating, imageIdx: Int
+    let rating, imageIdx: Int?
 
     enum CodingKeys: String, CodingKey {
         case createdAt = "created_at"
