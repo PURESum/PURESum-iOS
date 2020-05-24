@@ -30,7 +30,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="check"/>
-                                <state key="disabled" image="icCheckCircleWhite"/>
+                                <state key="disabled" image="check2"/>
                                 <connections>
                                     <action selector="tappedCheckButton:" destination="cDG-5J-4aG" eventType="touchUpInside" id="QHC-2S-gik"/>
                                 </connections>
@@ -62,7 +62,7 @@
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhV-oN-KDM">
                                 <rect key="frame" x="22" y="349" width="370" height="1"/>
-                                <color key="backgroundColor" name="veryLightPink"/>
+                                <color key="backgroundColor" red="0.32941177487373352" green="0.32549020648002625" blue="0.47843137383460999" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ZvX-6P-KFw"/>
                                 </constraints>
@@ -139,7 +139,7 @@
     </scenes>
     <resources>
         <image name="check" width="63" height="63"/>
-        <image name="icCheckCircleWhite" width="128" height="128"/>
+        <image name="check2" width="63" height="63"/>
         <namedColor name="deepBlue">
             <color red="0.27450980392156865" green="0.44313725490196076" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
