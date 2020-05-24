@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TCM-us-2ZX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat Room View Controller-->
+        <scene sceneID="GTF-vk-Yfe">
+            <objects>
+                <viewController storyboardIdentifier="ChatRoomViewController" id="TCM-us-2ZX" customClass="ChatRoomViewController" customModule="MatchingService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YNW-Zv-CS9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyY-5W-MSn">
+                                <rect key="frame" x="22" y="80" width="42" height="29"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7e-TQ-4Ll">
+                                <rect key="frame" x="72" y="80" width="22" height="29"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <color key="textColor" name="deepBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZPz-Zl-9mV">
+                                <rect key="frame" x="0.0" y="109" width="414" height="753"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uq0-U8-DDy" firstAttribute="bottom" secondItem="ZPz-Zl-9mV" secondAttribute="bottom" id="OlV-Kq-GRD"/>
+                            <constraint firstItem="xyY-5W-MSn" firstAttribute="leading" secondItem="uq0-U8-DDy" secondAttribute="leading" constant="22" id="TPE-cl-cBe"/>
+                            <constraint firstItem="ZPz-Zl-9mV" firstAttribute="top" secondItem="xyY-5W-MSn" secondAttribute="bottom" id="UbI-PX-iH2"/>
+                            <constraint firstItem="g7e-TQ-4Ll" firstAttribute="leading" secondItem="xyY-5W-MSn" secondAttribute="trailing" constant="8" id="a5I-Aa-jtc"/>
+                            <constraint firstItem="g7e-TQ-4Ll" firstAttribute="centerY" secondItem="xyY-5W-MSn" secondAttribute="centerY" id="c4y-m1-YgN"/>
+                            <constraint firstItem="uq0-U8-DDy" firstAttribute="trailing" secondItem="ZPz-Zl-9mV" secondAttribute="trailing" id="kal-PJ-poA"/>
+                            <constraint firstItem="xyY-5W-MSn" firstAttribute="top" secondItem="YNW-Zv-CS9" secondAttribute="centerY" multiplier="66:370" id="oBJ-Ul-jXk"/>
+                            <constraint firstItem="ZPz-Zl-9mV" firstAttribute="leading" secondItem="uq0-U8-DDy" secondAttribute="leading" id="sWG-NN-tfG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uq0-U8-DDy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOa-fd-1Uc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.71014492753625" y="-186.16071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="deepBlue">
+            <color red="0.27450980392156865" green="0.44313725490196076" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
