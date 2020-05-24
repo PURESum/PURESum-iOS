@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1D5-Is-qBM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Zdt-sw-YEn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDk-fW-5n1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="tabbarController" id="1D5-Is-qBM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LwX-Lp-F6p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="deepBlue"/>
+                        <color key="selectedImageTintColor" name="deepBlue"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aHF-Fk-7Ce" kind="relationship" relationship="viewControllers" id="0wp-Cz-Fgy"/>
+                        <segue destination="B2D-na-4FT" kind="relationship" relationship="viewControllers" id="Lhy-Kz-3rI"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-758" y="-145"/>
+        </scene>
+        <!--고민작성-->
+        <scene sceneID="FXq-z9-d4P">
+            <objects>
+                <navigationController id="aHF-Fk-7Ce" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="고민작성" image="pencil" catalog="system" id="CY8-lM-y6A"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iE5-nh-4tL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RW0-Mz-0BQ" kind="relationship" relationship="rootViewController" id="uSk-Fc-oSp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGz-pY-gKK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="-378"/>
+        </scene>
+        <!--WriteConcernNavi-->
+        <scene sceneID="HDe-Ds-9Ke">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="WriteConcernNavi" id="RW0-Mz-0BQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gpD-TV-NXk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvQ-ye-aEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="-378"/>
+        </scene>
+        <!--채팅-->
+        <scene sceneID="bCa-MC-rdk">
+            <objects>
+                <navigationController id="B2D-na-4FT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="채팅" image="message.fill" catalog="system" id="MNS-UB-IOd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8I3-kz-wZx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EOs-g6-ekt" kind="relationship" relationship="rootViewController" id="WBX-ss-AfB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vah-6O-4vq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="347"/>
+        </scene>
+        <!--ChatRoomViewController-->
+        <scene sceneID="bRe-cr-pmZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="ChatRoomViewController" id="EOs-g6-ekt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0bO-9p-YXG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKK-6V-Gub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="347"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <namedColor name="deepBlue">
+            <color red="0.27450980392156865" green="0.44313725490196076" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

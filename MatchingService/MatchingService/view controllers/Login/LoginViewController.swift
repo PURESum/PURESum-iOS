@@ -41,7 +41,9 @@ class LoginViewController: UIViewController {
         // firebase login 수행
         
         // 화면 전환
-        
+        let vc = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "tabbarController")
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
     // MARK: - life cycle

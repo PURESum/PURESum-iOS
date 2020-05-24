@@ -16,6 +16,7 @@
 		D9851C5C247AAE1300DE7D60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9851C5B247AAE1300DE7D60 /* LoginViewController.swift */; };
 		D9851C5E247ABAE400DE7D60 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9851C5D247ABAE400DE7D60 /* Chat.storyboard */; };
 		D9851C61247ABB7F00DE7D60 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9851C60247ABB7F00DE7D60 /* ChatRoomViewController.swift */; };
+		D9851C63247ABBC700DE7D60 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9851C62247ABBC700DE7D60 /* Tabbar.storyboard */; };
 		D9C7FD1724446B8E0057AE15 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7FD1624446B8E0057AE15 /* CustomTextView.swift */; };
 		D9C7FD192444A14D0057AE15 /* WaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7FD182444A14D0057AE15 /* WaitingViewController.swift */; };
 		D9C7FD1B2444A1D80057AE15 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7FD1A2444A1D80057AE15 /* CustomView.swift */; };
@@ -42,6 +43,7 @@
 		D9851C5B247AAE1300DE7D60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D9851C5D247ABAE400DE7D60 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		D9851C60247ABB7F00DE7D60 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		D9851C62247ABBC700DE7D60 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		D9C7FD1624446B8E0057AE15 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		D9C7FD182444A14D0057AE15 /* WaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingViewController.swift; sourceTree = "<group>"; };
 		D9C7FD1A2444A1D80057AE15 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				D9851C57247AADD200DE7D60 /* Login.storyboard */,
+				D9851C62247ABBC700DE7D60 /* Tabbar.storyboard */,
 				D9E34FA0244459AA00626EBA /* Main.storyboard */,
 				D9851C5D247ABAE400DE7D60 /* Chat.storyboard */,
 			);
@@ -270,6 +273,7 @@
 				D9E34FA7244459AE00626EBA /* LaunchScreen.storyboard in Resources */,
 				D9E34FA4244459AE00626EBA /* Assets.xcassets in Resources */,
 				D9851C58247AADD300DE7D60 /* Login.storyboard in Resources */,
+				D9851C63247ABBC700DE7D60 /* Tabbar.storyboard in Resources */,
 				D9E34FA2244459AA00626EBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
