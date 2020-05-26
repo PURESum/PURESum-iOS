@@ -35,7 +35,15 @@ class MypageViewController: UIViewController {
 
 // MARK: - UITableViewDelegate
 extension MypageViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 2:
+            let vc = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        default: break
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -52,13 +60,17 @@ extension MypageViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             cell.titleLabel.text = "--"
+            cell.titleLabel.textColor = .black
         case 1:
             cell.titleLabel.text = "--"
+            cell.titleLabel.textColor = .black
         case 2:
             cell.titleLabel.text = "로그아웃"
+            cell.titleLabel.textColor = .red
         default: break
         }
         
+        cell.selectionStyle = .none
         cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         return cell
     }
