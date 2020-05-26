@@ -10,7 +10,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Zdt-sw-YEn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PDk-fW-5n1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="tabbarController" id="1D5-Is-qBM" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LwX-Lp-F6p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -22,8 +21,10 @@
                     <connections>
                         <segue destination="aHF-Fk-7Ce" kind="relationship" relationship="viewControllers" id="0wp-Cz-Fgy"/>
                         <segue destination="B2D-na-4FT" kind="relationship" relationship="viewControllers" id="Lhy-Kz-3rI"/>
+                        <segue destination="S1a-zq-QUS" kind="relationship" relationship="viewControllers" id="MWo-Wu-Vi0"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDk-fW-5n1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-758" y="-145"/>
         </scene>
@@ -31,7 +32,7 @@
         <scene sceneID="FXq-z9-d4P">
             <objects>
                 <navigationController id="aHF-Fk-7Ce" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="고민작성" image="pencil" catalog="system" id="CY8-lM-y6A"/>
+                    <tabBarItem key="tabBarItem" title="고민작성" image="doc.fill" catalog="system" id="CY8-lM-y6A"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iE5-nh-4tL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -81,10 +82,38 @@
             </objects>
             <point key="canvasLocation" x="725" y="347"/>
         </scene>
+        <!--마이페이지-->
+        <scene sceneID="KPb-EP-tNz">
+            <objects>
+                <navigationController id="S1a-zq-QUS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="person.fill" catalog="system" id="DUc-iN-CCW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o3j-29-V9d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kk1-rQ-92S" kind="relationship" relationship="rootViewController" id="PDs-F8-4ob"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOC-10-vej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="1033"/>
+        </scene>
+        <!--MypageViewController-->
+        <scene sceneID="gXH-dK-YW1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mypage" referencedIdentifier="MypageViewController" id="Kk1-rQ-92S" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="g8W-Gu-6oB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5Z-Qq-R1w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="1033"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="deepBlue">
             <color red="0.27450980392156865" green="0.44313725490196076" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

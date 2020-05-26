@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D930363D2462D8CE00DBDB12 /* MatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */; };
 		D930363E2462D8CE00DBDB12 /* MatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */; };
+		D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95B5D28247D332000A12A6A /* Mypage.storyboard */; };
+		D95B5D2C247D335100A12A6A /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95B5D2B247D335100A12A6A /* MypageViewController.swift */; };
+		D95B5D2F247D372700A12A6A /* MypageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95B5D2E247D372700A12A6A /* MypageTableViewCell.swift */; };
 		D97CAA9D2462C92E00943930 /* Predict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAA9C2462C92E00943930 /* Predict.swift */; };
 		D97CAA9F2462C93A00943930 /* PredictServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAA9E2462C93A00943930 /* PredictServices.swift */; };
 		D97CAAA32462CDDD00943930 /* ServerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAAA22462CDDD00943930 /* ServerString.swift */; };
@@ -36,6 +39,9 @@
 		D93036362462D2DA00DBDB12 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCollectionViewCell.swift; sourceTree = "<group>"; };
 		D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchCollectionViewCell.xib; sourceTree = "<group>"; };
+		D95B5D28247D332000A12A6A /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
+		D95B5D2B247D335100A12A6A /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		D95B5D2E247D372700A12A6A /* MypageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTableViewCell.swift; sourceTree = "<group>"; };
 		D97CAA9C2462C92E00943930 /* Predict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
 		D97CAA9E2462C93A00943930 /* PredictServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictServices.swift; sourceTree = "<group>"; };
 		D97CAAA22462CDDD00943930 /* ServerString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerString.swift; sourceTree = "<group>"; };
@@ -96,6 +102,23 @@
 			children = (
 				D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */,
 				D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D95B5D2A247D333400A12A6A /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				D95B5D2D247D371700A12A6A /* views */,
+				D95B5D2B247D335100A12A6A /* MypageViewController.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		D95B5D2D247D371700A12A6A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D95B5D2E247D372700A12A6A /* MypageTableViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -171,6 +194,7 @@
 				D9851C59247AADF700DE7D60 /* Login */,
 				D9851C5A247AADFC00DE7D60 /* Main */,
 				D9851C5F247ABB6E00DE7D60 /* Chat */,
+				D95B5D2A247D333400A12A6A /* Mypage */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -182,6 +206,7 @@
 				D9851C62247ABBC700DE7D60 /* Tabbar.storyboard */,
 				D9E34FA0244459AA00626EBA /* Main.storyboard */,
 				D9851C5D247ABAE400DE7D60 /* Chat.storyboard */,
+				D95B5D28247D332000A12A6A /* Mypage.storyboard */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
@@ -271,6 +296,7 @@
 				D9851C5E247ABAE400DE7D60 /* Chat.storyboard in Resources */,
 				D930363E2462D8CE00DBDB12 /* MatchCollectionViewCell.xib in Resources */,
 				D9E34FA7244459AE00626EBA /* LaunchScreen.storyboard in Resources */,
+				D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */,
 				D9E34FA4244459AE00626EBA /* Assets.xcassets in Resources */,
 				D9851C58247AADD300DE7D60 /* Login.storyboard in Resources */,
 				D9851C63247ABBC700DE7D60 /* Tabbar.storyboard in Resources */,
@@ -319,10 +345,12 @@
 				D97CAA9D2462C92E00943930 /* Predict.swift in Sources */,
 				D9E34F9B244459AA00626EBA /* AppDelegate.swift in Sources */,
 				D97CAA9F2462C93A00943930 /* PredictServices.swift in Sources */,
+				D95B5D2C247D335100A12A6A /* MypageViewController.swift in Sources */,
 				D9C7FD1B2444A1D80057AE15 /* CustomView.swift in Sources */,
 				D97CAAA32462CDDD00943930 /* ServerString.swift in Sources */,
 				D9C7FD1724446B8E0057AE15 /* CustomTextView.swift in Sources */,
 				D9E34F9D244459AA00626EBA /* SceneDelegate.swift in Sources */,
+				D95B5D2F247D372700A12A6A /* MypageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
