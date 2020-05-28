@@ -2,7 +2,7 @@
 //  SignUpViewController.swift
 //  MatchingService
 //
-//  Created by JHKim on 2020/05/26.
+//  Created by JHKim on 2020/05/28.
 //  Copyright © 2020 zhi. All rights reserved.
 //
 
@@ -15,6 +15,9 @@ class SignUpViewController: UIViewController {
     // MARK: - IBOutlet
     
     // MARK: - IBAction
+    @IBAction func tappedXButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     // MARK: - life cycle
     override func viewDidLoad() {
@@ -24,5 +27,4 @@ class SignUpViewController: UIViewController {
     }
     
     // MARK: - Methods
-
 }

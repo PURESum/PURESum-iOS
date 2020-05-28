@@ -12,10 +12,11 @@
 		D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95B5D28247D332000A12A6A /* Mypage.storyboard */; };
 		D95B5D2C247D335100A12A6A /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95B5D2B247D335100A12A6A /* MypageViewController.swift */; };
 		D95B5D2F247D372700A12A6A /* MypageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95B5D2E247D372700A12A6A /* MypageTableViewCell.swift */; };
-		D95B5D31247D39E000A12A6A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95B5D30247D39E000A12A6A /* SignUpViewController.swift */; };
 		D97CAA9D2462C92E00943930 /* Predict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAA9C2462C92E00943930 /* Predict.swift */; };
 		D97CAA9F2462C93A00943930 /* PredictServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAA9E2462C93A00943930 /* PredictServices.swift */; };
 		D97CAAA32462CDDD00943930 /* ServerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97CAAA22462CDDD00943930 /* ServerString.swift */; };
+		D9828DF5247F883A00D26369 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828DF4247F883A00D26369 /* SignUpViewController.swift */; };
+		D9828DF7247F8A0600D26369 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9828DF6247F8A0600D26369 /* SignUp.storyboard */; };
 		D9851C58247AADD300DE7D60 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9851C57247AADD200DE7D60 /* Login.storyboard */; };
 		D9851C5C247AAE1300DE7D60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9851C5B247AAE1300DE7D60 /* LoginViewController.swift */; };
 		D9851C5E247ABAE400DE7D60 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9851C5D247ABAE400DE7D60 /* Chat.storyboard */; };
@@ -43,10 +44,11 @@
 		D95B5D28247D332000A12A6A /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
 		D95B5D2B247D335100A12A6A /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		D95B5D2E247D372700A12A6A /* MypageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTableViewCell.swift; sourceTree = "<group>"; };
-		D95B5D30247D39E000A12A6A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D97CAA9C2462C92E00943930 /* Predict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
 		D97CAA9E2462C93A00943930 /* PredictServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictServices.swift; sourceTree = "<group>"; };
 		D97CAAA22462CDDD00943930 /* ServerString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerString.swift; sourceTree = "<group>"; };
+		D9828DF4247F883A00D26369 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D9828DF6247F8A0600D26369 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		D9851C57247AADD200DE7D60 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D9851C5B247AAE1300DE7D60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D9851C5D247ABAE400DE7D60 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
@@ -137,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				D9851C5B247AAE1300DE7D60 /* LoginViewController.swift */,
-				D95B5D30247D39E000A12A6A /* SignUpViewController.swift */,
+				D9828DF4247F883A00D26369 /* SignUpViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				D9851C57247AADD200DE7D60 /* Login.storyboard */,
+				D9828DF6247F8A0600D26369 /* SignUp.storyboard */,
 				D9851C62247ABBC700DE7D60 /* Tabbar.storyboard */,
 				D9E34FA0244459AA00626EBA /* Main.storyboard */,
 				D9851C5D247ABAE400DE7D60 /* Chat.storyboard */,
@@ -298,6 +301,7 @@
 			files = (
 				D9851C5E247ABAE400DE7D60 /* Chat.storyboard in Resources */,
 				D930363E2462D8CE00DBDB12 /* MatchCollectionViewCell.xib in Resources */,
+				D9828DF7247F8A0600D26369 /* SignUp.storyboard in Resources */,
 				D9E34FA7244459AE00626EBA /* LaunchScreen.storyboard in Resources */,
 				D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */,
 				D9E34FA4244459AE00626EBA /* Assets.xcassets in Resources */,
@@ -349,7 +353,7 @@
 				D9E34F9B244459AA00626EBA /* AppDelegate.swift in Sources */,
 				D97CAA9F2462C93A00943930 /* PredictServices.swift in Sources */,
 				D95B5D2C247D335100A12A6A /* MypageViewController.swift in Sources */,
-				D95B5D31247D39E000A12A6A /* SignUpViewController.swift in Sources */,
+				D9828DF5247F883A00D26369 /* SignUpViewController.swift in Sources */,
 				D9C7FD1B2444A1D80057AE15 /* CustomView.swift in Sources */,
 				D97CAAA32462CDDD00943930 /* ServerString.swift in Sources */,
 				D9C7FD1724446B8E0057AE15 /* CustomTextView.swift in Sources */,

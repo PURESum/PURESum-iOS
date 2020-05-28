@@ -19,12 +19,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var signUpButton: UIButton!
-    
     @IBOutlet weak var checkButton: UIButton!
     
     // MARK: - IBAction
     @IBAction func changedSegmentedControl(_ sender: Any) {
+    }
+    
+    @IBAction func tappedSignUpButton(_ sender: Any) {
+        guard let vc: SignUpViewController = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController else {
+            print("tappedSignUpButton: SignUpViewController 할당 오류")
+            return
+        }
+        vc.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func tappedCheckButton(_ sender: Any) {
