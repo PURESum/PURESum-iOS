@@ -13,6 +13,8 @@ class ChatRoomViewController: UIViewController {
     // MARK: - properties
     
     // MARK: - IBOutlet
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - IBAction
     
@@ -20,8 +22,29 @@ class ChatRoomViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // tableview delegate, dataSource
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        tableView.tableFooterView = UIView()
     }
 
     // MARK: - Methods
+}
+
+extension ChatRoomViewController: UITableViewDelegate {
+    
+}
+
+extension ChatRoomViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    
 }

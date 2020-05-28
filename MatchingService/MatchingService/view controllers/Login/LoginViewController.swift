@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
             print("tappedSignUpButton: SignUpViewController 할당 오류")
             return
         }
-        vc.present(vc, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func tappedCheckButton(_ sender: Any) {
