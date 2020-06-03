@@ -103,6 +103,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D91F525B24881C3C003931C2 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D9828DF4247F883A00D26369 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		D930363A2462D8AC00DBDB12 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				D9851C5B247AAE1300DE7D60 /* LoginViewController.swift */,
-				D9828DF4247F883A00D26369 /* SignUpViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				D9851C59247AADF700DE7D60 /* Login */,
+				D91F525B24881C3C003931C2 /* SignUp */,
 				D9851C5A247AADFC00DE7D60 /* Main */,
 				D9851C5F247ABB6E00DE7D60 /* Chat */,
 				D95B5D2A247D333400A12A6A /* Mypage */,
