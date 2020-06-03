@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,6 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // delay launch screen
         Thread.sleep(forTimeInterval: 2.0)
+        
+        // firebase
+        FirebaseApp.configure()
         
         return true
     }

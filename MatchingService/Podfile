@@ -6,6 +6,7 @@ target 'MatchingService' do
   use_modular_headers!
 
   pod 'Alamofire', '~> 4.8.0'
+  pod 'Firebase/Analytics'
 
   # Pods for MatchingService
 

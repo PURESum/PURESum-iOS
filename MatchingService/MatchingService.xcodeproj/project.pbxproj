@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91F525A2487D000003931C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D91F52592487D000003931C2 /* GoogleService-Info.plist */; };
 		D930363D2462D8CE00DBDB12 /* MatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */; };
 		D930363E2462D8CE00DBDB12 /* MatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */; };
 		D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95B5D28247D332000A12A6A /* Mypage.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		065170C298C2005CE32CED59 /* Pods-MatchingService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingService.debug.xcconfig"; path = "Target Support Files/Pods-MatchingService/Pods-MatchingService.debug.xcconfig"; sourceTree = "<group>"; };
+		D91F52592487D000003931C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D93036322462CE4400DBDB12 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93036362462D2DA00DBDB12 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D9E34F99244459AA00626EBA /* MatchingService */,
+				D91F52592487D000003931C2 /* GoogleService-Info.plist */,
 				D9E34F98244459AA00626EBA /* Products */,
 				D35E448396212B2F8BAF184B /* Pods */,
 				D1B6298CAD1F3248DD4BFD7A /* Frameworks */,
@@ -306,6 +309,7 @@
 				D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */,
 				D9E34FA4244459AE00626EBA /* Assets.xcassets in Resources */,
 				D9851C58247AADD300DE7D60 /* Login.storyboard in Resources */,
+				D91F525A2487D000003931C2 /* GoogleService-Info.plist in Resources */,
 				D9851C63247ABBC700DE7D60 /* Tabbar.storyboard in Resources */,
 				D9E34FA2244459AA00626EBA /* Main.storyboard in Resources */,
 			);
