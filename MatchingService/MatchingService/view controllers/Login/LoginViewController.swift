@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
             print("tappedSignUpButton: SignUpViewController 할당 오류")
             return
         }
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     
@@ -68,14 +69,14 @@ class LoginViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
         // 처음에 버튼 비활성화
-               checkButton.isEnabled = false
-               
-               // textfield delegate
-               emailTextField.delegate = self
-               passwordTextField.delegate = self
-               // textfield 입력 감지 - 버튼 활성화
-               emailTextField.addTarget(self, action: #selector(textChange(_:)), for: .editingChanged)
-               passwordTextField.addTarget(self, action: #selector(textChange(_:)), for: .editingChanged)
+        checkButton.isEnabled = false
+        
+        // textfield delegate
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        // textfield 입력 감지 - 버튼 활성화
+        emailTextField.addTarget(self, action: #selector(textChange(_:)), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textChange(_:)), for: .editingChanged)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
