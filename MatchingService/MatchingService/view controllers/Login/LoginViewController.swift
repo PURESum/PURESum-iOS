@@ -57,10 +57,12 @@ class LoginViewController: UIViewController {
             print("email textfield 오류")
             return
         }
+        UserDefaults.standard.set(email, forKey: "email")
         guard let password = passwordTextField.text else {
             print("password textfield 오류")
             return
         }
+        UserDefaults.standard.set(password, forKey: "password")
         // 1. firebase 로그인 - 토큰 받아오기
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             guard let strongSelf = self else { return }

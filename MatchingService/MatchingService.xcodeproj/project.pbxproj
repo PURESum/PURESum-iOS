@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,13 @@
 		D9C7FD192444A14D0057AE15 /* WaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7FD182444A14D0057AE15 /* WaitingViewController.swift */; };
 		D9C7FD1B2444A1D80057AE15 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7FD1A2444A1D80057AE15 /* CustomView.swift */; };
 		D9C982322444A9980078EF42 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C982312444A9980078EF42 /* ResultViewController.swift */; };
+		D9DA757F2488A64C00D12233 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA757E2488A64C00D12233 /* Comment.swift */; };
+		D9DA75882488AA8D00D12233 /* ChatStartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA757A2488A4BD00D12233 /* ChatStartTableViewCell.swift */; };
+		D9DA75892488AA8D00D12233 /* ChatStartTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = D9DA757D2488A4BE00D12233 /* ChatStartTableViewCell.xib */; };
+		D9DA758A2488AA8D00D12233 /* OtherChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA75782488A4BD00D12233 /* OtherChatTableViewCell.swift */; };
+		D9DA758B2488AA8D00D12233 /* OtherChatTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = D9DA75792488A4BD00D12233 /* OtherChatTableViewCell.xib */; };
+		D9DA758C2488AA8E00D12233 /* UserChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA757C2488A4BE00D12233 /* UserChatTableViewCell.swift */; };
+		D9DA758D2488AA8E00D12233 /* UserChatTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = D9DA757B2488A4BE00D12233 /* UserChatTableViewCell.xib */; };
 		D9E34F9B244459AA00626EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34F9A244459AA00626EBA /* AppDelegate.swift */; };
 		D9E34F9D244459AA00626EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34F9C244459AA00626EBA /* SceneDelegate.swift */; };
 		D9E34FA2244459AA00626EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E34FA0244459AA00626EBA /* Main.storyboard */; };
@@ -60,6 +67,13 @@
 		D9C7FD182444A14D0057AE15 /* WaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingViewController.swift; sourceTree = "<group>"; };
 		D9C7FD1A2444A1D80057AE15 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		D9C982312444A9980078EF42 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		D9DA75782488A4BD00D12233 /* OtherChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OtherChatTableViewCell.swift; path = "../../../../../../../Willson/Willson-2019-iOS/Willson/Willson/view controllers/asker/Chatting/views/ChatRoom/OtherChatTableViewCell.swift"; sourceTree = "<group>"; };
+		D9DA75792488A4BD00D12233 /* OtherChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OtherChatTableViewCell.xib; path = "../../../../../../../Willson/Willson-2019-iOS/Willson/Willson/view controllers/asker/Chatting/views/ChatRoom/OtherChatTableViewCell.xib"; sourceTree = "<group>"; };
+		D9DA757A2488A4BD00D12233 /* ChatStartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatStartTableViewCell.swift; path = "../../../../../../../Willson/Willson-2019-iOS/Willson/Willson/view controllers/asker/Chatting/views/ChatRoom/ChatStartTableViewCell.swift"; sourceTree = "<group>"; };
+		D9DA757B2488A4BE00D12233 /* UserChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UserChatTableViewCell.xib; path = "../../../../../../../Willson/Willson-2019-iOS/Willson/Willson/view controllers/asker/Chatting/views/ChatRoom/UserChatTableViewCell.xib"; sourceTree = "<group>"; };
+		D9DA757C2488A4BE00D12233 /* UserChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserChatTableViewCell.swift; path = "../../../../../../../Willson/Willson-2019-iOS/Willson/Willson/view controllers/asker/Chatting/views/ChatRoom/UserChatTableViewCell.swift"; sourceTree = "<group>"; };
+		D9DA757D2488A4BE00D12233 /* ChatStartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChatStartTableViewCell.xib; path = "../../../../../../../Willson/Willson-2019-iOS/Willson/Willson/view controllers/asker/Chatting/views/ChatRoom/ChatStartTableViewCell.xib"; sourceTree = "<group>"; };
+		D9DA757E2488A64C00D12233 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		D9E34F97244459AA00626EBA /* MatchingService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E34F9A244459AA00626EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E34F9C244459AA00626EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				D97CAA9C2462C92E00943930 /* Predict.swift */,
+				D9DA757E2488A64C00D12233 /* Comment.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -167,9 +182,23 @@
 		D9851C5F247ABB6E00DE7D60 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				D9DA75772488A49100D12233 /* views */,
 				D9851C60247ABB7F00DE7D60 /* ChatRoomViewController.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		D9DA75772488A49100D12233 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D9DA757A2488A4BD00D12233 /* ChatStartTableViewCell.swift */,
+				D9DA757D2488A4BE00D12233 /* ChatStartTableViewCell.xib */,
+				D9DA75782488A4BD00D12233 /* OtherChatTableViewCell.swift */,
+				D9DA75792488A4BD00D12233 /* OtherChatTableViewCell.xib */,
+				D9DA757C2488A4BE00D12233 /* UserChatTableViewCell.swift */,
+				D9DA757B2488A4BE00D12233 /* UserChatTableViewCell.xib */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		D9E34F8E244459AA00626EBA = {
@@ -262,6 +291,7 @@
 				D9E34F93244459AA00626EBA /* Sources */,
 				D9E34F94244459AA00626EBA /* Frameworks */,
 				D9E34F95244459AA00626EBA /* Resources */,
+				B223C3F79D5996A361B69452 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,6 +378,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B223C3F79D5996A361B69452 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -355,11 +402,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DA75882488AA8D00D12233 /* ChatStartTableViewCell.swift in Sources */,
+				D9DA75892488AA8D00D12233 /* ChatStartTableViewCell.xib in Sources */,
+				D9DA758A2488AA8D00D12233 /* OtherChatTableViewCell.swift in Sources */,
+				D9DA758B2488AA8D00D12233 /* OtherChatTableViewCell.xib in Sources */,
+				D9DA758C2488AA8E00D12233 /* UserChatTableViewCell.swift in Sources */,
+				D9DA758D2488AA8E00D12233 /* UserChatTableViewCell.xib in Sources */,
 				D9851C5C247AAE1300DE7D60 /* LoginViewController.swift in Sources */,
 				D9C7FD192444A14D0057AE15 /* WaitingViewController.swift in Sources */,
 				D930363D2462D8CE00DBDB12 /* MatchCollectionViewCell.swift in Sources */,
 				D9E34FB52444670A00626EBA /* WriteConcernViewController.swift in Sources */,
 				D9C982322444A9980078EF42 /* ResultViewController.swift in Sources */,
+				D9DA757F2488A64C00D12233 /* Comment.swift in Sources */,
 				D9851C61247ABB7F00DE7D60 /* ChatRoomViewController.swift in Sources */,
 				D97CAA9D2462C92E00943930 /* Predict.swift in Sources */,
 				D9E34F9B244459AA00626EBA /* AppDelegate.swift in Sources */,
