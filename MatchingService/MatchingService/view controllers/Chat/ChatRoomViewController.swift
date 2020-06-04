@@ -140,7 +140,7 @@ class ChatRoomViewController: UIViewController {
             }
         } else {
             defaultView.isHidden = false
-            self.title = ""
+            self.title = "채팅"
         }
         
         // firestore

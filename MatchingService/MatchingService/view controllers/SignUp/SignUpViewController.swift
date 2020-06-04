@@ -14,6 +14,19 @@ import FirebaseAuth
 class SignUpViewController: UIViewController {
     
     // MARK: - properties
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        // Create an indicator.
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        activityIndicator.center = self.view.center
+        activityIndicator.color = #colorLiteral(red: 0.8392156863, green: 0.8392156863, blue: 0.8392156863, alpha: 1)
+        // Also show the indicator even when the animation is stopped.
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.white
+        // Start animation.
+        activityIndicator.stopAnimating()
+        return activityIndicator
+    }()
     
     // MARK: - IBOutlet
     @IBOutlet weak var cancelButton: UIButton!
@@ -35,6 +48,9 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func tappedCompleteButtonItem(_ sender: Any) {
+        // 로딩중 시작
+        self.activityIndicator.startAnimating()
+        
         // 1. firebase 서버에 이메일, 비밀번호 유효 체크
         UserDefaults.standard.set(emailTextField.text, forKey: "email")
         guard let email = UserDefaults.standard.value(forKey: "email") as? String else {
