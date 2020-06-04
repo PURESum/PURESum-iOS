@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC4CFCC14F3CF141A86C4DF4 /* libPods-MatchingService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DA75A72488C95900D12233 /* libPods-MatchingService.a */; };
+		6FC58CB5409A0CA10BFE57FA /* Pods_MatchingService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D9491F5EE37D98CAC22B1A /* Pods_MatchingService.framework */; };
 		D930363D2462D8CE00DBDB12 /* MatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */; };
 		D930363E2462D8CE00DBDB12 /* MatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */; };
 		D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95B5D28247D332000A12A6A /* Mypage.storyboard */; };
@@ -97,7 +97,6 @@
 		D9DA75A42488C95900D12233 /* libleveldb-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libleveldb-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DA75A52488C95900D12233 /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DA75A62488C95900D12233 /* libObjectMapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libObjectMapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9DA75A72488C95900D12233 /* libPods-MatchingService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-MatchingService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DA75A82488C95900D12233 /* libPromisesObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromisesObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DA75A92488C95900D12233 /* libProtobuf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libProtobuf.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DA75AA2488C95900D12233 /* libToast-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libToast-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +110,7 @@
 		D9E34FB42444670A00626EBA /* WriteConcernViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteConcernViewController.swift; sourceTree = "<group>"; };
 		DB1B97431C4F0A722F3AC775 /* Pods-MatchingService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingService.release.xcconfig"; path = "Target Support Files/Pods-MatchingService/Pods-MatchingService.release.xcconfig"; sourceTree = "<group>"; };
 		F39A69BF9C4BA57CD30AC04C /* libPods-MatchingService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MatchingService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D9491F5EE37D98CAC22B1A /* Pods_MatchingService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchingService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4CFCC14F3CF141A86C4DF4 /* libPods-MatchingService.a in Frameworks */,
+				6FC58CB5409A0CA10BFE57FA /* Pods_MatchingService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,13 +150,13 @@
 				D9DA75A42488C95900D12233 /* libleveldb-library.a */,
 				D9DA75A52488C95900D12233 /* libnanopb.a */,
 				D9DA75A62488C95900D12233 /* libObjectMapper.a */,
-				D9DA75A72488C95900D12233 /* libPods-MatchingService.a */,
 				D9DA75A82488C95900D12233 /* libPromisesObjC.a */,
 				D9DA75A92488C95900D12233 /* libProtobuf.a */,
 				D9DA75AA2488C95900D12233 /* libToast-Swift.a */,
 				D93036362462D2DA00DBDB12 /* Alamofire.framework */,
 				D93036322462CE4400DBDB12 /* Alamofire.framework */,
 				F39A69BF9C4BA57CD30AC04C /* libPods-MatchingService.a */,
+				F6D9491F5EE37D98CAC22B1A /* Pods_MatchingService.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
