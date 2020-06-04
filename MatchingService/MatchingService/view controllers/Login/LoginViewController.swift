@@ -8,10 +8,25 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
     // MARK: - properties
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        // Create an indicator.
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        activityIndicator.center = self.view.center
+        activityIndicator.color = #colorLiteral(red: 0.8392156863, green: 0.8392156863, blue: 0.8392156863, alpha: 1)
+        // Also show the indicator even when the animation is stopped.
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.white
+        // Start animation.
+        activityIndicator.stopAnimating()
+        return activityIndicator
+    }()
     
     // MARK: - IBOutlet
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -35,6 +50,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func tappedCheckButton(_ sender: Any) {
+        // 로딩중 시작
+        self.activityIndicator.startAnimating()
         
         guard let email = emailTextField.text else {
             print("email textfield 오류")
@@ -44,13 +61,31 @@ class LoginViewController: UIViewController {
             print("password textfield 오류")
             return
         }
-        
-        // firebase login 수행
-        
-        // 화면 전환
-        let vc = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "tabbarController")
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+        // 1. firebase 로그인 - 토큰 받아오기
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
+            if let user = authResult?.user {
+                user.getIDTokenForcingRefresh(true) { idToken, error in
+                    if let error = error {
+                        // Handle error
+                        print("=======================")
+                        print(error.localizedDescription)
+                        
+                        // 인디케이터 중지
+                        strongSelf.activityIndicator.stopAnimating()
+                        return
+                    }
+                    
+                    // firebase login 수행
+                    print("=======")
+                    print("firebase login 성공")
+                    // 화면 전환
+                    let vc = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "tabbarController")
+                    vc.modalPresentationStyle = .fullScreen
+                    strongSelf.present(vc, animated: true, completion: nil)
+                }
+            }
+        }
     }
     
     // MARK: - life cycle
@@ -88,6 +123,13 @@ class LoginViewController: UIViewController {
     }
 
     // MARK: - Methods
+    // 올바른 이메일 형식인지 확인
+    func isValidEmail(email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
 }
 
 extension LoginViewController: UITextFieldDelegate {
@@ -107,9 +149,11 @@ extension LoginViewController: UITextFieldDelegate {
     
     // textfield 입력 감지 - 버튼 활성화
     @objc func textChange(_ textField: UITextField) {
-        if emailTextField.hasText && passwordTextField.hasText {
-            checkButton.isEnabled = true
-        } else { checkButton.isEnabled = false }
+        if let email = emailTextField.text, let pw = passwordTextField.text {
+            if isValidEmail(email: email) && pw.count >= 6 {
+                checkButton.isEnabled = true
+            } else { checkButton.isEnabled = false }
+        }
     }
     
     //빈 화면 탭했을 때 키보드 내리기

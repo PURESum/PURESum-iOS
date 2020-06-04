@@ -7,10 +7,12 @@
 //
 
 import UIKit
-import Toaster
+import Toast_Swift
+import Firebase
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
-
+    
     // MARK: - properties
     
     // MARK: - IBOutlet
@@ -33,7 +35,30 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func tappedCompleteButtonItem(_ sender: Any) {
-        
+        // 1. firebase 서버에 이메일, 비밀번호 유효 체크
+        UserDefaults.standard.set(emailTextField.text, forKey: "email")
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else {
+            print("tappedCheckButton - email login: email 값 없음")
+            return
+        }
+        UserDefaults.standard.set(PWTextField.text, forKey: "password")
+        guard let password = UserDefaults.standard.value(forKey: "password") as? String else {
+            print("tappedCheckButton: password 값 없음")
+            return
+        }
+        // 2. firebase 서버에 회원가입
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            guard let user = authResult?.user, error == nil else {
+                print("=======================")
+                print(error?.localizedDescription ?? "")
+                return
+            }
+            print("=======================")
+            print("\(user.email ?? "") created")
+            
+            // 화면 전환
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     // MARK: - life cycle
@@ -47,7 +72,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // keyboard hide - view tapped
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewDidTapped(_:)))
         view.addGestureRecognizer(tap)
@@ -86,9 +111,9 @@ class SignUpViewController: UIViewController {
     func checkAllInfoFilled() {
         if let email = emailTextField.text, let pw = PWTextField.text, let checkPW = checkPWField.text {
             if isValidEmail(email: email) && pw.count >= 6 && pw == checkPW {
-            completeButtonItem.isEnabled = true
-        } else {
-            completeButtonItem.isEnabled = false
+                completeButtonItem.isEnabled = true
+            } else {
+                completeButtonItem.isEnabled = false
             }
         } else {
             completeButtonItem.isEnabled = false
@@ -107,11 +132,12 @@ extension SignUpViewController: UITextFieldDelegate {
     // textfield 입력 감지 - 버튼 활성화
     @objc func emailChanged(_ textField: UITextField) {
         if let email = textField.text {
-            // 올바른 이메일 형식일 때 화면 전환
+            checkAllInfoFilled()
+            // 올바른 이메일 형식
             if isValidEmail(email: email) {
                 emailLabel.isHidden = true
             }
-            // 아니면
+                // 아니면
             else {
                 emailLabel.isHidden = false
             }
@@ -120,11 +146,12 @@ extension SignUpViewController: UITextFieldDelegate {
     
     @objc func PWChanged(_ textField: UITextField) {
         if let pw = textField.text {
+            checkAllInfoFilled()
             // 6자리 이상인지 확인
             if pw.count >= 6 {
                 PWLabel.isHidden = true
             }
-            // 아니면
+                // 아니면
             else {
                 PWLabel.isHidden = false
             }
@@ -133,11 +160,12 @@ extension SignUpViewController: UITextFieldDelegate {
     
     @objc func checkPWChanged(_ textField: UITextField) {
         if let pw = PWTextField.text, let checkpw = textField.text {
+            checkAllInfoFilled()
             // 6자리 이상인지 확인
             if pw == checkpw {
                 checkPWLabel.isHidden = true
             }
-            // 아니면
+                // 아니면
             else {
                 checkPWLabel.isHidden = false
             }

@@ -35,6 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // firebase
         FirebaseApp.configure()
         
+        // fire base chat
+//        let db = Firestore.firestore()
+        
         return true
     }
 

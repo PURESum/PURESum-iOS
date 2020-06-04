@@ -27,6 +27,12 @@ class MypageViewController: UIViewController {
         tableView.dataSource = self
         
         tableView.tableFooterView = UIView()
+        
+        // nameLabel setting
+        if let email = UserDefaults.standard.value(forKey: "email") {
+            nameLabel.text = "\(email) 님"
+        }
+        
     }
     
     // MARK: - Methods
@@ -49,7 +55,7 @@ extension MypageViewController: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension MypageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,12 +65,6 @@ extension MypageViewController: UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            cell.titleLabel.text = "--"
-            cell.titleLabel.textColor = .black
-        case 1:
-            cell.titleLabel.text = "--"
-            cell.titleLabel.textColor = .black
-        case 2:
             cell.titleLabel.text = "로그아웃"
             cell.titleLabel.textColor = .red
         default: break
