@@ -89,6 +89,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 로딩중
+        self.view.addSubview(self.activityIndicator)
+        
         // keyboard hide - view tapped
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewDidTapped(_:)))
         view.addGestureRecognizer(tap)
