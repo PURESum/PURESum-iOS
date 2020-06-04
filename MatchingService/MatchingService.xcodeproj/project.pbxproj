@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D91F525A2487D000003931C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D91F52592487D000003931C2 /* GoogleService-Info.plist */; };
+		CC4CFCC14F3CF141A86C4DF4 /* libPods-MatchingService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DA75A72488C95900D12233 /* libPods-MatchingService.a */; };
 		D930363D2462D8CE00DBDB12 /* MatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */; };
 		D930363E2462D8CE00DBDB12 /* MatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D930363C2462D8CE00DBDB12 /* MatchCollectionViewCell.xib */; };
 		D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95B5D28247D332000A12A6A /* Mypage.storyboard */; };
@@ -34,18 +34,17 @@
 		D9DA758B2488AA8D00D12233 /* OtherChatTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = D9DA75792488A4BD00D12233 /* OtherChatTableViewCell.xib */; };
 		D9DA758C2488AA8E00D12233 /* UserChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA757C2488A4BE00D12233 /* UserChatTableViewCell.swift */; };
 		D9DA758D2488AA8E00D12233 /* UserChatTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = D9DA757B2488A4BE00D12233 /* UserChatTableViewCell.xib */; };
+		D9DA758F2488C3D200D12233 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9DA758E2488C3D200D12233 /* GoogleService-Info.plist */; };
 		D9E34F9B244459AA00626EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34F9A244459AA00626EBA /* AppDelegate.swift */; };
 		D9E34F9D244459AA00626EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34F9C244459AA00626EBA /* SceneDelegate.swift */; };
 		D9E34FA2244459AA00626EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E34FA0244459AA00626EBA /* Main.storyboard */; };
 		D9E34FA4244459AE00626EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E34FA3244459AE00626EBA /* Assets.xcassets */; };
 		D9E34FA7244459AE00626EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E34FA5244459AE00626EBA /* LaunchScreen.storyboard */; };
 		D9E34FB52444670A00626EBA /* WriteConcernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E34FB42444670A00626EBA /* WriteConcernViewController.swift */; };
-		DDB84716AEC9AB401D28E2E2 /* libPods-MatchingService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F39A69BF9C4BA57CD30AC04C /* libPods-MatchingService.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		065170C298C2005CE32CED59 /* Pods-MatchingService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingService.debug.xcconfig"; path = "Target Support Files/Pods-MatchingService/Pods-MatchingService.debug.xcconfig"; sourceTree = "<group>"; };
-		D91F52592487D000003931C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D93036322462CE4400DBDB12 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93036362462D2DA00DBDB12 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D930363B2462D8CE00DBDB12 /* MatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -74,6 +73,34 @@
 		D9DA757C2488A4BE00D12233 /* UserChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserChatTableViewCell.swift; path = "../../../../../../../Willson/Willson-2019-iOS/Willson/Willson/view controllers/asker/Chatting/views/ChatRoom/UserChatTableViewCell.swift"; sourceTree = "<group>"; };
 		D9DA757D2488A4BE00D12233 /* ChatStartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChatStartTableViewCell.xib; path = "../../../../../../../Willson/Willson-2019-iOS/Willson/Willson/view controllers/asker/Chatting/views/ChatRoom/ChatStartTableViewCell.xib"; sourceTree = "<group>"; };
 		D9DA757E2488A64C00D12233 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		D9DA758E2488C3D200D12233 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9DA75902488C64800D12233 /* MatchingService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MatchingService.entitlements; sourceTree = "<group>"; };
+		D9DA75912488C95900D12233 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "gRPCCertificates-Cpp.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75922488C95900D12233 /* libabseil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libabseil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75932488C95900D12233 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75942488C95900D12233 /* libAlamofireObjectMapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofireObjectMapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75952488C95900D12233 /* libBoringSSL-GRPC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libBoringSSL-GRPC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75962488C95900D12233 /* libFirebaseAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75972488C95900D12233 /* libFirebaseCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75982488C95900D12233 /* libFirebaseCoreDiagnostics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseCoreDiagnostics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75992488C95900D12233 /* libFirebaseFirestore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseFirestore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA759A2488C95900D12233 /* libFirebaseFirestoreSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseFirestoreSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA759B2488C95900D12233 /* libFirebaseInstallations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseInstallations.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA759C2488C95900D12233 /* libFirebaseInstanceID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseInstanceID.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA759D2488C95900D12233 /* libFirebaseMessaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseMessaging.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA759E2488C95900D12233 /* libGoogleDataTransport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleDataTransport.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA759F2488C95900D12233 /* libGoogleDataTransportCCTSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleDataTransportCCTSupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A02488C95900D12233 /* libGoogleUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A12488C95900D12233 /* libgRPC-C++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libgRPC-C++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A22488C95900D12233 /* libgRPC-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libgRPC-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A32488C95900D12233 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGTMSessionFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A42488C95900D12233 /* libleveldb-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libleveldb-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A52488C95900D12233 /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A62488C95900D12233 /* libObjectMapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libObjectMapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A72488C95900D12233 /* libPods-MatchingService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-MatchingService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A82488C95900D12233 /* libPromisesObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromisesObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75A92488C95900D12233 /* libProtobuf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libProtobuf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DA75AA2488C95900D12233 /* libToast-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libToast-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E34F97244459AA00626EBA /* MatchingService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E34F9A244459AA00626EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E34F9C244459AA00626EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB84716AEC9AB401D28E2E2 /* libPods-MatchingService.a in Frameworks */,
+				CC4CFCC14F3CF141A86C4DF4 /* libPods-MatchingService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +128,32 @@
 		D1B6298CAD1F3248DD4BFD7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9DA75912488C95900D12233 /* gRPCCertificates-Cpp.bundle */,
+				D9DA75922488C95900D12233 /* libabseil.a */,
+				D9DA75932488C95900D12233 /* libAlamofire.a */,
+				D9DA75942488C95900D12233 /* libAlamofireObjectMapper.a */,
+				D9DA75952488C95900D12233 /* libBoringSSL-GRPC.a */,
+				D9DA75962488C95900D12233 /* libFirebaseAuth.a */,
+				D9DA75972488C95900D12233 /* libFirebaseCore.a */,
+				D9DA75982488C95900D12233 /* libFirebaseCoreDiagnostics.a */,
+				D9DA75992488C95900D12233 /* libFirebaseFirestore.a */,
+				D9DA759A2488C95900D12233 /* libFirebaseFirestoreSwift.a */,
+				D9DA759B2488C95900D12233 /* libFirebaseInstallations.a */,
+				D9DA759C2488C95900D12233 /* libFirebaseInstanceID.a */,
+				D9DA759D2488C95900D12233 /* libFirebaseMessaging.a */,
+				D9DA759E2488C95900D12233 /* libGoogleDataTransport.a */,
+				D9DA759F2488C95900D12233 /* libGoogleDataTransportCCTSupport.a */,
+				D9DA75A02488C95900D12233 /* libGoogleUtilities.a */,
+				D9DA75A12488C95900D12233 /* libgRPC-C++.a */,
+				D9DA75A22488C95900D12233 /* libgRPC-Core.a */,
+				D9DA75A32488C95900D12233 /* libGTMSessionFetcher.a */,
+				D9DA75A42488C95900D12233 /* libleveldb-library.a */,
+				D9DA75A52488C95900D12233 /* libnanopb.a */,
+				D9DA75A62488C95900D12233 /* libObjectMapper.a */,
+				D9DA75A72488C95900D12233 /* libPods-MatchingService.a */,
+				D9DA75A82488C95900D12233 /* libPromisesObjC.a */,
+				D9DA75A92488C95900D12233 /* libProtobuf.a */,
+				D9DA75AA2488C95900D12233 /* libToast-Swift.a */,
 				D93036362462D2DA00DBDB12 /* Alamofire.framework */,
 				D93036322462CE4400DBDB12 /* Alamofire.framework */,
 				F39A69BF9C4BA57CD30AC04C /* libPods-MatchingService.a */,
@@ -205,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				D9E34F99244459AA00626EBA /* MatchingService */,
-				D91F52592487D000003931C2 /* GoogleService-Info.plist */,
 				D9E34F98244459AA00626EBA /* Products */,
 				D35E448396212B2F8BAF184B /* Pods */,
 				D1B6298CAD1F3248DD4BFD7A /* Frameworks */,
@@ -223,6 +275,7 @@
 		D9E34F99244459AA00626EBA /* MatchingService */ = {
 			isa = PBXGroup;
 			children = (
+				D9DA75902488C64800D12233 /* MatchingService.entitlements */,
 				D97CAA9B2462C91100943930 /* models */,
 				D9E34FB0244459C800626EBA /* networking */,
 				D9E34FAF244459C200626EBA /* storyboards */,
@@ -268,6 +321,7 @@
 		D9E34FB1244459CF00626EBA /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				D9DA758E2488C3D200D12233 /* GoogleService-Info.plist */,
 				D9E34F9A244459AA00626EBA /* AppDelegate.swift */,
 				D9E34F9C244459AA00626EBA /* SceneDelegate.swift */,
 				D9E34FA3244459AE00626EBA /* Assets.xcassets */,
@@ -291,7 +345,7 @@
 				D9E34F93244459AA00626EBA /* Sources */,
 				D9E34F94244459AA00626EBA /* Frameworks */,
 				D9E34F95244459AA00626EBA /* Resources */,
-				B223C3F79D5996A361B69452 /* [CP] Copy Pods Resources */,
+				036E1A8240BFC2A801151D24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,7 +401,7 @@
 				D95B5D29247D332000A12A6A /* Mypage.storyboard in Resources */,
 				D9E34FA4244459AE00626EBA /* Assets.xcassets in Resources */,
 				D9851C58247AADD300DE7D60 /* Login.storyboard in Resources */,
-				D91F525A2487D000003931C2 /* GoogleService-Info.plist in Resources */,
+				D9DA758F2488C3D200D12233 /* GoogleService-Info.plist in Resources */,
 				D9851C63247ABBC700DE7D60 /* Tabbar.storyboard in Resources */,
 				D9E34FA2244459AA00626EBA /* Main.storyboard in Resources */,
 			);
@@ -356,6 +410,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		036E1A8240BFC2A801151D24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1DAB63A059DC7B4D4ED7E9B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,23 +447,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B223C3F79D5996A361B69452 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MatchingService/Pods-MatchingService-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -569,6 +623,7 @@
 			baseConfigurationReference = 065170C298C2005CE32CED59 /* Pods-MatchingService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MatchingService/MatchingService.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 3R397P7C4Z;
@@ -591,6 +646,7 @@
 			baseConfigurationReference = DB1B97431C4F0A722F3AC775 /* Pods-MatchingService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MatchingService/MatchingService.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 3R397P7C4Z;

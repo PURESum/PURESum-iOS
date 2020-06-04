@@ -13,7 +13,7 @@ import Firebase
 // firebase: chatrooms -> chats - document
 class Comment: Mappable {
     var uid, message: String?
-    var timeStamp: Timestaㅏmp?
+    var timeStamp: Timestamp?
     var readUser: [String: Bool]?
 
     required init?(map: Map) {

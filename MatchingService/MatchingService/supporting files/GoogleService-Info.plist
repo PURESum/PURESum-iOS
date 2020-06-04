@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>208418082518-pndec1pt9o15rnd90ehotjmik8meibuo.apps.googleusercontent.com</string>
+	<string>208418082518-c17ghn7lfr4so3gf7v8mut9hhqgtcqlg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.208418082518-pndec1pt9o15rnd90ehotjmik8meibuo</string>
+	<string>com.googleusercontent.apps.208418082518-c17ghn7lfr4so3gf7v8mut9hhqgtcqlg</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBWR3r20MKGpLJq2hfvlTscoBg4463vCF8</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.matching.MatchingService</string>
+	<string>com.matching.MatchingService.inu</string>
 	<key>PROJECT_ID</key>
 	<string>matchingservice-inu</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:208418082518:ios:2b66b5f8c5895875bd0377</string>
+	<string>1:208418082518:ios:c636bf2ff6cd0845bd0377</string>
 	<key>DATABASE_URL</key>
 	<string>https://matchingservice-inu.firebaseio.com</string>
 </dict>
