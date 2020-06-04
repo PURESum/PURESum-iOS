@@ -58,7 +58,7 @@
         <!--채팅-->
         <scene sceneID="bCa-MC-rdk">
             <objects>
-                <navigationController id="B2D-na-4FT" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="chattingNavi" id="B2D-na-4FT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="채팅" image="message.fill" catalog="system" id="MNS-UB-IOd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8I3-kz-wZx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -182,19 +182,19 @@
                                             <constraint firstAttribute="height" constant="29" id="q6e-NI-tU2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
-                                        <state key="normal" title="보내기">
-                                            <color key="titleColor" name="deepSkyBlue"/>
-                                        </state>
+                                        <state key="normal" title="보내기"/>
                                         <state key="disabled">
                                             <color key="titleColor" name="veryLightPinkThree"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tappedSendButton:" destination="TCM-us-2ZX" eventType="touchUpInside" id="qeb-3m-qjd"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="내용을 입력해 주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPE-Vb-kyd">
                                         <rect key="frame" x="12" y="5" width="341" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="cIY-uz-hjX"/>
                                         </constraints>
-                                        <color key="textColor" name="black"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -224,21 +224,42 @@
                                     <constraint firstItem="pPE-Vb-kyd" firstAttribute="centerY" secondItem="WEx-lO-5RF" secondAttribute="centerY" id="nKU-eP-9aa"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMS-Ye-ASQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채팅방이 없습니다.   고민 신청을 해주세요" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrS-uz-oIG">
+                                        <rect key="frame" x="70" y="100" width="274.5" height="119"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="33"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="rrS-uz-oIG" firstAttribute="top" secondItem="UMS-Ye-ASQ" secondAttribute="top" constant="100" id="Egv-uV-Tzy"/>
+                                    <constraint firstItem="rrS-uz-oIG" firstAttribute="centerX" secondItem="UMS-Ye-ASQ" secondAttribute="centerX" id="Wdo-dZ-dAB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="WEx-lO-5RF" firstAttribute="leading" secondItem="YNW-Zv-CS9" secondAttribute="leading" id="0gW-eC-bMO"/>
                             <constraint firstItem="WEx-lO-5RF" firstAttribute="top" secondItem="ZPz-Zl-9mV" secondAttribute="bottom" id="4BE-ta-qmW"/>
+                            <constraint firstItem="UMS-Ye-ASQ" firstAttribute="leading" secondItem="uq0-U8-DDy" secondAttribute="leading" id="9Qs-Dc-F6b"/>
+                            <constraint firstItem="uq0-U8-DDy" firstAttribute="trailing" secondItem="UMS-Ye-ASQ" secondAttribute="trailing" id="L3Z-dB-gnM"/>
                             <constraint firstItem="ZPz-Zl-9mV" firstAttribute="top" secondItem="uq0-U8-DDy" secondAttribute="top" id="OVm-gk-jr3"/>
                             <constraint firstItem="uq0-U8-DDy" firstAttribute="trailing" secondItem="ZPz-Zl-9mV" secondAttribute="trailing" id="kal-PJ-poA"/>
                             <constraint firstItem="uq0-U8-DDy" firstAttribute="trailing" secondItem="WEx-lO-5RF" secondAttribute="trailing" id="nUo-AP-eIL"/>
+                            <constraint firstItem="UMS-Ye-ASQ" firstAttribute="top" secondItem="uq0-U8-DDy" secondAttribute="top" id="qFt-3U-9Fg"/>
                             <constraint firstItem="ZPz-Zl-9mV" firstAttribute="leading" secondItem="uq0-U8-DDy" secondAttribute="leading" id="sWG-NN-tfG"/>
                             <constraint firstItem="uq0-U8-DDy" firstAttribute="bottom" secondItem="WEx-lO-5RF" secondAttribute="bottom" id="tkf-DQ-tR7"/>
+                            <constraint firstItem="UMS-Ye-ASQ" firstAttribute="bottom" secondItem="uq0-U8-DDy" secondAttribute="bottom" id="zGI-IF-Qgp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uq0-U8-DDy"/>
                     </view>
                     <connections>
                         <outlet property="bottomConstraint" destination="tkf-DQ-tR7" id="NuY-Uo-byG"/>
+                        <outlet property="defaultView" destination="UMS-Ye-ASQ" id="36R-7n-eCs"/>
                         <outlet property="sendButton" destination="Y81-B7-Hka" id="Sho-Ss-m9T"/>
                         <outlet property="tableView" destination="ZPz-Zl-9mV" id="OO6-Kg-PfV"/>
                         <outlet property="textField" destination="pPE-Vb-kyd" id="yTh-zB-rYc"/>
@@ -250,17 +271,11 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="black">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="brownishGrey">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="deepBlue">
             <color red="0.27450980392156865" green="0.44313725490196076" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="deepSkyBlue">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lightBlue">
             <color red="0.88300001621246338" green="0.92000001668930054" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

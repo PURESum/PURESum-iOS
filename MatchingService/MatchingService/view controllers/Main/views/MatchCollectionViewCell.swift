@@ -10,7 +10,9 @@
 import UIKit
 
 class MatchCollectionViewCell: UICollectionViewCell {
-
+    
+    @IBOutlet var bgView: CustomView!
+    
     @IBOutlet var indexLabel: UILabel!
     @IBOutlet var categoryLabel: UILabel!
     @IBOutlet var textView: UITextView!

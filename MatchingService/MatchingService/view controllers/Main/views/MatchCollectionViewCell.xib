@@ -89,6 +89,7 @@
             </collectionViewCellContentView>
             <size key="customSize" width="50" height="50"/>
             <connections>
+                <outlet property="bgView" destination="yl1-0g-kGV" id="8PR-ff-46z"/>
                 <outlet property="categoryLabel" destination="Hd0-xH-s7c" id="JJD-ny-ZUv"/>
                 <outlet property="indexLabel" destination="Uok-aa-ECg" id="Wfv-C7-XtP"/>
                 <outlet property="textView" destination="Gz0-Mz-Biw" id="ej2-1d-eSa"/>

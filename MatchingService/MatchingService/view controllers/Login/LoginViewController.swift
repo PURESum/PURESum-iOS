@@ -78,6 +78,15 @@ class LoginViewController: UIViewController {
                         return
                     }
                     
+                    guard let idToken = idToken else {
+                        print("idToken 할당 오류")
+                        return
+                    }
+                    UserDefaults.standard.set(idToken, forKey: "idToken")
+                    if let idToken = UserDefaults.standard.value(forKey: "idToken") {
+                        print("idToken: \(idToken)")
+                    }
+                    
                     // firebase login 수행
                     print("=======")
                     print("firebase login 성공")
@@ -101,9 +110,14 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        UserDefaults.standard.removeObject(forKey: "concern")
+        
         // keyboard hide - view tapped
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewDidTapped(_:)))
         view.addGestureRecognizer(tap)
+        
+        // 로딩중
+        self.view.addSubview(self.activityIndicator)
         
         // 처음에 버튼 비활성화
         checkButton.isEnabled = false

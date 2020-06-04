@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import ObjectMapper
 
 class ChatRoomViewController: UIViewController {
 
@@ -21,9 +23,9 @@ class ChatRoomViewController: UIViewController {
     var uid: String?
     
     // 채팅 - firestore
-//    var db: Firestore!
+    var db: Firestore!
     // 리스너 선언
-//    var listener: ListenerRegistration!
+    var listener: ListenerRegistration!
     
     // chats
     var comments: [Comment]?
@@ -47,13 +49,52 @@ class ChatRoomViewController: UIViewController {
     }()
     
     // MARK: - IBOutlet
+    @IBOutlet weak var defaultView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sendButton: UIButton!
     
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
     // MARK: - IBAction
+    @IBAction func tappedSendButton(_ sender: Any) {
+        guard let roomkey = self.roomkey else {
+            print("roomkey가 nil값을 가짐")
+            return
+        }
+        //        print("roomkey: \(roomkey)")
+        guard let message = textField.text else {
+            print("textfield가 비어 있음")
+            return
+        }
+        //        print("message: \(message)")
+        
+        guard let uid = self.uid else {
+            print("uid 할당 오류")
+            return
+        }
+        //        print("uid: \(uid)")
+        
+        var ref: DocumentReference? = nil
+        ref = db.collection("chatrooms").document(roomkey).collection("chats").addDocument(data: [
+            "uid" : uid,
+            "message" : message,
+            "timeStamp" : FieldValue.serverTimestamp(),
+            "readUser" : [
+                self.uid : true
+            ]
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+        
+        textField.text = ""
+        setUpTextField()
+    }
     
     // MARK: - life cycle
     override func viewWillAppear(_ animated: Bool) {
@@ -67,9 +108,15 @@ class ChatRoomViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // comment 초기화
+        comments = []
+        
         // keyboard hide - view tapped
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewDidTapped(_:)))
         view.addGestureRecognizer(tap)
+        
+        // 버튼 비활성
+        sendButton.isEnabled = false
         
         // tableview delegate, dataSource
         tableView.delegate = self
@@ -78,17 +125,48 @@ class ChatRoomViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         tableView.tableFooterView = UIView()
+        
+        // textfield delegate
+        textField.delegate = self
+        // textfield 입력 감지 - 버튼 활성화
+        textField.addTarget(self, action: #selector(textChange(_:)), for: .editingChanged)
+        
+        // default or table
+        if (UserDefaults.standard.value(forKey: "concern") != nil) {
+            defaultView.isHidden = true
+            tableView.reloadData()
+            if let index = UserDefaults.standard.value(forKey: "categoryIndex") {
+                self.title = "\(index)번 상담자와의 대화"
+            }
+        } else {
+            defaultView.isHidden = false
+            self.title = ""
+        }
+        
+        // firestore
+        // [START setup]
+        let settings = FirestoreSettings()
+        
+        Firestore.firestore().settings = settings
+        // [END setup]
+        db = Firestore.firestore()
+        
+        // set roomkey
+        if let idToken = UserDefaults.standard.value(forKey: "idToken") {
+            self.uid = "\(idToken)"
+            self.roomkey = "\(idToken)_Ja7CLtpgZnYUnIFSVNRxERxw3Sp2"
+        }
+        // firestore
+        startChat()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         // 리스너 분리
-        /*
         if listener != nil {
             listener.remove()
         }
-        */
         
         // 키보드 노티 분리
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -96,6 +174,36 @@ class ChatRoomViewController: UIViewController {
     }
 
     // MARK: - Methods
+    // firestore
+    func startChat() {
+        guard let roomkey = self.roomkey else {
+            return
+        }
+        // 초기화
+        listener = db.collection("chatrooms").document(roomkey).collection("chats").order(by: "timeStamp", descending: false).addSnapshotListener { querySnapshot, error in
+            guard let snapshot = querySnapshot else {
+                print("Error fetching snapshots: \(error!)")
+                return
+            }
+            
+            snapshot.documentChanges.forEach { diff in
+                if diff.type == .added {
+                    
+                    // 메시지 가져와서 보여주기
+                    guard let comment: Comment = Mapper<Comment>().map(JSON: diff.document.data()) else {
+                        print("startChat (.added) - Mapper<Comment>().map(JSONObject: value) 할당 오류")
+                        return
+                    }
+                    print("added: \(comment)")
+                    self.comments?.append(comment)
+                }
+                self.tableView.reloadData()
+//                let indexPath = NSIndexPath(row: (self.comments?.count ?? 0) - 1, section: 0)
+//                self.tableView.scrollToRow(at: indexPath as IndexPath, at: .bottom, animated: true)
+            }
+        }
+        
+    }
 }
 
 // MARK: - UITextFieldDelegate
@@ -109,8 +217,9 @@ extension ChatRoomViewController: UITextFieldDelegate {
     // textfield 수정을 시작하고 나서 바로
     func textFieldDidBeginEditing(_ textField: UITextField) {
         setUpTextField()
-        /*
+        
         self.tableView.reloadData()
+        /*
         DispatchQueue.main.async {
             let indexPath = NSIndexPath(row: (self.comments?.count ?? 0) - 1, section: 0)
             self.tableView.scrollToRow(at: indexPath as IndexPath, at: .bottom, animated: true)
@@ -130,34 +239,14 @@ extension ChatRoomViewController: UITextFieldDelegate {
         if textField.text == "" {
             sendButton.isEnabled = false
         } else {
-            // textField control - 동의 이전에는 입력 못하도록
-            if let comments = self.comments {
-                for comment in comments {
-                    if comment.uid == "end" {
-                        self.sendButton.isEnabled = true
-                        break
-                    } else {
-                        self.sendButton.isEnabled = false
-                    }
-                }
-            }
+            self.sendButton.isEnabled = true
         }
     }
     
     // textfield 입력 감지 - 버튼 활성화
     @objc func textChange(_ textField: UITextField) {
         if textField.hasText {
-            // textField control - 동의 이전에는 입력 못하도록
-            if let comments = self.comments {
-                for comment in comments {
-                    if comment.uid == "end" {
-                        self.sendButton.isEnabled = true
-                        break
-                    } else {
-                        self.sendButton.isEnabled = false
-                    }
-                }
-            }
+            self.sendButton.isEnabled = true
         } else { sendButton.isEnabled = false }
     }
     
@@ -192,41 +281,25 @@ extension ChatRoomViewController: UITextFieldDelegate {
 // MARK: - UITableViewDelegate
 extension ChatRoomViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        /*
-        guard let uid = comments?[indexPath.row].uid else {
-            print("heightForRowAt: comments?[indexPath.row].uid 할당 오류")
-            return 0
-        }
-        if uid == "end" {
-            return 75
+        if let uid = comments?[indexPath.row].uid {
+            if uid == "end" {
+                return 75
+            } else {
+                return UITableView.automaticDimension
+            }
         } else {
-            return UITableView.automaticDimension
-        }
-        */
-        switch indexPath.row {
-        case 0:
-            return 75
-        default:
             return UITableView.automaticDimension
         }
     }
-    
+
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        /*
-        guard let uid = comments?[indexPath.row].uid else {
-            print("estimatedHeightForRowAt: comments?[indexPath.row].uid 할당 오류")
-            return 0
-        }
-        if uid == "end" {
-            return 75
+        if let uid = comments?[indexPath.row].uid {
+            if uid == "end" {
+                return 75
+            } else {
+                return UITableView.automaticDimension
+            }
         } else {
-            return UITableView.automaticDimension
-        }
-        */
-        switch indexPath.row {
-        case 0:
-            return 75
-        default:
             return UITableView.automaticDimension
         }
     }
@@ -235,17 +308,15 @@ extension ChatRoomViewController: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension ChatRoomViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        /*
         guard let count = comments?.count else {
             print("numberOfRowsInSection: count 할당 오류")
             return 0
         }
         return count
-        */
-        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        /*
         switch indexPath.row {
         case 0:
             guard let cell: ChatStartTableViewCell = tableView.dequeueReusableCell(withIdentifier: chatStartCellIdnetifier, for: indexPath) as? ChatStartTableViewCell else {
@@ -271,7 +342,7 @@ extension ChatRoomViewController: UITableViewDataSource {
             
         default: return UITableViewCell()
         }
-        /*
+        */
         guard let uid = comments?[indexPath.row].uid else {
             print("cellForRowAt: comments?[indexPath.row].uid 할당 오류")
             return UITableViewCell()
@@ -352,7 +423,6 @@ extension ChatRoomViewController: UITableViewDataSource {
             cell.selectionStyle = .none
             return cell
         }
- */
     }
 }
 

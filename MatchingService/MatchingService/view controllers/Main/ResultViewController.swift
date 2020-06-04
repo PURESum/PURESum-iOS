@@ -17,6 +17,9 @@ class ResultViewController: UIViewController {
     // cell identifier
     let cellIdentifier: String = "MatchCollectionViewCell"
     
+    // 카테고리 인덱스
+    var categoryIndex: Int?
+    
     // MARK: - IBOutlet
     @IBOutlet weak var userTextView: CustomTextView!
     
@@ -25,7 +28,33 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var nextButton: UIButton!
+    
     // MARK: - IBAction
+    @IBAction func tappedNextButton(_ sender: Any) {
+        UserDefaults.standard.set(true, forKey: "concern")
+        UserDefaults.standard.set(categoryIndex, forKey: "categoryIndex")
+        guard let categoryIndex = UserDefaults.standard.value(forKey: "categoryIndex") else {
+            print("UserDefaults - categoryIndex 할당 오류")
+            return
+        }
+        print("categoryIndex: \(categoryIndex)")
+        
+        let tabbarStoryboard = UIStoryboard(name: "Tabbar", bundle: nil)
+        guard let tabBarController: UITabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "tabbarController") as? UITabBarController else { return }
+        
+        tabBarController.selectedIndex = 1
+        
+        let navi = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "chattingNavi")
+        
+        tabBarController.viewControllers?[1] = navi
+        tabBarController.tabBar.items?[1].image =  UIImage(systemName: "message.fill")
+        tabBarController.tabBar.items?[1].title = "채팅"
+        
+        
+        tabBarController.modalPresentationStyle = .fullScreen
+        self.present(tabBarController, animated: true)
+    }
     
     // MARK: - life cycle
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +67,9 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 버튼 비 활성화
+        nextButton.isEnabled = false
+        
         // collectionView
         let collectionViewLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         collectionViewLayout.minimumLineSpacing = 0
@@ -45,6 +77,9 @@ class ResultViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.decelerationRate = .fast
+        
+        collectionView.isMultipleTouchEnabled = false
+        collectionView.isExclusiveTouch = true
         
         collectionView.reloadData()
         
@@ -89,7 +124,51 @@ extension ResultViewController: UIScrollViewDelegate {
 
 // MARK: - UICollectionViewDelegate
 extension ResultViewController: UICollectionViewDelegate {
+    // did select item
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        guard let cell = collectionView.cellForItem(at: indexPath) as? MatchCollectionViewCell else {
+            print("didSelectedItemAt - cell 할당 오류")
+            return
+        }
+        if cell.isSelected {
+            cell.bgView.layer.backgroundColor = #colorLiteral(red: 0.8742982149, green: 0.9215779901, blue: 0.9905198216, alpha: 1)
+            nextButton.isEnabled = true
+            categoryIndex = indexPath.item + 1
+            print("==========")
+            guard let index = categoryIndex else {
+                print("category index 할당 오류")
+                return
+            }
+            print("categoryIndex: \(index)")
+        } else {
+            cell.bgView.layer.backgroundColor = UIColor.white.cgColor
+            nextButton.isEnabled = false
+        }
+    }
     
+    // did deselect item
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        
+        guard let cell = collectionView.cellForItem(at: indexPath) as? MatchCollectionViewCell else {
+            print("didSelectedItemAt - cell 할당 오류")
+            return
+        }
+        if cell.isSelected {
+            cell.bgView.layer.backgroundColor = #colorLiteral(red: 0.8742982149, green: 0.9215779901, blue: 0.9905198216, alpha: 1)
+            nextButton.isEnabled = true
+            categoryIndex = indexPath.item + 1
+            print("==========")
+            guard let index = categoryIndex else {
+                print("category index 할당 오류")
+                return
+            }
+            print("categoryIndex: \(index)")
+        } else {
+            cell.bgView.layer.backgroundColor = UIColor.white.cgColor
+            nextButton.isEnabled = false
+        }
+    }
 }
 
 // MARK: - UICollectionViewDataSource

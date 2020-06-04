@@ -43,7 +43,9 @@ class MypageViewController: UIViewController {
 extension MypageViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
-        case 2:
+        case 0:
+            UserDefaults.standard.removeObject(forKey: "concern")
+            
             let vc = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
