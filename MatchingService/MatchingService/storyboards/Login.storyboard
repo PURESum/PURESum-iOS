@@ -45,7 +45,7 @@
                                     <segment title="상담자 모드"/>
                                 </segments>
                                 <connections>
-                                    <action selector="changedSegmentedControl:" destination="cDG-5J-4aG" eventType="valueChanged" id="MZH-Dl-Bw0"/>
+                                    <action selector="valueChanged:" destination="cDG-5J-4aG" eventType="valueChanged" id="8IK-uj-9nG"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 주소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkQ-m2-c7U">

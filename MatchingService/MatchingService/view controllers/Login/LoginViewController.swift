@@ -12,7 +12,7 @@ import Firebase
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
-
+    
     // MARK: - properties
     lazy var activityIndicator: UIActivityIndicatorView = {
         // Create an indicator.
@@ -37,7 +37,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var checkButton: UIButton!
     
     // MARK: - IBAction
-    @IBAction func changedSegmentedControl(_ sender: Any) {
+    @IBAction func valueChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            UserDefaults.standard.set(false, forKey: "admin")
+            print("admin: false")
+        } else {
+            UserDefaults.standard.set(true, forKey: "admin")
+            print("admin: true")
+        }
     }
     
     @IBAction func tappedSignUpButton(_ sender: Any) {
@@ -90,10 +97,20 @@ class LoginViewController: UIViewController {
                     // firebase login 수행
                     print("=======")
                     print("firebase login 성공")
-                    // 화면 전환
-                    let vc = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "tabbarController")
-                    vc.modalPresentationStyle = .fullScreen
-                    strongSelf.present(vc, animated: true, completion: nil)
+                    if let admin: Bool = UserDefaults.standard.value(forKey: "admin") as? Bool {
+                        if admin {
+                            // 화면 전환
+                            let vc = UIStoryboard(name: "Admin", bundle: nil).instantiateViewController(withIdentifier: "admin")
+                            vc.modalPresentationStyle = .fullScreen
+                            strongSelf.present(vc, animated: true, completion: nil)
+                        } else {
+                        // 화면 전환
+                        let vc = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "tabbarController")
+                        vc.modalPresentationStyle = .fullScreen
+                        strongSelf.present(vc, animated: true, completion: nil)
+                        }
+                    }
+                    
                 }
             }
         }
@@ -109,7 +126,10 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        UserDefaults.standard.set(false, forKey: "admin")
+        print("admin: false")
+        
         UserDefaults.standard.removeObject(forKey: "concern")
         
         // keyboard hide - view tapped
@@ -137,7 +157,7 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-
+    
     // MARK: - Methods
     // 올바른 이메일 형식인지 확인
     func isValidEmail(email: String) -> Bool {
