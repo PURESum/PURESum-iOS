@@ -1,8 +1,8 @@
 //
-//  ChatRoomViewController.swift
+//  AdminChatRoomViewController.swift
 //  MatchingService
 //
-//  Created by JHKim on 2020/05/24.
+//  Created by JHKim on 2020/06/09.
 //  Copyright © 2020 zhi. All rights reserved.
 //
 
@@ -10,9 +10,9 @@ import UIKit
 import Firebase
 import ObjectMapper
 
-class ChatRoomViewController: UIViewController {
+class AdminChatRoomViewController: UIViewController {
 
-    // MARK: - properties
+// MARK: - properties
     let chatStartCellIdnetifier: String = "ChatStartTableViewCell"
     let userChatCellIdentifier: String = "UserChatTableViewCell"
     let otherChatCellIdnetifier: String = "OtherChatTableViewCell"
@@ -132,12 +132,10 @@ class ChatRoomViewController: UIViewController {
         textField.addTarget(self, action: #selector(textChange(_:)), for: .editingChanged)
         
         // default or table
-        if (UserDefaults.standard.value(forKey: "concern") != nil) {
+        if (comments != nil) {
             defaultView.isHidden = true
             tableView.reloadData()
-            if let index = UserDefaults.standard.value(forKey: "categoryIndex") {
-                self.title = "\(index)번 상담자와의 대화"
-            }
+            self.title = "내담자와의 대화"
         } else {
             defaultView.isHidden = false
             self.title = "채팅"
@@ -207,7 +205,7 @@ class ChatRoomViewController: UIViewController {
 }
 
 // MARK: - UITextFieldDelegate
-extension ChatRoomViewController: UITextFieldDelegate {
+extension AdminChatRoomViewController: UITextFieldDelegate {
     
     //빈 화면 탭했을 때 키보드 내리기
     @objc func viewDidTapped(_ sender: UITapGestureRecognizer) {
@@ -279,7 +277,7 @@ extension ChatRoomViewController: UITextFieldDelegate {
 }
 
 // MARK: - UITableViewDelegate
-extension ChatRoomViewController: UITableViewDelegate {
+extension AdminChatRoomViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if let uid = comments?[indexPath.row].uid {
             if uid == "end" {
@@ -306,7 +304,7 @@ extension ChatRoomViewController: UITableViewDelegate {
 }
 
 // MARK: - UITableViewDataSource
-extension ChatRoomViewController: UITableViewDataSource {
+extension AdminChatRoomViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let count = comments?.count else {
             print("numberOfRowsInSection: count 할당 오류")

@@ -9,7 +9,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="L1X-ly-aNo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7ri-Ph-i3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="admin" id="mUX-u6-aIS" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="P5a-by-FyK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -22,6 +21,7 @@
                         <segue destination="e2l-68-din" kind="relationship" relationship="viewControllers" id="Anv-lE-8lD"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ri-Ph-i3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1152" y="-206"/>
         </scene>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-268" y="88"/>
         </scene>
-        <!--ChatRoomViewController-->
+        <!--AdminChatRoomViewController-->
         <scene sceneID="tzC-Uc-086">
             <objects>
-                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="ChatRoomViewController" id="AHg-Yj-2Wb" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="AdminChatRoomViewController" id="AHg-Yj-2Wb" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Ceq-OC-vLk"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Llq-dS-CYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

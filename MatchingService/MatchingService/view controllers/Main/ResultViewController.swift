@@ -134,7 +134,7 @@ extension ResultViewController: UICollectionViewDelegate {
         if cell.isSelected {
             cell.bgView.layer.backgroundColor = #colorLiteral(red: 0.8742982149, green: 0.9215779901, blue: 0.9905198216, alpha: 1)
             nextButton.isEnabled = true
-            categoryIndex = indexPath.item + 1
+            categoryIndex = predict?.data.predict.counselor[indexPath.row].willsonerIdx
             print("==========")
             guard let index = categoryIndex else {
                 print("category index 할당 오류")
